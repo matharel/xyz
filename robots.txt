@@ -104,6 +104,8 @@ Disallow: /groupes/kloog/
 
 Disallow: /f/vfub/
 
+Disallow: /
+
 Disallow: /f/edr/
 
 Disallow: /f/vfub/scarabal/
