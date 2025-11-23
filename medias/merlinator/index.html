@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Merlinator</title>
+
+
+  
+  
+    <link rel="stylesheet" href="/css/style.min.8f4eb2ab85f02cb29f21250abb4ee470274568b2078bd673e5048acddbe6af5a.css" integrity="sha256-j06yq4XwLLKfISUKu07kcCdFaLIHi9Zz5QSKzdvmr1o=" crossorigin="anonymous">
+  
+
+
+    
+
+
+
+  </head>
+
+  <body class=" menu toc breadcrumb">
+
+    
+    
+
+    <header id="main-header">
+      <div id="logo"><a href="/">Sm</a></div>
+
+      <nav id="section-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle"></label>
+        
+
+
+
+  
+
+
+
+  
+
+    
+    
+    
+    
+
+    
+    
+
+    
+        <ul>
+          
+          
+            <li class="menu_draft">
+              
+                <span>
+    
+
+    
+      
+    
+
+    Merlinator
+  </span>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li>
+              
+                <a href="/medias/photo/">
+    
+
+    
+      
+    
+
+    Photo
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+        </ul>
+      
+    
+
+      </nav>
+
+    </header>
+    
+
+    <main>
+
+      
+      <div id="TOC-container">
+        <input type="checkbox" id="TOC-toggle">
+        <label for="TOC-toggle"></label>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mode-demploi">Mode d&rsquo;emploi</a></li>
+    <li><a href="#les-images">Les images</a></li>
+    <li><a href="#les-morceaux">Les morceaux</a></li>
+    <li><a href="#pour-utiliser-merlinator">Pour utiliser Merlinator</a></li>
+    <li><a href="#albums-à-mettre">Albums à mettre</a></li>
+    <li><a href="#convertir-laudio">Convertir l&rsquo;audio</a></li>
+  </ul>
+</nav>
+      </div>
+      
+
+      <div id="mainContent">
+        
+        
+
+
+
+  <nav id="breadcrumbs">
+    <ol>
+      
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/medias/">media</a></li>
+      
+      <li class="breadcrumb_draft" >Merlinator</li>
+    </ol>
+  </nav>
+
+
+        
+
+        <h1 class="title_draft">Merlinator</h1>
+
+        
+
+
+        
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
+    <p>![WARNING]
+C&rsquo;est une copie du README, et en vrai je me demande si l&rsquo;info ne devrait pas rester exclusivement dans le README.</p>
+
+  </blockquote>
+
+<h1 id="merlinator-judgement-day">Merlinator Judgement Day</h1>
+<h2 id="mode-demploi">Mode d&rsquo;emploi</h2>
+<ol>
+<li>Organiser la musique dans IN en renommant les fichiers pour qu&rsquo;ils soient lisibles sur l&rsquo;enceinte.</li>
+<li>lancer <code>.merlinatorjudgementday playlist.bin</code></li>
+<li>avec <code>Merlinator</code>, ouvrir la playlist <code>out/playlist.bin</code> et l&rsquo;écraser (merlinator doit faire un bidouillage)</li>
+</ol>
+<p>Timéo suggère de tester sans l&rsquo;étape 3 qui était peut-être juste là pour récupérer les histoires déjà sur l&rsquo;enceinte.</p>
+<h2 id="les-images">Les images</h2>
+<p>Elles doivent avoir les caractéristiques suivantes:</p>
+<ul>
+<li>jpg</li>
+<li>128x128</li>
+</ul>
+<p>Dans un dossier, quand elles s&rsquo;appellent:</p>
+<ul>
+<li>art.jpg → elles seront utilisées pour le dossier</li>
+<li>le-nom-d-un-morceau.jpg → elles seront utilisées pour ce morceau</li>
+</ul>
+<p>Pour convertir les images:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>magick input_image.* -resize 128x128^ -gravity center -crop 128x128+0+0 +repage art.jpg
+</span></span></code></pre></div><h2 id="les-morceaux">Les morceaux</h2>
+<p>À priori doivent être sous format mp3 128ko/s. J&rsquo;essayerai de mettre ici si je teste d&rsquo;autres formats compatibles.</p>
+<p>Pour les télécharger depuis Spotify, voilà ce que j&rsquo;ai trouvé de plus ergonomiques:<br>
+<a href="https://spotdownloader.com/">Spotify Downloader</a></p>
+<p>Spotube fonctionne aussi, mais attention au format de conversion. Et en général, je n&rsquo;arrive pas à télécharger tous les morceaux.</p>
+<h2 id="pour-utiliser-merlinator">Pour utiliser Merlinator</h2>
+<p>En utilisant <code>python virtual environnement</code>, je peux m&rsquo;assurer d&rsquo;ouvrir merlinator avec la bonne version de python et les bonnes librairies.</p>
+<p>Dans le dossier <code>merlinator</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#7fbaf5">source</span> python-environnement/bin/activate
+</span></span><span style="display:flex;"><span><span style="color:#7fbaf5">cd</span> src
+</span></span><span style="display:flex;"><span>python merlinator.py
+</span></span></code></pre></div><h2 id="albums-à-mettre">Albums à mettre</h2>
+<p>Lisa Loeb :</p>
+<ul>
+<li>Nursery Rhyme Parade!</li>
+<li>Silly sing along</li>
+</ul>
+<p>Charlie Hope :</p>
+<ul>
+<li>Songs for little one</li>
+</ul>
+<p>Raffi :</p>
+<ul>
+<li>Single songs for the very young</li>
+</ul>
+<p>Renne &amp; Jeremy:</p>
+<ul>
+<li>It&rsquo;s a big World</li>
+</ul>
+<p>Caspar Babyplants:</p>
+<ul>
+<li>Sing Along!</li>
+<li>Away We Go!</li>
+</ul>
+<p>Elizabeth Mitchell:</p>
+<ul>
+<li>Your are my sunshine</li>
+<li>Your are my little Bird
+→ Pas mal, un peu trop pop pour moi.</li>
+</ul>
+<p>Frances England</p>
+<ul>
+<li>honey → shift in a more polished style</li>
+<li>fascinating creatures → her debut album</li>
+</ul>
+<p><a href="https://github.com/djokeur/merlinator">djokeur/merlinator: Playlist editor for the Merlin children loudspeaker from La Chouette Radio (Bayard / Radio France)</a></p>
+<h2 id="convertir-laudio">Convertir l&rsquo;audio</h2>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#7fbaf5">for</span> f in *.m4a<span style="color:#56b6c2">;</span> <span style="color:#7fbaf5">do</span> ffmpeg -i <span style="color:#82cc6a">&#34;</span><span style="color:#bc74c4;font-style:italic">$f</span><span style="color:#82cc6a">&#34;</span> -ab 128k -ar <span style="color:#56b6c2">44100</span> <span style="color:#82cc6a">&#34;render/</span><span style="color:#82cc6a">${</span><span style="color:#bc74c4;font-style:italic">f</span><span style="color:#56b6c2">%.*</span><span style="color:#82cc6a">}</span><span style="color:#82cc6a">.mp3&#34;</span><span style="color:#56b6c2">;</span> <span style="color:#7fbaf5">done</span>
+</span></span></code></pre></div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+    
+</footer>
+
+    <script src="/js/scroll-spy.js"></script>
+    <script src="/js/checklist.js"></script>
+    
+  </body>
+</html>

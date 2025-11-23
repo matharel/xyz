@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Attestation Vente on My New Hugo Site</title>
+    <link>//localhost:1313/vfub/attestation-vente/</link>
+    <description>Recent content in Attestation Vente on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Wed, 29 Jan 2025 11:18:24 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/vfub/attestation-vente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attestation de vente</title>
+      <link>//localhost:1313/vfub/attestation-vente/2025-01-24-motu-m64/</link>
+      <pubDate>Wed, 29 Jan 2025 09:50:08 +0100</pubDate>
+      <guid>//localhost:1313/vfub/attestation-vente/2025-01-24-motu-m64/</guid>
+      <description>&lt;p&gt;Je soussigné &lt;strong&gt;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;..&lt;/strong&gt;,&lt;br&gt;&#xA;demeurant au &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;. à &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;..,&lt;/p&gt;&#xA;&lt;p&gt;certifie sur l’honneur avoir cédé à l&amp;rsquo;association &lt;strong&gt;&amp;ldquo;Vous Fait Une Biz&amp;rdquo;&lt;/strong&gt;,&lt;br&gt;&#xA;dont le siège social est au 755 Route de l&amp;rsquo;Arps (26190 Saint-Laurent-en-Royans),&lt;/p&gt;&#xA;&lt;p&gt;le bien suivant: &lt;strong&gt;carte son motu m64&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Ce matériel ci-dessus a été vendu pour la somme de 380 euros. Le paiement a été effectué par l&amp;rsquo;application du boncoin pour un total de &lt;strong&gt;401,69€&lt;/strong&gt; commission et frais de port compris.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

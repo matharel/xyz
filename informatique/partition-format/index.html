@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>How to partition and format drive</title>
+
+
+  
+  
+    <link rel="stylesheet" href="/css/style.min.8f4eb2ab85f02cb29f21250abb4ee470274568b2078bd673e5048acddbe6af5a.css" integrity="sha256-j06yq4XwLLKfISUKu07kcCdFaLIHi9Zz5QSKzdvmr1o=" crossorigin="anonymous">
+  
+
+
+    
+
+
+
+  </head>
+
+  <body class=" breadcrumb">
+
+    
+    
+
+    <main>
+
+      
+
+      <div id="mainContent">
+        
+        
+
+
+
+  <nav id="breadcrumbs">
+    <ol>
+      
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/informatique/">Informatique</a></li>
+      
+      <li class="breadcrumb_draft" >How to partition and format drive</li>
+    </ol>
+  </nav>
+
+
+        
+
+        <h1 class="title_draft">How to partition and format drive</h1>
+
+        
+
+
+        
+
+        
+
+
+        
+<h2 id="create-a-new-partition-table">create a new partition table</h2>
+<p>First we have to create a new <code>GPT</code> partition table</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo parted /dev/sdX mklabel gpt
+</span></span></code></pre></div><h2 id="create-a-new-partition">Create a new partition</h2>
+<p>Then we create a new partition covering the drive:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo parted /dev/sdX mkpart primary ext4 1MiB 100%
+</span></span></code></pre></div><ul>
+<li>Start at 1MiB for alignment</li>
+<li>Create a <code>primary</code> partition intended for <code>ext4</code> file system.</li>
+<li>Use 100% to cover the entire drive</li>
+</ul>
+<h2 id="create-a-new-file-system">create a New file system</h2>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo mkfs.ext4 /dev/sdX1
+</span></span></code></pre></div><ul>
+<li><code>mkfs.ext4</code> → make file system <code>ext4</code></li>
+</ul>
+
+
+      </div>
+
+    </main>
+
+    <footer>
+
+    
+</footer>
+
+    <script src="/js/scroll-spy.js"></script>
+    <script src="/js/checklist.js"></script>
+    
+  </body>
+</html>

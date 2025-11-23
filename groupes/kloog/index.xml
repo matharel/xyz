@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kloog on My New Hugo Site</title><link>/groupes/kloog/</link><description>Recent content in Kloog on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Mon, 24 Mar 2025 21:43:13 +0100</lastBuildDate><atom:link href="/groupes/kloog/index.xml" rel="self" type="application/rss+xml"/><item><title>Mulder Scully Ibiza</title><link>/groupes/kloog/mulder-scully-ibiza/</link><pubDate>Thu, 20 Mar 2025 14:55:55 +0100</pubDate><guid>/groupes/kloog/mulder-scully-ibiza/</guid><description>&lt;label&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kloog on Mes notes personnelles</title><link>https://matharel.github.io/xyz/groupes/kloog/</link><description>Recent content in Kloog on Mes notes personnelles</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Mon, 24 Mar 2025 21:43:13 +0100</lastBuildDate><atom:link href="https://matharel.github.io/xyz/groupes/kloog/index.xml" rel="self" type="application/rss+xml"/><item><title>Mulder Scully Ibiza</title><link>https://matharel.github.io/xyz/groupes/kloog/mulder-scully-ibiza/</link><pubDate>Thu, 20 Mar 2025 14:55:55 +0100</pubDate><guid>https://matharel.github.io/xyz/groupes/kloog/mulder-scully-ibiza/</guid><description>&lt;label&gt;
  &lt;input type="checkbox" id="removeCol2" onclick="toggleColumn()" checked&gt; Chloé
 &lt;/label&gt;&lt;br&gt;
 &lt;label&gt;
@@ -87,7 +87,7 @@
 
 &lt;figure role="figure" aria-label=""&gt;
  &lt;img
- src="/groupes/kloog/mulder-scully-ibiza/lily/stop1.cropped.svg"
+ src="https://matharel.github.io/xyz/groupes/kloog/mulder-scully-ibiza/lily/stop1.cropped.svg"
  alt=""
  title=""
  loading="lazy"
@@ -132,7 +132,7 @@
 
 &lt;figure role="figure" aria-label=""&gt;
  &lt;img
- src="/groupes/kloog/mulder-scully-ibiza/lily/stop3.cropped.svg"
+ src="https://matharel.github.io/xyz/groupes/kloog/mulder-scully-ibiza/lily/stop3.cropped.svg"
  alt=""
  title=""
  loading="lazy"
@@ -144,7 +144,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 
- &lt;script src="/js/tune-structure.js"&gt;&lt;/script&gt;</description></item><item><title>Kloog - Fiche Technique</title><link>/ft-kloog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ft-kloog/</guid><description>&lt;p class="pdf-link"&gt;&lt;a href="/ft-kloog.pdf"&gt;Version PDF&lt;/a&gt;&lt;/p&gt;
+ &lt;script src="https://matharel.github.io/xyz/js/tune-structure.js"&gt;&lt;/script&gt;</description></item><item><title>Kloog - Fiche Technique</title><link>https://matharel.github.io/xyz/ft-kloog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/ft-kloog/</guid><description>&lt;p class="pdf-link"&gt;&lt;a href="https://matharel.github.io/xyz/ft-kloog.pdf"&gt;Version PDF&lt;/a&gt;&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -327,7 +327,7 @@
  &lt;/svg&gt;
  
 &lt;/div&gt;
-&lt;p&gt;Au son → Matthieu: 07 70 28 23 90&lt;/p&gt;</description></item><item><title>Le portique</title><link>/groupes/kloog/le-portique/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/groupes/kloog/le-portique/</guid><description>&lt;p&gt;Trouver des samples de la dictée magique en français. Le dernier break pourrait être &lt;em&gt;&amp;ldquo;Appuie sur la case rouge&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Au son → Matthieu: 07 70 28 23 90&lt;/p&gt;</description></item><item><title>Le portique</title><link>https://matharel.github.io/xyz/groupes/kloog/le-portique/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/groupes/kloog/le-portique/</guid><description>&lt;p&gt;Trouver des samples de la dictée magique en français. Le dernier break pourrait être &lt;em&gt;&amp;ldquo;Appuie sur la case rouge&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On pourrait aussi avoir d&amp;rsquo;autres breaks au milieu des gros riffs, avec des annonces de la dictée magique.&lt;/p&gt;
 &lt;h2 id="samples"&gt;Samples&lt;/h2&gt;
 &lt;h3 id="dictée-magique-court"&gt;Dictée magique court&lt;/h3&gt;
@@ -337,7 +337,7 @@
 &lt;h3 id="dictée-magique-long"&gt;Dictée magique long&lt;/h3&gt;
 &lt;audio controls&gt;
  &lt;source src="dictee-magique-long.mp3" type="audio/mp3"&gt;
-&lt;/audio&gt;</description></item><item><title>Naked Vallieu</title><link>/groupes/kloog/naked-vailleu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/groupes/kloog/naked-vailleu/</guid><description>&lt;p&gt;À jouer au clic&lt;/p&gt;
+&lt;/audio&gt;</description></item><item><title>Naked Vallieu</title><link>https://matharel.github.io/xyz/groupes/kloog/naked-vailleu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/groupes/kloog/naked-vailleu/</guid><description>&lt;p&gt;À jouer au clic&lt;/p&gt;
 &lt;p&gt;Sur l&amp;rsquo;intro, jouer avec le son du moog. Pour cela avoir un Lfo rythmique et
 synchronisé avec le tempo dont je peux faire rentrer et sortir pour pimenter le
 son.&lt;/p&gt;

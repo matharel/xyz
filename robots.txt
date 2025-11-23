@@ -1,314 +1,314 @@
 User-agent: *
 
-Disallow: /medias/photo/
+Disallow: /xyz/medias/photo/
 
-Disallow: /musique/bome/
+Disallow: /xyz/musique/bome/
 
-Disallow: /groupes/octopulse/
+Disallow: /xyz/groupes/octopulse/
 
-Disallow: /lecume/
+Disallow: /xyz/lecume/
 
-Disallow: /musique/m8/
+Disallow: /xyz/musique/m8/
 
-Disallow: /web/hugo/format-content/
+Disallow: /xyz/web/hugo/format-content/
 
-Disallow: /k/roti-vegan/
+Disallow: /xyz/k/roti-vegan/
 
-Disallow: /k/ecrase-d-avocat/
+Disallow: /xyz/k/ecrase-d-avocat/
 
-Disallow: /k/
+Disallow: /xyz/k/
 
-Disallow: /productivity/note-taking/
+Disallow: /xyz/productivity/note-taking/
 
-Disallow: /productivity/
+Disallow: /xyz/productivity/
 
-Disallow: /fraternites-2025/
+Disallow: /xyz/fraternites-2025/
 
-Disallow: /informatique/install/
+Disallow: /xyz/informatique/install/
 
-Disallow: /informatique/install/systemd/
+Disallow: /xyz/informatique/install/systemd/
 
-Disallow: /f/2025-10-jtc/
+Disallow: /xyz/f/2025-10-jtc/
 
-Disallow: /reaper/git/
+Disallow: /xyz/reaper/git/
 
-Disallow: /vfub-technique/gros-bal-chapiteau/
+Disallow: /xyz/vfub-technique/gros-bal-chapiteau/
 
-Disallow: /vfub-technique/
+Disallow: /xyz/vfub-technique/
 
-Disallow: /vfub-technique/gros-bal/
+Disallow: /xyz/vfub-technique/gros-bal/
 
-Disallow: /cc-lecume/
+Disallow: /xyz/cc-lecume/
 
-Disallow: /vfub/frais/2025-07-14-danseruna/
+Disallow: /xyz/vfub/frais/2025-07-14-danseruna/
 
-Disallow: /danseruna/
+Disallow: /xyz/danseruna/
 
-Disallow: /ziw/
+Disallow: /xyz/ziw/
 
-Disallow: /edr/
+Disallow: /xyz/edr/
 
-Disallow: /arts-vignes/
+Disallow: /xyz/arts-vignes/
 
-Disallow: /jtc/dates/
+Disallow: /xyz/jtc/dates/
 
-Disallow: /tap/
+Disallow: /xyz/tap/
 
-Disallow: /cdr/
+Disallow: /xyz/cdr/
 
-Disallow: /grand-plouf/
+Disallow: /xyz/grand-plouf/
 
-Disallow: /fonctionnement-gite/
+Disallow: /xyz/fonctionnement-gite/
 
-Disallow: /cdr/
+Disallow: /xyz/cdr/
 
-Disallow: /tetra/
+Disallow: /xyz/tetra/
 
-Disallow: /f/2025-anlor/
+Disallow: /xyz/f/2025-anlor/
 
-Disallow: /tain/
+Disallow: /xyz/tain/
 
-Disallow: /2025-fdt/
+Disallow: /xyz/2025-fdt/
 
-Disallow: /ballons/
+Disallow: /xyz/ballons/
 
-Disallow: /groupes/kloog/mulder-scully-ibiza/
+Disallow: /xyz/groupes/kloog/mulder-scully-ibiza/
 
-Disallow: /informatique/ssh/
+Disallow: /xyz/informatique/ssh/
 
-Disallow: /reaper/keybindings/
+Disallow: /xyz/reaper/keybindings/
 
-Disallow: /vfub/attestation-vente/2025-01-24-motu-m64/
+Disallow: /xyz/vfub/attestation-vente/2025-01-24-motu-m64/
 
-Disallow: /jtc/suivi/
+Disallow: /xyz/jtc/suivi/
 
-Disallow: /vfub/frais/2024-11-29-frais-transports/
+Disallow: /xyz/vfub/frais/2024-11-29-frais-transports/
 
-Disallow: /assimil/lesson_04/
+Disallow: /xyz/assimil/lesson_04/
 
-Disallow: /education/ambre/
+Disallow: /xyz/education/ambre/
 
-Disallow: /formation/
+Disallow: /xyz/formation/
 
-Disallow: /formation/cloe/
+Disallow: /xyz/formation/cloe/
 
-Disallow: /tubercules/ca-2024-12-09/
+Disallow: /xyz/tubercules/ca-2024-12-09/
 
-Disallow: /tubercules/
+Disallow: /xyz/tubercules/
 
-Disallow: /assimil/lesson_02/
+Disallow: /xyz/assimil/lesson_02/
 
-Disallow: /assimil/lesson_01/
+Disallow: /xyz/assimil/lesson_01/
 
-Disallow: /groupes/kloog/
+Disallow: /xyz/groupes/kloog/
 
-Disallow: /f/vfub/
+Disallow: /xyz/f/vfub/
 
-Disallow: /
+Disallow: /xyz/
 
-Disallow: /f/edr/
+Disallow: /xyz/f/edr/
 
-Disallow: /f/vfub/scarabal/
+Disallow: /xyz/f/vfub/scarabal/
 
-Disallow: /f/scarabal/
+Disallow: /xyz/f/scarabal/
 
-Disallow: /musique/test/
+Disallow: /xyz/musique/test/
 
-Disallow: /formation/vfub/
+Disallow: /xyz/formation/vfub/
 
-Disallow: /groupes/terroir-collapse/terroir-collapse-notes-enregistrements/
+Disallow: /xyz/groupes/terroir-collapse/terroir-collapse-notes-enregistrements/
 
-Disallow: /informatique/install/todo/
+Disallow: /xyz/informatique/install/todo/
 
-Disallow: /informatique/ordinateurs/
+Disallow: /xyz/informatique/ordinateurs/
 
-Disallow: /vfub/devis/
+Disallow: /xyz/vfub/devis/
 
-Disallow: /web/css/
+Disallow: /xyz/web/css/
 
-Disallow: /musique/microfreak/20tips-unlock-full-potential/
+Disallow: /xyz/musique/microfreak/20tips-unlock-full-potential/
 
-Disallow: /f/6/
+Disallow: /xyz/f/6/
 
-Disallow: /studio-enregistrement/acoustique/
+Disallow: /xyz/studio-enregistrement/acoustique/
 
-Disallow: /studio-enregistrement/administratif/
+Disallow: /xyz/studio-enregistrement/administratif/
 
-Disallow: /ausondudiois/
+Disallow: /xyz/ausondudiois/
 
-Disallow: /bal-moras/
+Disallow: /xyz/bal-moras/
 
-Disallow: /reaper/tips-and-tricks/bazar/
+Disallow: /xyz/reaper/tips-and-tricks/bazar/
 
-Disallow: /groupes/bez-orchestra/
+Disallow: /xyz/groupes/bez-orchestra/
 
-Disallow: /studio-enregistrement/cablage-audio/
+Disallow: /xyz/studio-enregistrement/cablage-audio/
 
-Disallow: /categories/
+Disallow: /xyz/categories/
 
-Disallow: /chloe/
+Disallow: /xyz/chloe/
 
-Disallow: /ft-chloe2/
+Disallow: /xyz/ft-chloe2/
 
-Disallow: /ft-chloe/
+Disallow: /xyz/ft-chloe/
 
-Disallow: /terrain/commande-novembre/
+Disallow: /xyz/terrain/commande-novembre/
 
-Disallow: /studio-enregistrement/acoustique/conception/
+Disallow: /xyz/studio-enregistrement/acoustique/conception/
 
-Disallow: /informatique/config/
+Disallow: /xyz/informatique/config/
 
-Disallow: /studio-enregistrement/consommables/
+Disallow: /xyz/studio-enregistrement/consommables/
 
-Disallow: /studio-enregistrement/administratif/contrats/
+Disallow: /xyz/studio-enregistrement/administratif/contrats/
 
-Disallow: /musique/digitakt/
+Disallow: /xyz/musique/digitakt/
 
-Disallow: /musique/digitakt2/
+Disallow: /xyz/musique/digitakt2/
 
-Disallow: /musique/digitone/
+Disallow: /xyz/musique/digitone/
 
-Disallow: /reaper/reaperdoc/
+Disallow: /xyz/reaper/reaperdoc/
 
-Disallow: /studio-enregistrement/entretien/
+Disallow: /xyz/studio-enregistrement/entretien/
 
-Disallow: /f/tain-lhermitage/
+Disallow: /xyz/f/tain-lhermitage/
 
-Disallow: /studio-enregistrement/filets/
+Disallow: /xyz/studio-enregistrement/filets/
 
-Disallow: /musique/fireface802/
+Disallow: /xyz/musique/fireface802/
 
-Disallow: /ausondudiois/frigo/
+Disallow: /xyz/ausondudiois/frigo/
 
-Disallow: /informatique/git/
+Disallow: /xyz/informatique/git/
 
-Disallow: /f/nyons/
+Disallow: /xyz/f/nyons/
 
-Disallow: /web/hugo/
+Disallow: /xyz/web/hugo/
 
-Disallow: /informatique/
+Disallow: /xyz/informatique/
 
-Disallow: /web/hugo/install/
+Disallow: /xyz/web/hugo/install/
 
-Disallow: /jtc/
+Disallow: /xyz/jtc/
 
-Disallow: /ft-jtc/
+Disallow: /xyz/ft-jtc/
 
-Disallow: /ft-jtc-seb/
+Disallow: /xyz/ft-jtc-seb/
 
-Disallow: /informatique/keyboard/
+Disallow: /xyz/informatique/keyboard/
 
-Disallow: /ft-kloog/
+Disallow: /xyz/ft-kloog/
 
-Disallow: /reaper/la-base/
+Disallow: /xyz/reaper/la-base/
 
-Disallow: /fougere-chloe/
+Disallow: /xyz/fougere-chloe/
 
-Disallow: /groupes/kloog/le-portique/
+Disallow: /xyz/groupes/kloog/le-portique/
 
-Disallow: /reveillon-chatillon/
+Disallow: /xyz/reveillon-chatillon/
 
-Disallow: /2025-ndf/
+Disallow: /xyz/2025-ndf/
 
-Disallow: /musique/lilypond/
+Disallow: /xyz/musique/lilypond/
 
-Disallow: /web/lilypond/
+Disallow: /xyz/web/lilypond/
 
-Disallow: /informatique/linux/
+Disallow: /xyz/informatique/linux/
 
-Disallow: /musique/linux-sound-architecture/
+Disallow: /xyz/musique/linux-sound-architecture/
 
-Disallow: /musique/linux/
+Disallow: /xyz/musique/linux/
 
-Disallow: /web/hugo/variables/
+Disallow: /xyz/web/hugo/variables/
 
-Disallow: /informatique/markdown/
+Disallow: /xyz/informatique/markdown/
 
-Disallow: /medias/
+Disallow: /xyz/medias/
 
-Disallow: /musique/microfreak/
+Disallow: /xyz/musique/microfreak/
 
-Disallow: /musique/midi/
+Disallow: /xyz/musique/midi/
 
-Disallow: /musique/
+Disallow: /xyz/musique/
 
-Disallow: /groupes/kloog/naked-vailleu/
+Disallow: /xyz/groupes/kloog/naked-vailleu/
 
-Disallow: /web/netlify/
+Disallow: /xyz/web/netlify/
 
-Disallow: /informatique/network/
+Disallow: /xyz/informatique/network/
 
-Disallow: /nvim/
+Disallow: /xyz/nvim/
 
-Disallow: /informatique/ordinateurs/asus-ambre/
+Disallow: /xyz/informatique/ordinateurs/asus-ambre/
 
-Disallow: /groupes/pss/
+Disallow: /xyz/groupes/pss/
 
-Disallow: /web/hugo/scope-and-dot/
+Disallow: /xyz/web/hugo/scope-and-dot/
 
-Disallow: /studio-enregistrement/2024-chantier/
+Disallow: /xyz/studio-enregistrement/2024-chantier/
 
-Disallow: /groupes/terroir-collapse/pre-prod/
+Disallow: /xyz/groupes/terroir-collapse/pre-prod/
 
-Disallow: /informatique/ordinateurs/lenovo/
+Disallow: /xyz/informatique/ordinateurs/lenovo/
 
-Disallow: /reaper/reapack/
+Disallow: /xyz/reaper/reapack/
 
-Disallow: /reaper/
+Disallow: /xyz/reaper/
 
-Disallow: /reaper/tips-and-tricks/linux/
+Disallow: /xyz/reaper/tips-and-tricks/linux/
 
-Disallow: /reaper/tips-and-tricks/export/
+Disallow: /xyz/reaper/tips-and-tricks/export/
 
-Disallow: /web/ressources/
+Disallow: /xyz/web/ressources/
 
-Disallow: /reaper/generic-ressources/
+Disallow: /xyz/reaper/generic-ressources/
 
-Disallow: /kubnick/
+Disallow: /xyz/kubnick/
 
-Disallow: /studio-enregistrement/rideaux/
+Disallow: /xyz/studio-enregistrement/rideaux/
 
-Disallow: /studio-enregistrement/rew/
+Disallow: /xyz/studio-enregistrement/rew/
 
-Disallow: /groupes/saltabimus/
+Disallow: /xyz/groupes/saltabimus/
 
-Disallow: /web/sass/
+Disallow: /xyz/web/sass/
 
-Disallow: /groupes/chloe/setlist/
+Disallow: /xyz/groupes/chloe/setlist/
 
-Disallow: /musique/slim-phatty/
+Disallow: /xyz/musique/slim-phatty/
 
-Disallow: /sonorisation/
+Disallow: /xyz/sonorisation/
 
-Disallow: /nvim/spelling/
+Disallow: /xyz/nvim/spelling/
 
-Disallow: /studio-enregistrement/
+Disallow: /xyz/studio-enregistrement/
 
-Disallow: /tags/
+Disallow: /xyz/tags/
 
-Disallow: /terrain/
+Disallow: /xyz/terrain/
 
-Disallow: /terrain/terrain/
+Disallow: /xyz/terrain/terrain/
 
-Disallow: /groupes/terroir-collapse/
+Disallow: /xyz/groupes/terroir-collapse/
 
-Disallow: /groupes/terroir-collapse/live/
+Disallow: /xyz/groupes/terroir-collapse/live/
 
-Disallow: /f/arts-et-vignes/
+Disallow: /xyz/f/arts-et-vignes/
 
-Disallow: /web/hugo/time/
+Disallow: /xyz/web/hugo/time/
 
-Disallow: /nvim/tips-and-tricks/
+Disallow: /xyz/nvim/tips-and-tricks/
 
-Disallow: /reaper/tips-and-tricks/
+Disallow: /xyz/reaper/tips-and-tricks/
 
-Disallow: /f/tournee-bez/
+Disallow: /xyz/f/tournee-bez/
 
-Disallow: /reaper/travail-en-cours/
+Disallow: /xyz/reaper/travail-en-cours/
 
-Disallow: /groupes/vargoz-matharel/
+Disallow: /xyz/groupes/vargoz-matharel/
 
-Disallow: /informatique/virtualizer/
+Disallow: /xyz/informatique/virtualizer/
 
-Disallow: /web/
+Disallow: /xyz/web/
 

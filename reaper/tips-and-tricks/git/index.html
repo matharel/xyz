@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Git</title>
+
+
+  
+  
+    <link rel="stylesheet" href="/css/style.min.8f4eb2ab85f02cb29f21250abb4ee470274568b2078bd673e5048acddbe6af5a.css" integrity="sha256-j06yq4XwLLKfISUKu07kcCdFaLIHi9Zz5QSKzdvmr1o=" crossorigin="anonymous">
+  
+
+
+    
+
+
+
+  </head>
+
+  <body class=" menu">
+
+    
+    
+
+    <header id="main-header">
+      <div id="logo"><a href="/">Sm</a></div>
+
+      <nav id="section-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle"></label>
+        
+
+
+
+  
+
+
+
+  
+
+    
+    
+    
+    
+
+    
+    
+
+    
+        <ul>
+          
+          
+            <li>
+              
+                <a href="/reaper/tips-and-tricks/bazar/">
+    
+
+    
+      
+    
+
+    bazar
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li>
+              
+                <a href="/reaper/tips-and-tricks/export/">
+    
+
+    
+      
+    
+
+    Render
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <span>
+    
+
+    
+      
+    
+
+    Git
+  </span>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/latency/">
+    
+
+    
+      
+    
+
+    Latency
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li>
+              
+                <a href="/reaper/tips-and-tricks/linux/">
+    
+
+    
+      
+    
+
+    Reaper sous Linux
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/monitoring/">
+    
+
+    
+      
+    
+
+    Monitoring
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/play-and-edit-cursor/">
+    
+
+    
+      
+    
+
+    Play and Edit Cursor
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/prepare-a-tune-before-mixing/">
+    
+
+    
+      
+    
+
+    Prepare a Tune Before Mixing
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/resetting-time-and-measure/">
+    
+
+    
+      
+    
+
+    Resetting Time and Measure
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/shortcuts/">
+    
+
+    
+      
+    
+
+    Shortcuts
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/tempo-map/">
+    
+
+    
+      
+    
+
+    Tempo Map
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/time-signature/">
+    
+
+    
+      
+    
+
+    Time Signature
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/track-grouping/">
+    
+
+    
+      
+    
+
+    Track Grouping
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/reaper/tips-and-tricks/transients-detection/">
+    
+
+    
+      
+    
+
+    Transients Detection
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+        </ul>
+      
+    
+
+      </nav>
+
+    </header>
+    
+
+    <main>
+
+      
+
+      <div id="mainContent">
+        
+
+        <h1 class="title_draft">Git</h1>
+
+        
+
+
+        
+
+        
+
+
+        
+<h1 id="reaper-config-tree--file-by-file-guide-loose-mode-oriented">REAPER config tree — file-by-file guide (loose-mode oriented)</h1>
+<hr>
+<h2 id="directories">Directories</h2>
+<h3 id="automationitems"><code>AutomationItems/</code></h3>
+<p><strong>Purpose:</strong> Stores per-project automation item data and snapshots.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you want project automation preserved; <strong>No</strong> if you treat automation data as ephemeral.<br>
+<strong>Why / Notes:</strong> Usually small. If you want exact project-state portability, keep it; otherwise safe to ignore.</p>
+<hr>
+<h3 id="colorthemes"><code>ColorThemes/</code></h3>
+<p><strong>Purpose:</strong> REAPER color theme files (<code>.ReaperThemeZip</code> / theme files).<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Small, purely cosmetic, useful to restore UI look.</p>
+<hr>
+<h3 id="cursors"><code>Cursors/</code></h3>
+<p><strong>Purpose:</strong> Custom mouse cursors (rare).<br>
+<strong>Keep?</strong> Optional<br>
+<strong>Why / Notes:</strong> Keep if you customized cursors; otherwise ignore.</p>
+<hr>
+<h3 id="data"><code>Data/</code></h3>
+<p><strong>Purpose:</strong> Misc data used by REAPER or extensions; contents vary.<br>
+<strong>Keep?</strong> Optional → inspect contents.<br>
+<strong>Why / Notes:</strong> Some items may be caches; check before committing. If it contains generated cache, prefer ignoring.</p>
+<hr>
+<h3 id="effects"><code>Effects/</code></h3>
+<p><strong>Purpose:</strong> Local FX preset files / effect-related data.<br>
+<strong>Keep?</strong> <strong>Yes (but inspect)</strong><br>
+<strong>Why / Notes:</strong> Often useful for consistent FX presets. If it holds large binary plugin data, reconsider.</p>
+<hr>
+<h3 id="fxchains"><code>FXChains/</code></h3>
+<p><strong>Purpose:</strong> Saved FX chain files (your presets / chains).<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Valuable to restore saved chains.</p>
+<hr>
+<h3 id="keymaps"><code>KeyMaps/</code></h3>
+<p><strong>Purpose:</strong> MIDI/OSC keymaps and controller mappings.<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Critical if you rely on controller mappings.</p>
+<hr>
+<h3 id="langpack"><code>LangPack/</code></h3>
+<p><strong>Purpose:</strong> Language pack files.<br>
+<strong>Keep?</strong> Optional — <strong>Yes</strong> if you use a custom language pack.<br>
+<strong>Why / Notes:</strong> Otherwise not needed.</p>
+<hr>
+<h3 id="midinotenames"><code>MIDINoteNames/</code></h3>
+<p><strong>Purpose:</strong> MIDI note name customizations.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you changed note names.<br>
+<strong>Why / Notes:</strong> Small and harmless.</p>
+<hr>
+<h3 id="metadatacaches"><code>MetadataCaches/</code></h3>
+<p><strong>Purpose:</strong> Caches for file metadata (project lists, media).<br>
+<strong>Keep?</strong> <strong>No</strong> (ignore)<br>
+<strong>Why / Notes:</strong> Cache; regenerated by REAPER. Saves space and avoids noisy commits.</p>
+<hr>
+<h3 id="mousemaps"><code>MouseMaps/</code></h3>
+<p><strong>Purpose:</strong> Mouse action maps.<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you have custom mouse maps.<br>
+<strong>Why / Notes:</strong> Small and useful.</p>
+<hr>
+<h3 id="osc"><code>OSC/</code></h3>
+<p><strong>Purpose:</strong> OSC remote control mappings.<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you use OSC; otherwise optional.<br>
+<strong>Why / Notes:</strong> Useful to keep for reproducing remote control setup.</p>
+<hr>
+<h3 id="projecttemplates"><code>ProjectTemplates/</code></h3>
+<p><strong>Purpose:</strong> Saved project templates (<code>.rpp</code> templates).<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Important for reproducible sessions.</p>
+<hr>
+<h3 id="queuedrenders"><code>QueuedRenders/</code></h3>
+<p><strong>Purpose:</strong> Metadata for queued renders.<br>
+<strong>Keep?</strong> <strong>Optional / No</strong><br>
+<strong>Why / Notes:</strong> Usually ephemeral; safe to ignore unless you want queued renders preserved.</p>
+<hr>
+<h3 id="reaimgui"><code>ReaImGui/</code></h3>
+<p><strong>Purpose:</strong> Data for ReaImGui extension (GUI assets &amp; resources used by scripts).<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you rely on local ReaImGui GUI resources.<br>
+<strong>Why / Notes:</strong> Can be kept but inspect size.</p>
+<hr>
+<h3 id="reapack"><code>ReaPack/</code></h3>
+<p><strong>Purpose:</strong> ReaPack-managed data and maybe caches/packages.<br>
+<strong>Keep?</strong> <strong>No</strong> for the folder contents; <strong>Yes</strong> for ReaPack config files (<code>reapack.ini</code>) — see files section.<br>
+<strong>Why / Notes:</strong> ReaPack-installed scripts are best reinstalled via ReaPack (keep the repo list instead of vendorizing everything). If you <em>do</em> vendor them, be deliberate.</p>
+<hr>
+<h3 id="scripts"><code>Scripts/</code></h3>
+<p><strong>Purpose:</strong> All user scripts (Lua, EEL, Python) and script folders.<br>
+<strong>Keep?</strong> <strong>Yes</strong>, but be selective.<br>
+<strong>Why / Notes:</strong> Keep your own <code>Scripts/seb/</code> dev scripts. For ReaPack-managed script folders, prefer not to commit full third-party packages (track repo list instead). Suggest: commit <code>Scripts/seb/</code>, optionally <code>Scripts/README.md</code>.</p>
+<hr>
+<h3 id="tracktemplates"><code>TrackTemplates/</code></h3>
+<p><strong>Purpose:</strong> Track template files.<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Useful and small.</p>
+<hr>
+<h3 id="userplugins"><code>UserPlugins/</code></h3>
+<p><strong>Purpose:</strong> Third-party plugin <code>.dll</code> / <code>.so</code> files or local plugin data (e.g., SWS .so).<br>
+<strong>Keep?</strong> Optional → <strong>No</strong> for binaries, <strong>Yes</strong> for tiny helper configs.<br>
+<strong>Why / Notes:</strong> Binary plugins are system/OS-specific (and usually installed separately). Don’t vendor big binaries into config repo — reinstall / package manager handles them. If you have small local helper files (like <code>.ini</code> for a local plugin), consider keeping those separately.</p>
+<hr>
+<h3 id="presets"><code>presets/</code></h3>
+<p><strong>Purpose:</strong> Generic presets (various plugins / settings).<br>
+<strong>Keep?</strong> <strong>Yes</strong> if they are user presets you made.<br>
+<strong>Why / Notes:</strong> Useful to restore presets.</p>
+<hr>
+<h3 id="reaper_www_root"><code>reaper_www_root/</code></h3>
+<p><strong>Purpose:</strong> Local web root for REAPER web UI / resources (rare).<br>
+<strong>Keep?</strong> Optional<br>
+<strong>Why / Notes:</strong> Keep if you customised it; otherwise ignore.</p>
+<hr>
+<h3 id="trash"><code>trash/</code></h3>
+<p><strong>Purpose:</strong> Reaper’s internal trash/backup area.<br>
+<strong>Keep?</strong> <strong>No</strong><br>
+<strong>Why / Notes:</strong> Ephemeral; ignore.</p>
+<hr>
+<h2 id="files-top-level-ini-and-others">Files (top-level .ini and others)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
+    <p>General rule for your <strong>loose mode</strong>: keep user preferences that you personally tweaked (<code>reaper-kb.ini</code>, <code>reaper-menu.ini</code>, <code>reaper-themeconfig.ini</code>, project templates, keymaps, color themes). Avoid large caches, plugin-scan lists, undo logs and registration/license files (privacy &amp; portability).</p>
+
+  </blockquote>
+
+<hr>
+<h3 id="brini"><code>BR.ini</code></h3>
+<p><strong>Purpose:</strong> SWS / BR (Breeder) extension config file (if you use BR/SWS scripts).<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you use BR/SWS features.<br>
+<strong>Why / Notes:</strong> Small and useful.</p>
+<hr>
+<h3 id="readmemd"><code>README.md</code></h3>
+<p><strong>Purpose:</strong> Repo documentation.<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Good place to explain your setup.</p>
+<hr>
+<h3 id="smini"><code>S&amp;M.ini</code></h3>
+<p><strong>Purpose:</strong> SWS/S&amp;M extension config (SWS actions/macros).<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you use SWS S&amp;M features.<br>
+<strong>Why / Notes:</strong> Useful to reproduce SWS/S&amp;M configuration.</p>
+<hr>
+<h3 id="sws-renamepresetstxt"><code>SWS-RenamePresets.txt</code></h3>
+<p><strong>Purpose:</strong> Text file listing SWS rename presets (SWS extension).<br>
+<strong>Keep?</strong> <strong>Yes</strong> if that’s your custom data.<br>
+<strong>Why / Notes:</strong> Small and useful.</p>
+<hr>
+<h3 id="reapackini"><code>reapack.ini</code></h3>
+<p><strong>Purpose:</strong> ReaPack settings (repositories subscribed, package meta).<br>
+<strong>Keep?</strong> <strong>Yes</strong> (important)<br>
+<strong>Why / Notes:</strong> Track this so on reinstall you can re-subscribe to the same ReaPack repos.</p>
+<hr>
+<h3 id="reaper-clap-linux-x86_64ini"><code>reaper-clap-linux-x86_64.ini</code></h3>
+<p><strong>Purpose:</strong> Platform/plugin-specific config for CLAP plugin host or plugin wrapper.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if relevant to your system.<br>
+<strong>Why / Notes:</strong> Machine-specific; keep if you rely on it.</p>
+<hr>
+<h3 id="reaper-defpresetsini"><code>reaper-defpresets.ini</code></h3>
+<p><strong>Purpose:</strong> Default presets registry.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you rely on customized defaults.<br>
+<strong>Why / Notes:</strong> Small; safe to keep.</p>
+<hr>
+<h3 id="reaper-extstateini"><code>reaper-extstate.ini</code></h3>
+<p><strong>Purpose:</strong> Extensions’ saved state (SWS / scripts / extension preferences).<br>
+<strong>Keep?</strong> Optional → <strong>Usually NO</strong> for loose-mode (can be noisy).<br>
+<strong>Why / Notes:</strong> Often contains volatile state; keeping it may cause noisy commits. Only keep if you need exact extension state restored.</p>
+<hr>
+<h3 id="reaper-fxtagsini"><code>reaper-fxtags.ini</code></h3>
+<p><strong>Purpose:</strong> FX tagging metadata (organizing plugins).<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you used FX tags.<br>
+<strong>Why / Notes:</strong> Small and helpful for organizing plugins.</p>
+<hr>
+<h3 id="reaper-install-revtxt"><code>reaper-install-rev.txt</code></h3>
+<p><strong>Purpose:</strong> Text file with REAPER install revision/version.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> (tiny).<br>
+<strong>Why / Notes:</strong> Handy for tracking which REAPER build you used.</p>
+<hr>
+<h3 id="reaper-jsfxini"><code>reaper-jsfx.ini</code></h3>
+<p><strong>Purpose:</strong> JSFX (built-in effects) settings / registry.<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you heavily customise JSFX settings; otherwise optional.<br>
+<strong>Why / Notes:</strong> Not usually huge; keeping restores JSFX state.</p>
+<hr>
+<h3 id="reaper-kbini"><code>reaper-kb.ini</code></h3>
+<p><strong>Purpose:</strong> Keyboard shortcuts (keymap).<br>
+<strong>Keep?</strong> <strong>YES — track</strong><br>
+<strong>Why / Notes:</strong> Essential. Commit this.</p>
+<hr>
+<h3 id="reaper-menuini"><code>reaper-menu.ini</code></h3>
+<p><strong>Purpose:</strong> Custom menu sets &amp; actions.<br>
+<strong>Keep?</strong> <strong>YES — track</strong><br>
+<strong>Why / Notes:</strong> Essential for your custom menus.</p>
+<hr>
+<h3 id="reaper-midihw-alsaini--reaper-midihw-linuxini"><code>reaper-midihw-alsa.ini</code> &amp; <code>reaper-midihw-linux.ini</code></h3>
+<p><strong>Purpose:</strong> MIDI hardware settings (ALSA/Linux).<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you want to restore MIDI device keying, but note device names can change between machines.<br>
+<strong>Why / Notes:</strong> Good to keep for same machine; consider editing if you move between hosts.</p>
+<hr>
+<h3 id="reaper-mouseini"><code>reaper-mouse.ini</code></h3>
+<p><strong>Purpose:</strong> Mouse mapping preferences.<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you customized them.<br>
+<strong>Why / Notes:</strong> Small and useful.</p>
+<hr>
+<h3 id="reaper-recentfxini"><code>reaper-recentfx.ini</code></h3>
+<p><strong>Purpose:</strong> Recently used FX lists (runtime history).<br>
+<strong>Keep?</strong> <strong>No</strong> (ignore)<br>
+<strong>Why / Notes:</strong> Noisy and ephemeral.</p>
+<hr>
+<h3 id="reaper-reginfo2ini"><code>reaper-reginfo2.ini</code></h3>
+<p><strong>Purpose:</strong> Registration/installation info and possibly path data.<br>
+<strong>Keep?</strong> <strong>No</strong> (do <strong>not</strong> commit to public repo)<br>
+<strong>Why / Notes:</strong> May contain registration keys or machine-specific info — treat as sensitive. Exclude from repo or keep locally but out of version control.</p>
+<hr>
+<h3 id="reaper-renderini--reaper-render2ini"><code>reaper-render.ini</code> &amp; <code>reaper-render2.ini</code></h3>
+<p><strong>Purpose:</strong> Render presets and queued render settings.<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you want to preserve render presets/queues.<br>
+<strong>Why / Notes:</strong> Handy for reproducible exports.</p>
+<hr>
+<h3 id="reaper-themeconfigini"><code>reaper-themeconfig.ini</code></h3>
+<p><strong>Purpose:</strong> Theme &amp; toolbar layout configuration.<br>
+<strong>Keep?</strong> <strong>Yes</strong><br>
+<strong>Why / Notes:</strong> Restores UI layout and theme choices.</p>
+<hr>
+<h3 id="reaper-vstplugins64ini"><code>reaper-vstplugins64.ini</code></h3>
+<p><strong>Purpose:</strong> List/scan results of VST plugins (64-bit).<br>
+<strong>Keep?</strong> <strong>No</strong> (ignore)<br>
+<strong>Why / Notes:</strong> Machine- and path-specific; plugin paths differ across systems and can be large/noisy. Re-scan on new machine. If you <em>do</em> want to track plugin list for exact reproduce, keep it privately — but generally exclude.</p>
+<hr>
+<h3 id="reaper-wndposini"><code>reaper-wndpos.ini</code></h3>
+<p><strong>Purpose:</strong> Saved window positions (layouts).<br>
+<strong>Keep?</strong> Optional → <strong>Yes</strong> if you want exact window placement restored.<br>
+<strong>Why / Notes:</strong> May be machine/display-specific (multi-monitor differences).</p>
+<hr>
+<h3 id="reaperini"><code>reaper.ini</code></h3>
+<p><strong>Purpose:</strong> Global REAPER preferences (audio device settings, many UI / behaviour prefs).<br>
+<strong>Keep?</strong> <strong>Yes (but with caution)</strong><br>
+<strong>Why / Notes:</strong> This is the big one — contains many UI and behaviour tweaks you want in loose mode. However it can also contain machine-specific audio device names, paths, or sensitive data. Before committing: scan it for absolute paths, audio device names, or registration info and decide whether to keep or scrub those lines. Consider adding <code>/reaper.ini</code> to <code>.gitignore</code> if you plan to use repo across different machines, or keep it and be careful.</p>
+<hr>
+<h3 id="sws-autocoloriconini"><code>sws-autocoloricon.ini</code></h3>
+<p><strong>Purpose:</strong> SWS extension autocolor/icon settings.<br>
+<strong>Keep?</strong> <strong>Yes</strong> if you use SWS and want consistent icons/colors.<br>
+<strong>Why / Notes:</strong> Small and useful.</p>
+<hr>
+<h2 id="quick-summary--suggested-gitignore-patterns-loose-mode-friendly">Quick summary / suggested .gitignore patterns (loose-mode friendly)</h2>
+<p>If you want a quick <code>.gitignore</code> starting point tuned to the above recommendations:</p>
+<pre tabindex="0"><code># generated / cache / trash
+MetadataCaches/
+trash/
+QueuedRenders/
+reaper-recentfx*.ini
+reaper-vstplugins*.ini
+reaper-extstate.ini
+reaper-reginfo2.ini
+reapeaks/
+Undo_Buf/
+
+# plugin caches / bad scan logs
+reaper-vstplugins*-bad.ini
+
+# logs &amp; backups
+*.log
+*.rpp-bak
+*.rpp-undo
+</code></pre><p><strong>Notes:</strong> keep <code>reaper-kb.ini</code>, <code>reaper-menu.ini</code>, <code>ColorThemes/</code>, <code>TrackTemplates/</code>, <code>FXChains/</code>, <code>Scripts/</code> (your own), <code>KeyMaps/</code>, <code>reaper-themeconfig.ini</code>, <code>reaper-render*.ini</code>, <code>reapack.ini</code>, <code>BR.ini</code>, <code>S&amp;M.ini</code>, etc.</p>
+<hr>
+<h2 id="final-tips">Final tips</h2>
+<ul>
+<li><strong>Sensitive files</strong>: <code>reaper-reginfo2.ini</code> and any license files should <em>not</em> be pushed to public repos. Keep them out of version control or in a private location.</li>
+<li><strong>Binaries</strong>: avoid committing plugin <code>.so</code>/<code>.dll</code> in <code>UserPlugins/</code>; install via package manager or keep a separate binary backup.</li>
+<li><strong>Scripts</strong>: keep <em>your</em> scripts (<code>Scripts/seb/</code>) in the repo. For ReaPack-managed scripts, track <code>reapack.ini</code> (so you can re-sync) rather than large vendorized copies.</li>
+<li><strong>Check before commit</strong>: do <code>git status</code> and <code>git diff</code> after initial <code>git add</code> to make sure nothing unexpected (big caches, binary blobs) slipped in.</li>
+</ul>
+<hr>
+<p>If you want, I can:</p>
+<ul>
+<li>produce a ready-to-copy <code>.gitignore</code> tuned to this exact tree, or</li>
+<li>generate a small shell snippet to copy the <em>keep</em> files from your backup into <code>~/.dotfiles/reaper-config</code> while skipping the <code>ignore</code> list.</li>
+</ul>
+<p>Which should I produce next?</p>
+
+
+      </div>
+
+    </main>
+
+    <footer>
+
+    
+</footer>
+
+    <script src="/js/scroll-spy.js"></script>
+    <script src="/js/checklist.js"></script>
+    
+  </body>
+</html>

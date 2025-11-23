@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Backup</title>
+
+
+  
+  
+    <link rel="stylesheet" href="/css/style.min.8f4eb2ab85f02cb29f21250abb4ee470274568b2078bd673e5048acddbe6af5a.css" integrity="sha256-j06yq4XwLLKfISUKu07kcCdFaLIHi9Zz5QSKzdvmr1o=" crossorigin="anonymous">
+  
+
+
+    
+
+
+
+  </head>
+
+  <body class=" menu">
+
+    
+    
+
+    <header id="main-header">
+      <div id="logo"><a href="/">Sm</a></div>
+
+      <nav id="section-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle"></label>
+        
+
+
+
+  
+
+
+
+  
+
+    
+    
+    
+    
+
+    
+    
+
+    
+        <ul>
+          
+          
+            <li class="menu_draft">
+              
+                <span>
+    
+
+    
+      
+    
+
+    Backup
+  </span>
+              
+              
+    
+
+    
+     
+            </li>
+          
+            <li class="menu_draft">
+              
+                <a href="/studio-config/motu/">
+    
+
+    
+      
+    
+
+    Motu
+  </a>
+              
+              
+    
+
+    
+     
+            </li>
+          
+        </ul>
+      
+    
+
+      </nav>
+
+    </header>
+    
+
+    <main>
+
+      
+
+      <div id="mainContent">
+        
+
+        <h1 class="title_draft">Backup</h1>
+
+        
+
+
+        
+
+        
+
+
+        
+<h2 id="disque-dur-externe">Disque dur externe</h2>
+<p>Sur un disque dur externe:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>rsync -av --update reaper/terroir-collapse /mnt/backup/reaper
+</span></span></code></pre></div><p>Cela va prendre tout le dossier <code>terroir-collapse</code> et le mettre dans le dossier <code>reaper</code>.<br>
+La deuxième fois, il vérifie si il y a des changements.<br>
+Attention la présence ou non du <code>trailing slash</code> est très importante.</p>
+<p>La commande précédente est équivalente à:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>rsync -av --update reaper/terroir-collapse/ /mnt/backup/reaper/terroir-collapse/
+</span></span></code></pre></div><p>C&rsquo;est un comportement de rsync. Sur le dossier source:</p>
+<ul>
+<li>
+<p>sans trailing slash: c&rsquo;est le dossier qui est copié</p>
+</li>
+<li>
+<p>avec un trailing slash: c&rsquo;est le contenu du dossier qui est copié</p>
+</li>
+<li>
+<p><code>a</code>: Archive mode</p>
+</li>
+<li>
+<p><code>v</code>: verbose</p>
+</li>
+<li>
+<p><code>--update</code>: ignore existing files</p>
+</li>
+</ul>
+
+
+      </div>
+
+    </main>
+
+    <footer>
+
+    
+</footer>
+
+    <script src="/js/scroll-spy.js"></script>
+    <script src="/js/checklist.js"></script>
+    
+  </body>
+</html>

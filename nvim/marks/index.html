@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Marks</title>
+
+
+  
+  
+    <link rel="stylesheet" href="/css/style.min.8f4eb2ab85f02cb29f21250abb4ee470274568b2078bd673e5048acddbe6af5a.css" integrity="sha256-j06yq4XwLLKfISUKu07kcCdFaLIHi9Zz5QSKzdvmr1o=" crossorigin="anonymous">
+  
+
+
+    
+
+
+
+  </head>
+
+  <body class=" anki toc">
+
+    
+    
+
+    <main>
+
+      
+      <div id="TOC-container">
+        <input type="checkbox" id="TOC-toggle">
+        <label for="TOC-toggle"></label>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-commands">Basic commands</a></li>
+    <li><a href="#delete-marks">Delete marks</a></li>
+    <li><a href="#special-marks">Special marks</a></li>
+    <li><a href="#marksnvim"><code>marks.nvim</code></a></li>
+    <li><a href="#questionsanswers">Questions/answers</a></li>
+  </ul>
+</nav>
+      </div>
+      
+
+      <div id="mainContent">
+        
+
+        <h1 class="title_draft">Marks</h1>
+
+        
+
+
+        
+
+        
+
+
+        
+<!-- LTeX: language=en-US -->
+<h2 id="basic-commands">Basic commands</h2>
+<p>Marks allow recording position to jump back to it. There are two types of marks,
+lowercase for the current file and uppercase: for jumping between files (only
+one per file).</p>
+<ul>
+<li><code>mV</code> set a mark</li>
+<li><code>'V</code> jump to mark</li>
+<li><code>]'</code> jump to next mark</li>
+<li><code>['</code> jump to previous mark</li>
+<li><code>d'a</code> delete from current line to line of mark <code>a</code></li>
+<li><code>c'a</code> change &hellip;</li>
+<li><code>y'a</code> yank &hellip;</li>
+</ul>
+<p>If using <code>backticks</code> instead of <code>quote</code>, it respects the position in the line.</p>
+<h2 id="delete-marks">Delete marks</h2>
+<ul>
+<li><code>:delmarks a</code> delete mark a</li>
+<li><code>:delmarks a-d</code> delete marks a, b, c, d</li>
+<li><code>:delmarks abxy</code> delete marks a, b, x, y</li>
+<li><code>:delmarks aA</code> delete marks a, A</li>
+<li><code>:delmarks!</code> delete all lowercase marks for the current buffer (a-z)</li>
+</ul>
+<h2 id="special-marks">Special marks</h2>
+<p>Wow ! I think there are very interesting marks here :</p>
+<ul>
+<li><code>`.</code> jump to position where last change occurred in current buffer</li>
+<li><code>`&quot;</code> jump to position where last exited current buffer</li>
+<li><code>`0</code> jump to position in last file edited (when exited Vim)</li>
+<li><code>`1</code> like <code>`0</code> but the previous file (also <code>`2</code> etc.)</li>
+<li><code>''</code> jump back (to line in current buffer where jumped from)</li>
+<li><code>``</code> jump back (to position in current buffer where jumped from)</li>
+<li><code>`[ or `]</code> jump to beginning/end of previously changed or yanked text</li>
+<li><code>`&lt; or `&gt;</code> jump to beginning/end of last visual selection</li>
+</ul>
+<h2 id="marksnvim"><code>marks.nvim</code></h2>
+<p>Add other useful mappings keybindings:</p>
+<p>I like <code>m;</code> for setting or removing mark, very easy.</p>
+<ul>
+<li><code>m,</code> set the next available mark</li>
+<li><code>m;</code> Toggle the next available mark at the current position</li>
+<li><code>dmx</code> Delete mark <code>x</code></li>
+<li><code>m]</code> &amp; <code>m[</code> move to next and previous mark</li>
+<li><code>m:x</code> Preview mark <code>x</code></li>
+</ul>
+<h2 id="questionsanswers">Questions/answers</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>mV</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Set a mark for jumping files (<code>V</code> in the example)</p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>'V</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Jump to the file with the mark <code>V</code></p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>]'</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Jump to next mark</p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>['</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Jump to previous mark</p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>d'a</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Delete from current line to line of mark <code>a</code></p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>c'a</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Change from current line to line of mark <code>a</code></p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="anki" data-info="">
+	<summary class="question"><p><code>y'a</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</summary>
+	<div class="answer">
+    <p>Yank from current line to line of mark <code>a</code></p>
+
+  </blockquote></div>
+</details>
+
+<section class="eval">
+	<label><input type="radio" name="" /><span> Again</span></label>
+	<label><input type="radio" name="" /><span> Hard</span></label>
+	<label><input type="radio" name="" /><span> Good</span></label>
+	<label><input type="radio" name="" /><span> Easy</span></label>
+</section>
+
+
+      </div>
+
+    </main>
+
+    <footer>
+
+    
+</footer>
+
+    <script src="/js/scroll-spy.js"></script>
+    <script src="/js/checklist.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sci on My New Hugo Site</title>
+    <link>//localhost:1313/sci/</link>
+    <description>Recent content in Sci on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 18 Oct 2025 19:42:52 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/sci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remboursements</title>
+      <link>//localhost:1313/sci/remboursements/</link>
+      <pubDate>Fri, 17 Oct 2025 10:41:58 +0200</pubDate>
+      <guid>//localhost:1313/sci/remboursements/</guid>
+      <description>&lt;h2 id=&#34;tableau-de-remboursement-cic&#34;&gt;Tableau de remboursement CIC&lt;/h2&gt;&#xA;&lt;p&gt;Pour consulter l&amp;rsquo;historique de mes virements dans cic.fr, je dois faire:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Opérations &amp;gt; Virements Permanents &amp;gt; Vos virements permanents&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Et ici on peut voir dans &lt;code&gt;échéances en attente&lt;/code&gt; ce qui reste à faire, et dans &lt;code&gt;échéances passées&lt;/code&gt; ce qui a fonctionné, ou bien les virements qui ont échoués.&lt;/p&gt;&#xA;&lt;p&gt;// &amp;lt; csv-table caption=&amp;ldquo;Tableau de remboursement CIC&amp;rdquo; &amp;gt; //&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Nom, Montant&lt;/li&gt;&#xA;&lt;li&gt;Payraudeau Isabelle, 8.62&lt;/li&gt;&#xA;&lt;li&gt;Bonamant Jérémie, 14.30&lt;/li&gt;&#xA;&lt;li&gt;Challouh Caroline, 43.10&lt;/li&gt;&#xA;&lt;li&gt;Bouytet Anne-Sophie, 43.10&lt;/li&gt;&#xA;&lt;li&gt;Gigon Pascal, 51.72&lt;/li&gt;&#xA;&lt;li&gt;Trouplin Boris, 51.72&lt;/li&gt;&#xA;&lt;li&gt;Jacquet Christine, 43.10&lt;/li&gt;&#xA;&lt;li&gt;Jacquet Michel, 43.10&lt;/li&gt;&#xA;&lt;li&gt;Gaubillard Laurianne, 34.48&lt;/li&gt;&#xA;&lt;li&gt;Perrin Nicole, 17.24&lt;/li&gt;&#xA;&lt;li&gt;Nevoret Jean-marc, 24.26&lt;/li&gt;&#xA;&lt;li&gt;Darve Estelle, 34.48&lt;/li&gt;&#xA;&lt;li&gt;Mouche Lise, 97.56&lt;/li&gt;&#xA;&lt;li&gt;Beillard Clarisse, 12.77&lt;/li&gt;&#xA;&lt;li&gt;Quelen Brigitte, 17.24&lt;/li&gt;&#xA;&lt;li&gt;De Visme Hélène, 17.24&#xA;// &amp;lt; /csv-table &amp;gt; //&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Le shortcode &lt;code&gt;csv-table&lt;/code&gt; ne semble plus exister ou être fonctionnel, alors j&amp;rsquo;ai retiré les balises et transformé&#xA;le tableau en liste.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contrats Location</title>
+      <link>//localhost:1313/sci/contrats-location/</link>
+      <pubDate>Fri, 17 Oct 2025 10:41:50 +0200</pubDate>
+      <guid>//localhost:1313/sci/contrats-location/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est toujours un peu dur de s&amp;rsquo;y retrouver avec la SCI. Voici une page qui&#xA;recense les infos intéressantes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://edito.seloger.com/actualites/location-saisonniere-meuble-de-tourisme-difference-article-16707.html&#34;&gt;https://edito.seloger.com/actualites/location-saisonniere-meuble-de-tourisme-difference-article-16707.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;La &amp;ldquo;location saisonnière&amp;rdquo; n&amp;rsquo;existe pas, il s&amp;rsquo;agit de location de courte durée.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;blockquote&gt;&#xA;    &lt;p&gt;Concrètement, les meublés de tourisme sont des villas, appartements ou studios&#xA;meublés, à l’usage exclusif du locataire, que vous proposez à la location à&#xA;une clientèle de passage qui n’y élit pas domicile et qui y effectue un séjour&#xA;caractérisé par une location à la journée, à la semaine ou au mois.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creative Commons on My New Hugo Site</title>
+    <link>//localhost:1313/groupes/creative-commons/</link>
+    <description>Recent content in Creative Commons on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 22 Nov 2025 16:01:12 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/groupes/creative-commons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/cc-lecume/</link>
+      <pubDate>Wed, 30 Jul 2025 18:59:47 +0200</pubDate>
+      <guid>//localhost:1313/cc-lecume/</guid>
+      <description>&lt;h1 id=&#34;attestation-de-non-adhésion-à-la-sacem-et-dautoproduction-des-œuvres-musicales-du-groupe-l39écume&#34;&gt;Attestation de non-adhésion à la SACEM et d’autoproduction des œuvres musicales du groupe L&#39;Écume&lt;/h1&gt;&#xA;&lt;p&gt;Je soussigné, &lt;strong&gt;Sébastien Matharel&lt;/strong&gt;, compositeur et membre du groupe&#xA;&lt;strong&gt;L&#39;Écume&lt;/strong&gt;, atteste sur l’honneur ce qui suit :&lt;/p&gt;&#xA;&lt;p&gt;Le &lt;strong&gt;mercredi 6 août 2025&lt;/strong&gt;, à l’occasion d’un bal public, le groupe&#xA;&lt;em&gt;L&#39;Écume&lt;/em&gt; a interprété &lt;strong&gt;uniquement des œuvres musicales&#xA;originales&lt;/strong&gt;, composées par Sébastien Matharel &lt;strong&gt;non déposées à la&#xA;SACEM&lt;/strong&gt; et placées sous licence Creative Commons Attribution – Pas d’utilisation&#xA;commerciale 4.0 International (CC BY-NC 4.0), interdisant toute utilisation à&#xA;but commercial sans autorisation explicite de l’auteur&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reaper on My New Hugo Site</title><link>/reaper/</link><description>Recent content in Reaper on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/reaper/index.xml" rel="self" type="application/rss+xml"/><item><title>Reaper Git Workflow</title><link>/reaper/git/</link><pubDate>Thu, 02 Oct 2025 17:05:30 +0200</pubDate><guid>/reaper/git/</guid><description>&lt;p&gt;This is a compact, practical &lt;strong&gt;wiki&lt;/strong&gt; that explains a beginner-friendly but
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reaper on Mes notes personnelles</title><link>https://matharel.github.io/xyz/reaper/</link><description>Recent content in Reaper on Mes notes personnelles</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="https://matharel.github.io/xyz/reaper/index.xml" rel="self" type="application/rss+xml"/><item><title>Reaper Git Workflow</title><link>https://matharel.github.io/xyz/reaper/git/</link><pubDate>Thu, 02 Oct 2025 17:05:30 +0200</pubDate><guid>https://matharel.github.io/xyz/reaper/git/</guid><description>&lt;p&gt;This is a compact, practical &lt;strong&gt;wiki&lt;/strong&gt; that explains a beginner-friendly but
 robust workflow for backing up and versioning your Reaper projects at the
 &lt;em&gt;album&lt;/em&gt; level (one git repo that contains multiple song folders). It focuses on
 the things you asked about: when to commit and how to write commit messages, how
@@ -57,7 +57,7 @@ ready for review&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;End of session&lt;/strong&gt;: quick commit with a note of what you did.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Aim for &lt;strong&gt;small, meaningful commits&lt;/strong&gt;: each commit should answer &amp;ldquo;what changed
-and why&amp;rdquo;.&lt;/p&gt;</description></item><item><title>Keybindings</title><link>/reaper/keybindings/</link><pubDate>Thu, 20 Feb 2025 10:04:30 +0100</pubDate><guid>/reaper/keybindings/</guid><description>&lt;h2 id="travail-en-cours-sur-laffichage-des-raccourcis-claviers"&gt;Travail en cours sur l&amp;rsquo;affichage des raccourcis claviers&lt;/h2&gt;
+and why&amp;rdquo;.&lt;/p&gt;</description></item><item><title>Keybindings</title><link>https://matharel.github.io/xyz/reaper/keybindings/</link><pubDate>Thu, 20 Feb 2025 10:04:30 +0100</pubDate><guid>https://matharel.github.io/xyz/reaper/keybindings/</guid><description>&lt;h2 id="travail-en-cours-sur-laffichage-des-raccourcis-claviers"&gt;Travail en cours sur l&amp;rsquo;affichage des raccourcis claviers&lt;/h2&gt;
 &lt;p&gt;OK ce fichier commence à être assez lisible. Voici les questions que je me pose
 maintenant.&lt;/p&gt;
 &lt;h3 id="nom-complet-des-actions-reaper-ou-non"&gt;Nom complet des actions Reaper ou non&lt;/h3&gt;
@@ -66,7 +66,7 @@ n&amp;rsquo;est pas très lisible pour une consultation rapide. Plusieurs soluti
 s&amp;rsquo;offrent à moi.&lt;/p&gt;
 &lt;h4 id="solution-1"&gt;Solution 1&lt;/h4&gt;
 &lt;p&gt;Avoir une colonne &amp;ldquo;function&amp;rdquo; qui est un résumé lisible de l&amp;rsquo;action et avoir une
-autre colonne &amp;ldquo;Reaper Action&amp;rdquo; qui est transformée en tooltip.&lt;/p&gt;</description></item><item><title>Documentation de Reaper Motion (as Vim)</title><link>/reaper/reaperdoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/reaperdoc/</guid><description>&lt;h2 id="keybindings"&gt;Keybindings&lt;/h2&gt;
+autre colonne &amp;ldquo;Reaper Action&amp;rdquo; qui est transformée en tooltip.&lt;/p&gt;</description></item><item><title>Documentation de Reaper Motion (as Vim)</title><link>https://matharel.github.io/xyz/reaper/reaperdoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/reaper/reaperdoc/</guid><description>&lt;h2 id="keybindings"&gt;Keybindings&lt;/h2&gt;
 &lt;p&gt;C-L : Grid adjust by 2
 C-H : Grid adjust by 1/2
 . : repeat the most recent action
@@ -272,7 +272,7 @@ S-I : restore next zoom/scroll postion&lt;/p&gt;
 &lt;p&gt;C-U: scroll half page up
 C-D: scroll half page down
 C-F: scroll half page right
-C-B: scroll half page left&lt;/p&gt;</description></item><item><title>La base</title><link>/reaper/la-base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/la-base/</guid><description>&lt;p&gt;Ici nous voyons comment préparer un morceau avant d&amp;rsquo;être mixé.&lt;/p&gt;
+C-B: scroll half page left&lt;/p&gt;</description></item><item><title>La base</title><link>https://matharel.github.io/xyz/reaper/la-base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/reaper/la-base/</guid><description>&lt;p&gt;Ici nous voyons comment préparer un morceau avant d&amp;rsquo;être mixé.&lt;/p&gt;
 &lt;h2 id="préparation"&gt;Préparation&lt;/h2&gt;
 &lt;h3 id="renommer-les-pistes"&gt;Renommer les pistes&lt;/h3&gt;
 &lt;p&gt;Il est important de bien nommer les pistes avant les prises, cela permet d&amp;rsquo;avoir
@@ -280,7 +280,7 @@ les fichiers très clairement organisés.&lt;/p&gt;
 &lt;p&gt;Avoir une convention claire. Nommer avec 3 majuscules les instruments est très
 lisible. Une manière de choisir les majuscules est de supprimer les voyelles -
 des fois il vaut mieux garder une voyelle, à voir au cas par cas. Ici l&amp;rsquo;anglais
-peut aider pour son vocabulaire plus concis.&lt;/p&gt;</description></item><item><title>Reapack</title><link>/reaper/reapack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/reapack/</guid><description>&lt;p&gt;How to install our own script to Reapack.&lt;/p&gt;
+peut aider pour son vocabulaire plus concis.&lt;/p&gt;</description></item><item><title>Reapack</title><link>https://matharel.github.io/xyz/reaper/reapack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/reaper/reapack/</guid><description>&lt;p&gt;How to install our own script to Reapack.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Dans la vidéo autour de 24 minutes, il explique comment intégrer d&amp;rsquo;autres fichiers au script principal&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id="concepts"&gt;Concepts&lt;/h2&gt;
 &lt;p&gt;The idea is to update an index.xml files with all the references of our scripts.&lt;/p&gt;
@@ -301,7 +301,7 @@ Daniel explains 2 method to do so.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- feature. [Markdown](https://commonmark.org/) *formatting* is supported.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;reaper.ShowConsoleMsg &lt;span style="color:#82cc6a"&gt;&amp;#39;Hello World!&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the script is not the main script, we change &lt;code&gt;@version&lt;/code&gt; with &lt;code&gt;@noindex&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Ressources génériques</title><link>/reaper/generic-ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/generic-ressources/</guid><description>&lt;p&gt;&lt;a href="https://unison.audio/upward-compression/"&gt;Upward Compression: The Hidden Gem of Dynamic Sound Design&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Travail en cours</title><link>/reaper/travail-en-cours/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/travail-en-cours/</guid><description>&lt;h2 id="mes-tous-nouveaux-raccourcis-à-réorganiser-quelque-part"&gt;Mes tous nouveaux raccourcis à réorganiser quelque part&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the script is not the main script, we change &lt;code&gt;@version&lt;/code&gt; with &lt;code&gt;@noindex&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Ressources génériques</title><link>https://matharel.github.io/xyz/reaper/generic-ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/reaper/generic-ressources/</guid><description>&lt;p&gt;&lt;a href="https://unison.audio/upward-compression/"&gt;Upward Compression: The Hidden Gem of Dynamic Sound Design&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Travail en cours</title><link>https://matharel.github.io/xyz/reaper/travail-en-cours/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matharel.github.io/xyz/reaper/travail-en-cours/</guid><description>&lt;h2 id="mes-tous-nouveaux-raccourcis-à-réorganiser-quelque-part"&gt;Mes tous nouveaux raccourcis à réorganiser quelque part&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;v,&lt;/code&gt; time selection: set start point
 &lt;code&gt;v;&lt;/code&gt; time selection: set end point
 &lt;code&gt;zs&lt;/code&gt; zoom time selection
