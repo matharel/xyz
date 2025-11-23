@@ -1,0 +1,14 @@
+graph Verger {
+    node [shape=circle, style=filled, fillcolor=lightgreen, fixedsize=true width=1.2, height=1.2];
+
+    Noyer [pos="0,0!", label="Noyer"];
+    Amandier [pos="4,0!", label="Amandier"];
+    Pommier [pos="2,3!", label="Pommier"];
+    Chêne [pos="6,2!", label="Chêne vert"];
+
+    // Distances symboliques
+//    Noyer -- Amandier;
+//    Noyer -- Pommier;
+//    Amandier -- Chêne;
+//    Pommier -- Chêne;
+}

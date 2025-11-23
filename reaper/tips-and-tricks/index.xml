@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips and Tricks on My New Hugo Site</title><link>/reaper/tips-and-tricks/</link><description>Recent content in Tips and Tricks on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/reaper/tips-and-tricks/index.xml" rel="self" type="application/rss+xml"/><item><title>bazar</title><link>/reaper/tips-and-tricks/bazar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/tips-and-tricks/bazar/</guid><description>&lt;h2 id="cue-buss-generator"&gt;Cue Buss Generator&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;sws cue buss generator → generate for selected tracks&lt;/li&gt;
+&lt;li&gt;rc.reaper.fm/mon → à configurer dans &lt;code&gt;pref → Control/OSC/web → add&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="ressources"&gt;ressources&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://reaper.blog/2016/03/reaper-workflow-tips-from-the-community/"&gt;https://reaper.blog/2016/03/reaper-workflow-tips-from-the-community/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.reapertips.com/resources/the-perfect-setup"&gt;https://www.reapertips.com/resources/the-perfect-setup&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://seventhsam.com/guides/blog/6791049/how-to-set-up-reaper-s-midi-editor-for-better-workflow"&gt;https://seventhsam.com/guides/blog/6791049/how-to-set-up-reaper-s-midi-editor-for-better-workflow&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="démarche-pour-configurer-my-new-reaper"&gt;Démarche pour configurer my new Reaper&lt;/h2&gt;
+&lt;p&gt;J&amp;rsquo;ai quand même l&amp;rsquo;impression qu&amp;rsquo;il me manque pas mal de compétences concernant l&amp;rsquo;édition.
+Ne devrais-je pas faire des tutos pour me remttre au goût du jour sur reaper 7 ?&lt;/p&gt;
+&lt;p&gt;Ensuite je fais des catégories de racourcis, sur les 3 lignes du bas, en commençant par la ligne de repos.&lt;/p&gt;</description></item><item><title>Reaper sous Linux</title><link>/reaper/tips-and-tricks/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/tips-and-tricks/linux/</guid><description>&lt;h2 id="openbox"&gt;Openbox&lt;/h2&gt;
+&lt;p&gt;La configuration se situe ici:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;~/.config/openbox/rc.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pour recharger la configuration après modification:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;openbox --reconfigure
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;J&amp;rsquo;ai retirer tous les raccourcis qui utilisaient la touche &lt;code&gt;Alt&lt;/code&gt; pour être bien sûr qu&amp;rsquo;elle soit disponible avec Reaper.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;ai gardé quelques raccourcis intéressants que j&amp;rsquo;ai bougé sur la touche windows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;W-Right → move windows&lt;/li&gt;
+&lt;li&gt;W-Left → resize windows&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Render</title><link>/reaper/tips-and-tricks/export/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/tips-and-tricks/export/</guid><description>&lt;p&gt;Rien pour l&amp;rsquo;instant.&lt;/p&gt;</description></item></channel></rss>

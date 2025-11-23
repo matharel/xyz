@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="31.13mm" height="11.38mm" viewBox="8.5358 0.0020 17.7152 6.4760">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(8.5358, 6.4280)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="17.6652" y2="0"/>
+</g>
+<g transform="translate(8.5358, 5.4280)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="17.6652" y2="0"/>
+</g>
+<g transform="translate(8.5358, 4.4280)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="17.6652" y2="0"/>
+</g>
+<g transform="translate(8.5358, 3.4280)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="17.6652" y2="0"/>
+</g>
+<g transform="translate(8.5358, 2.4280)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="17.6652" y2="0"/>
+</g>
+<g transform="translate(16.5959, 4.4280)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0610, 4.4280)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(22.9110, 3.9280)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/sebastien/repos/matharel/content/groupes/kloog/mulder-scully-ibiza/lily/stop1.ly:5:13:14">
+<g transform="translate(20.9610, 4.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M365 0h-355c-6 0 -10 4 -10 10v136c0 6 4 10 10 10h355c6 0 10 -4 10 -10v-136c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
+</g>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/sebastien/repos/matharel/content/groupes/kloog/mulder-scully-ibiza/lily/stop1.ly:4:2:3">
+<g transform="translate(10.5358, 5.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-45 0 -69 -34 -69 -88c0 -102 89 -136 134 -136s69 34 69 88c0 102 -89 136 -134 136zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/sebastien/repos/matharel/content/groupes/kloog/mulder-scully-ibiza/lily/stop1.ly:5:2:3">
+<g transform="translate(17.9588, 5.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M218 136c66 0 108 -36 108 -89c0 -89 -113 -183 -218 -183c-66 0 -108 36 -108 89c0 89 113 183 218 183z" fill="currentColor"/>
+</g>
+</a>
+<a style="color:inherit;" xlink:href="textedit:///home/sebastien/repos/matharel/content/groupes/kloog/mulder-scully-ibiza/lily/stop1.ly:5:4:5">
+<g transform="translate(18.6109, 1.4520)">
+<path transform="scale(0.0040, -0.0040)" d="M-67 48c0 37 30 67 67 67s67 -30 67 -67s-30 -67 -67 -67s-67 30 -67 67zM0 363c255 0 332 -331 332 -366c0 -9 -10 -15 -19 -15s-17 5 -19 18c-26 148 -146 262 -294 262s-268 -114 -294 -262c-2 -13 -10 -18 -19 -18s-19 6 -19 15c0 35 77 366 332 366z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(19.1980, 4.4280)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.3139" ry="0.0400" fill="currentColor"/>
+</g>
+</svg>

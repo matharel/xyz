@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Productivities on My New Hugo Site</title><link>/productivity/</link><description>Recent content in Productivities on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Sat, 22 Nov 2025 16:01:12 +0100</lastBuildDate><atom:link href="/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>Note Taking</title><link>/productivity/note-taking/</link><pubDate>Wed, 22 Oct 2025 10:14:06 +0200</pubDate><guid>/productivity/note-taking/</guid><description>&lt;h2 id="obsidian"&gt;Obsidian&lt;/h2&gt;
+&lt;h3 id="todo-list"&gt;Todo list&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;recording button start/stop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="what-is-it-"&gt;What is it ?&lt;/h3&gt;
+&lt;p&gt;→ A folder of notes on a computer. Files in markdown.&lt;/p&gt;
+&lt;p&gt;You organizes notes into files into folders.&lt;/p&gt;
+&lt;p&gt;There is a note view which collect all links created, even orphans, and show how
+they relates.&lt;/p&gt;
+&lt;p&gt;If I click on an orhpan link, I can straight edit a new file with this title.&lt;/p&gt;
+&lt;p&gt;For me, that would mean more relying on link in my files. Maybe there is a
+plugin to develop for the Graph view.&lt;/p&gt;</description></item></channel></rss>

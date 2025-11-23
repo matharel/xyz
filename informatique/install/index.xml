@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation d'un système Linux on My New Hugo Site</title><link>/informatique/install/</link><description>Recent content in Installation d'un système Linux on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><lastBuildDate>Sat, 18 Oct 2025 19:42:52 +0200</lastBuildDate><atom:link href="/informatique/install/index.xml" rel="self" type="application/rss+xml"/><item><title>SystemD</title><link>/informatique/install/systemd/</link><pubDate>Fri, 10 Oct 2025 14:51:22 +0200</pubDate><guid>/informatique/install/systemd/</guid><description>&lt;p&gt;This page is my personal notes on this excellent ressource:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;blockquote&gt;
+ &lt;p&gt;&lt;a href="https://medium.com/@sebastiancarlos/systemds-nuts-and-bolts-0ae7995e45d3"&gt;Systemd’s Nuts and Bolts — A Visual Guide to Systemd&lt;/a&gt;&lt;/p&gt;
+
+ &lt;/blockquote&gt;
+
+&lt;h2 id="the-d-of-systemd"&gt;The &lt;code&gt;D&lt;/code&gt; of &lt;code&gt;systemd&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;D-Bus&lt;/code&gt; (Desktop Bus) is a high-level message-passing mechanism for
+&lt;strong&gt;&lt;code&gt;Inter-Process Communication&lt;/code&gt;&lt;/strong&gt; (IPC).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;D-Bus&lt;/code&gt; daemon runs two &lt;strong&gt;busses&lt;/strong&gt;, virtual channels where messages fly back
+and forth :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The System Bus&lt;/strong&gt;: system-wide services (NetworkManager, systemd)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Session Bus&lt;/strong&gt;: a private bus for each logged-in user, handling things
+like desktop notifications and applications communication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When a program connects to a bus, it gets a &lt;strong&gt;bus name&lt;/strong&gt; (e.g.,
+&lt;code&gt;org.freedesktop.NetworkManager&lt;/code&gt;). This how we can talk to a given service, it&amp;rsquo;s
+a DNS for D-Bus.&lt;/p&gt;</description></item><item><title/><link>/informatique/install/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/informatique/install/todo/</guid><description>&lt;h1 id="todo-list-concerning-working-space-on-my-computer"&gt;Todo list concerning working space on my computer&lt;/h1&gt;
+&lt;h2 id="firefoxtridactyl"&gt;Firefox/tridactyl&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;une liste de bookmark fonctionnels:
+&lt;ul&gt;
+&lt;li&gt;onetime secret / password pusher&lt;/li&gt;
+&lt;li&gt;syncthing UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;reblacklister gmail et youtube&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

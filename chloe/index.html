@@ -1,0 +1,83 @@
+<!doctype html><html lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Chloé</title><link rel=stylesheet href=/css/style.min.7b4250401cd274931ed8bcbac91d35383a99f849b837a813e2820ec60acabba5.css integrity="sha256-e0JQQBzSdJMe2Ly6yR01ODqZ+Em4N6gT4oIOxgrKu6U=" crossorigin=anonymous></head><body class=toc><main><div id=TOC-container><input type=checkbox id=TOC-toggle>
+<label for=TOC-toggle></label><nav id=TableOfContents><ul><li><a href=#luanoon-sur-lordi-dambre>Luanoon sur l&rsquo;ordi d&rsquo;Ambre</a></li><li><a href=#les-sons-synthés>Les sons synthés</a></li><li><a href=#ajouter-les-delays>ajouter les delays</a></li><li><a href=#balances>Balances</a></li><li><a href=#branchement-pédalier>Branchement pédalier</a></li><li><a href=#luanoon>Luanoon</a><ul><li><a href=#page-1>Page 1</a></li><li><a href=#page-2>Page 2</a></li></ul></li><li><a href=#idées-arrangement-son>Idées arrangement son</a><ul><li><a href=#la-mazurka>La mazurka</a></li><li><a href=#polka>Polka</a></li><li><a href=#bourrée>Bourrée</a></li><li><a href=#son-intéressant>Son intéressant</a></li></ul></li><li><a href=#notes-bal-clermont>Notes bal clermont</a><ul><li><a href=#technique>Technique</a></li><li><a href=#par-morceaux>Par morceaux</a></li></ul></li><li><a href=#le-projet>Le projet</a></li><li><a href=#les-étapes>Les étapes</a></li><li><a href=#sampler>Sampler</a><ul><li><a href=#le-vieux-piano-de-la-liveroom>Le vieux piano de la liveroom</a></li></ul></li><li><a href=#morceaux>Morceaux</a></li><li><a href=#nom-de-domaine>Nom de domaine</a><ul><li><a href=#charlie>Charlie</a></li></ul></li><li><a href=#pédalier>Pédalier</a></li><li><a href=#webmidijs>webmidi.js</a></li><li><a href=#fiche-technique>Fiche Technique</a></li><li><a href=#notes-pour-le-bal-dautomne>Notes pour le bal d&rsquo;automne</a></li><li><a href=#synthés-possible>Synthés possible</a></li></ul></nav></div><div id=mainContent><h1>Chloé</h1><ul><li><a href=/ft-chloe2/>Chloé - Fiche Technique</a></li><li><a href=/ft-chloe/>Chloé - Fiche Technique Simplifiée</a></li><li><a href=/groupes/chloe/setlist/>Setlist</a></li></ul><h2 id=luanoon-sur-lordi-dambre>Luanoon sur l&rsquo;ordi d&rsquo;Ambre</h2><ul><li>Allumer l&rsquo;ordi et lancer <code>sway</code>.</li><li>Ouvrir un terminal <code>alt+Enter</code></li><li>Aller dans le bon dossier <code>cd luanoon-projects</code></li><li>lancer le programme <code>lnoon -w .</code></li></ul><h2 id=les-sons-synthés>Les sons synthés</h2><p>On y est à peu près. À affiner :</p><ul><li>le son d&rsquo;orgue à la basse</li><li>la nappe</li><li>le lead</li></ul><h2 id=ajouter-les-delays>ajouter les delays</h2><p>Est-ce nécessaire ? Ou alors juste un delay que je ne peux pas vraiment faire
+bien tordu.</p><h2 id=balances>Balances</h2><ul><li>1 morceau complet et chargé en informations et que:<ul><li>tu maitrises</li><li>tu peux jouer en boucle</li><li>tu prends du plaisir à le jouer</li><li>et il te mets à l&rsquo;aise</li></ul></li><li>Montée et descente chromatiques avec les basses</li><li><code>Satie</code> (<em>en boucle</em>)</li><li>la fin de <code>LoFi</code> (<em>avec pied et en boucle</em>)</li></ul><h2 id=branchement-pédalier>Branchement pédalier</h2><pre class=mermaid>flowchart TD
+
+%% MIDI Chain
+subgraph MIDI
+  Accordion -. MIDI .-> HxStomp
+  HxStomp -. USB .-> LuaNoon
+  LaunchPad -. USB .-> LuaNoon
+  12Step -. USB .-> LuaNoon
+  MP100 -. USB .-> LuaNoon
+  LuaNoon -. USB .-> Digitakt
+  LuaNoon -. USB .-> MicroMonsta
+end
+
+
+%% Styling
+style MIDI fill:#f9f,stroke:#333,stroke-width:1px
+</pre><pre class=mermaid>flowchart TD
+
+%% AUDIO Chain
+subgraph AUDIO
+  MG -- 1 --> Mixer
+  MD -- 2 --> HxStomp
+  HxStomp -- 3-4 --> Mixer
+  HxStomp -- 5-6 --> Mixer
+  Digitak --7-8 --> Mixer
+  MicroMonsta -- 9-10 --> Mixer
+end
+
+%% Additional audio flows
+
+
+%% Styling
+style AUDIO fill:#bbf,stroke:#333,stroke-width:1px
+</pre><h2 id=luanoon>Luanoon</h2><h3 id=page-1>Page 1</h3><table class=headers><thead><tr><td></td><td>Sth 1</td><td>Sth 2</td><td>Kick</td><td>Snare</td><td>HH</td></tr></thead><tbody><tr><td>Son 1</td><td>Infra</td><td>Orgue</td><td>Accoustique</td><td>Accoustique</td><td>HiHat</td></tr><tr><td>Son 2</td><td>Hard</td><td>Arpégiateur</td><td>Electro</td><td>Electro</td><td>Cloche</td></tr><tr><td>Son 3</td><td></td><td>Foot lead</td><td></td><td></td><td></td></tr><tr><td>Son 4</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Son 5</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><h3 id=page-2>Page 2</h3><table class=headers><thead><tr><td></td><td>Sth 1</td><td>Sth 2</td><td>Kick</td><td>Snare</td><td>HH</td></tr></thead><tbody><tr><td>MG</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>CHORDS</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>MD</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>12 STEP</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>KEYSTEP 6</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><h2 id=idées-arrangement-son>Idées arrangement son</h2><ul><li>da funk (154) avec un Chorus pour un rif à la main droite (les notes à
+l&rsquo;octave style disco, ça marche bien)</li><li><code>tant de clichés</code> bad lead avec plus de glissando</li></ul><h3 id=la-mazurka>La mazurka</h3><ul><li>trouver son de nappes (j&rsquo;suis parti sur du farfiza déformé pour l&rsquo;instant)</li></ul><h3 id=polka>Polka</h3><ul><li>Son 245 → rajouter LFO sur sur cutoff & reso</li></ul><h3 id=bourrée>Bourrée</h3><p>Sur deuxième bourrée, le son <code>pluck 2 - 156</code>, sans delay et avec glide <code>55</code>, une
+rythmique soit séquencée, soit jouée main gauche</p><pre tabindex=0><code>||: c8. c c8 r8 c8 c&#39; c :||
+</code></pre><p>Si jouée avec la main gauche, avoir une pédale d&rsquo;expression qui permet de jouer
+l&rsquo;octave ou shift d&rsquo;un octave, ou bien un bouton push qui permet d&rsquo;octaver la
+main gauche</p><h3 id=son-intéressant>Son intéressant</h3><ul><li>farfiza - 160</li><li>PSSCercl - 162 → nappes</li></ul><h2 id=notes-bal-clermont>Notes bal clermont</h2><h3 id=technique>Technique</h3><p>Y&rsquo;a des MD pleins d&rsquo;aigus et d&rsquo;autres non. soit faut un footswitch high self, ou
+alors une pedale. En tout cas, il faut trouver une solution. Pour les delays, si
+on programme une setlist sur son téléphone, ça permettrait de rentrer le tempo
+(ideal), et le HX synchronisé en midi lui donnerait le tempo. Par contre ça
+limite les changements de tempo en fonction de l&rsquo;humeur et de l&rsquo;ambiance.</p><h3 id=par-morceaux>Par morceaux</h3><p>Polka : Faire 2 fois la rythmique rentrer la basse dans la première rythmique
+avec delay propre à la ronde</p><p>Valse dans la boîte : trop longue et de toute manière trop répétitive.</p><p>Cercle : - trop répétitif, à la rigueur faire deux fois la deuxième partie, mais
+la première partie vient vraiment trop souvent. : - proposition structure AABAB</p><p>tango : filtre → 105 (effet motion trio sur les basses)</p><p>Bourrée 2 tps : Trop répétitive → il faut trouver un arrangement.</p><p>Satie : Attention à la fin, s&rsquo;il y a un décrescendo de volume, le synthé lui
+reste au même niveau et il sort beaucoup plus tout d&rsquo;un coup. Il faut faire un
+arrangement de fin très lyrique, à base d&rsquo;arpèges qui monte &mldr; bref, trouver un
+truc.</p><p>Rondeau : Faut vraiment le sortir de la chapelloise à tirroir et le développer,
+il est très chouette. Et en plus dans la chapelloise à tirroir, ça ne fonctionne
+pas parce que les gens sont à l&rsquo;envers.</p><h2 id=le-projet>Le projet</h2><p>Avoir un répertoire original, encore une fois très musique de film, onirique,
+qui fait voyager. Essayer de faire des mélodies simples et belles, pas trop
+dark, mollo sur la modulation.</p><ul><li>enrichier les morceaux simples. Charlie. → Écouter Nino Rota, où toutes les
+musiques de film assez simple.</li></ul><h2 id=les-étapes>Les étapes</h2><p>À l&rsquo;heure actuelle, elle a:</p><ul><li>des sons de basse. Fonctionne plutôt bien.</li><li>des arrangements au pied → un peu anecdotique</li><li>du boum, boum → assez anecdotique aussi.</li></ul><p>Ce qu&rsquo;on pourrait développer :</p><ul><li>des sons de synthés sur la main droite. Soit en renfort, soit en effet delay</li><li>des thèmes au pied</li><li>du boum, boum sur la main gauche</li><li>nappes d&rsquo;accord au pied</li></ul><p>Ce qu&rsquo;on pourrait développer dans un deuxième temps (et avec luanoon):</p><ul><li>des parties rythmiques complètes sur la main gauche</li><li>l&rsquo;envoie de sample → genre du tugudu sur lesquelles elle se rajoute</li></ul><p>Morceaux à ressuciter et à finir d&rsquo;écrire:</p><ul><li>Chapeloise</li><li>La mazurka cachée dans la chapelloise</li><li>Valse à 8 temps</li><li>La mazurka qui ne va pas</li></ul><p>Écrire du nouveau répertoire.</p><ul><li>un morceau inspiré par &ldquo;Ça gaze&rdquo;</li><li>un tango</li><li>un forro</li></ul><p>Faire un site, avec un Ep:</p><ul><li>Mon premier est un &mldr;</li><li>Chapelloise</li></ul><h2 id=sampler>Sampler</h2><p>Pour sampler le piano et le piano jouet, il faut déjà que:</p><ol><li>je me renseigne pour comment utiliser des samples mélodiques. J&rsquo;ai
+l&rsquo;impression qu&rsquo;il faut que je prépare un gros ficher bien caler
+métronomiquement et qu&rsquo;ensuite je le découpe dans le digitakt. À voir après
+comment chaque note jouée pourrait déclencher le digitakt.</li><li>Je sample avec Reaper branché dans la console et je démarre reaper depuis mon
+tél. Sample long, et je ferai un montage dans reaper</li></ol><h3 id=le-vieux-piano-de-la-liveroom>Le vieux piano de la liveroom</h3><p>J&rsquo;ai pris toutes les notes une par une en deux versions (courte et longue).
+Maintenant il faut :</p><ul><li>je regroupe les notes sur 2 tracks par longueur</li><li>je les coupes automatiquements avec les transitoires</li><li>je vérifie les entrées sorties</li><li>je place les samples sur une grille divisible en 64</li></ul><p>J&rsquo;aurais dû utiliser <code>quantize items position to grid</code> Par contre j&rsquo;ai utilisé
+<code>normalize items (peak/rms/lufs)</code> très bien. Avec les réglages:</p><ul><li>lufs-i -20db (dépend du volume d&rsquo;enegitrement)</li><li>normalize each item separatly et après j&rsquo;ai mis un limiter à -0.05 sur la
+track pour gommer les dernier peaks.</li></ul><h2 id=morceaux>Morceaux</h2><h2 id=nom-de-domaine>Nom de domaine</h2><ul><li>chloeso.love</li><li>chloesol.ooo</li><li>chloeso.lol</li></ul><h3 id=charlie>Charlie</h3><p>2ème partie</p><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>b   g   fis e   b
+</span></span><span style=display:flex><span>e   ees c   b   fis
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>b   g   fis e
+</span></span><span style=display:flex><span>ees c   b   bes
+</span></span><span style=display:flex><span>b   c   ees e
+</span></span><span style=display:flex><span>fis g   bes b
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#bc74c4>&lt;&lt;</span>e b<span style=color:#bc74c4>&gt;&gt;</span>     <span style=color:#bc74c4>&lt;&lt;</span>ees g<span style=color:#bc74c4>&gt;&gt;</span>   <span style=color:#bc74c4>&lt;&lt;</span>e fis<span style=color:#bc74c4>&gt;&gt;</span>   <span style=color:#bc74c4>&lt;&lt;</span>c e<span style=color:#bc74c4>&gt;&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#bc74c4>&lt;&lt;</span>b ees<span style=color:#bc74c4>&gt;&gt;</span>   <span style=color:#bc74c4>&lt;&lt;</span>bes c<span style=color:#bc74c4>&gt;&gt;</span>   <span style=color:#bc74c4>&lt;&lt;</span>g b<span style=color:#bc74c4>&gt;&gt;</span>     <span style=color:#bc74c4>&lt;&lt;</span>fis bes<span style=color:#bc74c4>&gt;&gt;</span>
+</span></span></code></pre></div><h2 id=pédalier>Pédalier</h2><p>Attention à l&rsquo;heure actuelle, il n&rsquo;y a qu&rsquo;une différence entre le solo et kloog:</p><ul><li>solo → Midi output To BBdin</li><li>kloog → Midi output To Madame Bidule J&rsquo;ai fait en sorte que ça envoit
+l&rsquo;accordéon dans les deux sorties, mais probablement à remapper à la prochaine
+répète kloog.</li></ul><h2 id=webmidijs>webmidi.js</h2><p>Pour pouvoir envoyer des informations à luanoon qui vont gérer</p><h2 id=fiche-technique>Fiche Technique</h2><table><thead><tr><td>Tranche</td><td>Instrument</td><td>Fourni</td><td>Demandé</td></tr></thead><tbody><tr><td>1</td><td>MG</td><td>Atm 350</td><td></td></tr><tr><td>2</td><td>MD</td><td>Atm 350</td><td></td></tr><tr><td>3-4</td><td>MD Dry</td><td>Jack TRS → Jack TS x2</td><td>DI stereo</td></tr><tr><td>5-6</td><td>MD Wet</td><td>Jack TRS → XLR M x2</td><td></td></tr><tr><td>7-8</td><td>Synth</td><td></td><td>DI Stéréo</td></tr><tr><td>9-10</td><td>Sampler</td><td>Jack TRS → XLR M x2</td><td></td></tr><tr><td>11</td><td>Voix</td><td></td><td>sm58</td></tr></tbody></table><p>On récupère la main droite pour l&rsquo;équaliser et on la renvoit sur scène pour
+qu&rsquo;elle passe dans les effets de Chloé.</p><p>On récupère une main droite avec des effets sec, mais potentiellement stéréo,
+comme:</p><ul><li>distortion</li><li>octaver</li><li>tremolo s</li><li>vibrato s</li></ul><p>On récupère les effets mouillés sur une autre tranche stéréo.</p><ul><li>delays</li><li>reverbe</li></ul><p>2 circuits de retour:</p><ol><li>MD envoyée en pre-fader: <code>adaptateur XLR F → Boitier de reamping → jack mono</code></li><li>Retours</li></ol><h2 id=notes-pour-le-bal-dautomne>Notes pour le bal d&rsquo;automne</h2><ul><li>un lèger chorus sur les mains gauches pour les faire ressortir</li><li>delay à 100%</li><li>voir si je peux utiliser le midi through de la pédale</li></ul><p>Pour l&rsquo;instant, je n&rsquo;utilise que les effets mouillés de l&rsquo;accordéon. Mais on
+pourrait imaginer faire comme avec le saxe de Jo et d&rsquo;avoir deux sorties
+différentes, 1 sortie pour les effets secs (distos, looper, &mldr;) et une sortie
+pour les effets mouillés.</p><p>Matériel à prendre:</p><ul><li>quadra through (<code>acc → HX Stomp | MM2</code>)</li><li>2 câbles midi</li><li><del>2 adaptateurs jack TRS → xlr mâles (pour la sortie de la pédale)</del></li><li><strong>Adpatateur midi mini-jack trs</strong> → le seul truc archi indispensable</li></ul><h2 id=synthés-possible>Synthés possible</h2><p>pulse2 - 300€ d&rsquo;occase SE-02 300€ d&rsquo;occase typhon 280€ d&rsquo;occase nymphes 300€
+d&rsquo;occase</p><p>Je pense que le typhon, ça va être super. Il peut être appairé avec le
+micromonsta pour le reste, ou bien avec le pulse 2 si on veut vraiment tout
+défoncer !</p><script type=module>
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({ startOnLoad: true });
+	</script></div></main><footer></footer><script src=/js/scroll-spy.js></script><script src=/js/checklist.js></script></body></html>

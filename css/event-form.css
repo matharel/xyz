@@ -1,0 +1,97 @@
+/* Functionality */
+
+#category-filter[data-category-id=""] {
+	display: none;
+}
+
+#items a {
+	cursor: pointer;
+}
+
+#items .stock {
+	cursor: pointer;
+}
+
+#items .stock div {
+	position: relative;
+}
+
+#items .stock ul {
+	position: absolute;
+	visibility: hidden;
+}
+
+#items .stock:hover ul {
+	pointer-events: none;
+	visibility: visible;
+}
+
+/* Visuals */
+
+.out-of-stock {
+	color: red;
+}
+
+#items-wrapper {
+	overflow: scroll;
+	height: 300px;
+}
+
+#github,
+input[type=text],
+input[type=number] {
+	padding: 6px 10px;
+	margin: 4px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#event-form>button {
+	margin: 10px 0;
+}
+
+input[type=text] {
+	width: 100%;
+}
+
+input[type=number] {
+	width: 5em;
+}
+
+fieldset {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+#items tr[data-added="1"] {
+	background-color: #deb;
+}
+
+#items .stock li {
+	list-style: none;
+}
+
+#items td {
+	width: 25%;
+}
+
+#items input {
+	margin: 0 10px;
+	padding: 0;
+}
+
+#items .select a,
+#items .select input {
+	float: right;
+}
+
+#items .stock ul {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 200%;
+}

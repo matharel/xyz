@@ -1,0 +1,161 @@
+<!doctype html><html lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Reaper Git Workflow</title><link rel=stylesheet href=/css/style.min.7b4250401cd274931ed8bcbac91d35383a99f849b837a813e2820ec60acabba5.css integrity="sha256-e0JQQBzSdJMe2Ly6yR01ODqZ+Em4N6gT4oIOxgrKu6U=" crossorigin=anonymous></head><body class="numbering-headings toc breadcrumb"><main><div id=TOC-container><input type=checkbox id=TOC-toggle>
+<label for=TOC-toggle></label><nav id=TableOfContents><ul><li><a href=#goals-of-this-workflow>Goals of this workflow</a></li><li><a href=#when-to-commit-and-how>When to commit and how</a><ul><li><a href=#when-to-commit-practical-rules>When to commit (practical rules)</a></li><li><a href=#commit-message-structure-simple-consistent>Commit message structure (simple, consistent)</a></li></ul></li><li><a href=#versioning-mixes-conventions>Versioning mixes: conventions</a><ul><li><a href=#core-idea>Core idea</a></li><li><a href=#naming-conventions-consistent--human-friendly>Naming conventions (consistent & human-friendly)</a></li><li><a href=#using-git-tags-to-label-mix-exports-recommended>Using Git tags to label mix exports (recommended)</a></li><li><a href=#when-if-ever-to-duplicate-rpp-files>When (if ever) to duplicate <code>.RPP</code> files</a></li></ul></li><li><a href=#branching--when-and-how>Branching — when and how</a><ul><li><a href=#minimal-branching-model-recommended>Minimal branching model (recommended)</a></li><li><a href=#branch-flow-for-a-typical-mix-lifecycle>Branch flow for a typical mix lifecycle</a></li></ul></li></ul><ul><li><a href=#extras-added-on-request>Extras added on request</a><ul><li><a href=#scriptsrelease-mixsh-what-it-does><code>scripts/release-mix.sh</code> (what it does)</a></li><li><a href=#readmemd-template><code>README.md</code> template</a></li></ul></li></ul></nav></div><div id=mainContent><nav id=breadcrumbs><ol><li class=breadcrumb_draft><a href>Home</a></li><li><a href=/reaper/>Reaper</a></li><li>Reaper Git Workflow</li></ol></nav><h1>Reaper Git Workflow</h1><p>This is a compact, practical <strong>wiki</strong> that explains a beginner-friendly but
+robust workflow for backing up and versioning your Reaper projects at the
+<em>album</em> level (one git repo that contains multiple song folders). It focuses on
+the things you asked about: when to commit and how to write commit messages, how
+to version mix iterations, and whether/how to use branches.</p><blockquote><p><strong>Context / assumptions</strong></p><ul><li>You keep one Git repo per album (e.g. <code>This super Band/</code>).</li><li>You <strong>do not</strong> commit audio files (<code>audio/</code> folders are ignored). Git tracks
+<code>.RPP</code> and other small project metadata.</li><li>You use <code>rsnapshot</code> or a separate backup for actual audio files and big
+exports.</li></ul></blockquote><hr><h2 id=goals-of-this-workflow>Goals of this workflow</h2><ul><li>Keep a tidy, meaningful history of changes to <code>.RPP</code> files.</li><li>Make it easy to reproduce a particular mix/export by linking it to a Git
+commit or tag.</li><li>Keep collaboration safe and simple (avoid heavy branching complexity unless
+needed).</li><li>Use <strong>Git tags</strong> and small conventions to mark important milestones (mix
+proposals, approved versions, masters).</li></ul><hr><h2 id=when-to-commit-and-how>When to commit and how</h2><h3 id=when-to-commit-practical-rules>When to commit (practical rules)</h3><ul><li><strong>Start of a session</strong>: commit before you begin (&ldquo;session start: recording day
+2025-10-02&rdquo;).</li><li><strong>After major structural edits</strong>: arrangement changes, major track
+adds/removes, large routing changes.</li><li><strong>Before/after editing</strong>: after comping takes / fixing takes / vocal comp.</li><li><strong>Before each mix pass</strong>: commit the <code>.RPP</code> used to export a mix.</li><li><strong>When you reach a named milestone</strong>: e.g. &ldquo;edited version complete&rdquo;, &ldquo;mix v1
+ready for review&rdquo;.</li><li><strong>End of session</strong>: quick commit with a note of what you did.</li></ul><p>Aim for <strong>small, meaningful commits</strong>: each commit should answer &ldquo;what changed
+and why&rdquo;.</p><h3 id=commit-message-structure-simple-consistent>Commit message structure (simple, consistent)</h3><p>Use a short header line (&lt;=72 chars), then an optional body with more details. A
+structured prefix helps scanning history.</p><p>Suggested template:</p><pre tabindex=0><code>&lt;type&gt;(&lt;scope&gt;): short summary
+
+Detailed notes (why, author notes, timestamp, export filename, etc.)
+
+Markers: [session: YYYY-MM-DD hh:mm] [export: filename.wav]
+</code></pre><p><strong>Recommended <code>type</code> prefixes</strong> (pick a small set you like):</p><ul><li><code>session</code> — general session start/end notes</li><li><code>arr</code> or <code>arrangement</code> — structural / arrangement edits</li><li><code>edit</code> — comping / edit / cleanup</li><li><code>mix</code> — mixing changes</li><li><code>fix</code> — bugfix / routing error / lost plugin</li><li><code>doc</code> — README, notes, metadata</li></ul><p><strong>Examples</strong></p><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md><span style=display:flex><span>mix: mix v1 - flat export after recording
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Notes: quick flat mix to check balance. Needs brighter snare, less vocal reverb.
+</span></span><span style=display:flex><span>[session: 2025-10-02 18:03] [export: my-great-song-mix-v1-flat.wav]
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md><span style=display:flex><span>edit: complete vocal comp for verse 1 and 2
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Removed noisy breaths, tightened timing ~30-50ms. Markers: V1_comped [session:
+</span></span><span style=display:flex><span>2025-10-02 20:40]
+</span></span></code></pre></div><p><strong>Why include these details?</strong></p><ul><li>They make it trivial later to know which commit produced a specific exported
+mix.</li><li>They help collaborators find the exact <code>.RPP</code> used for an export.</li></ul><hr><h2 id=versioning-mixes-conventions>Versioning mixes: conventions</h2><p>You asked whether to duplicate <code>.RPP</code> files or to rely on git labels and
+exports. The cleanest approach is to <strong>not duplicate <code>.RPP</code> files</strong> as a primary
+strategy. Instead use a combination of <strong>git commits, tags, and exported
+filenames</strong>.</p><h3 id=core-idea>Core idea</h3><ul><li>Keep working <code>.RPP</code> as the single source of truth.</li><li>When you export a mix (WAV/MP3), record the export filename in the commit
+message and create a <strong>git tag</strong> that identifies that exported mix version.</li><li>Optionally attach the exported file to a GitHub Release (or store it via
+<code>rsnapshot</code>) — but do <strong>not</strong> commit large audio into the repo.</li></ul><h3 id=naming-conventions-consistent--human-friendly>Naming conventions (consistent & human-friendly)</h3><p>Pick a small, consistent scheme for labeling mix iterations. Example convention
+that scales well:</p><ul><li><code>session-flat</code> — immediate mixes right after recording (flat / no fancy
+processing)</li><li><code>edited</code> — editing/comping finished</li><li><code>mix-v1</code>, <code>mix-v2</code>, &mldr; — iterative mix proposals (major changes to artistic
+direction)</li><li><code>mix-v2.1</code>, <code>mix-v2.2</code> — micro iterations: detail passes (EQ tweaks,
+automation)</li><li><code>mix-v2-final</code> or <code>mix-v2-approved</code> — the band accepted the artistic direction</li><li><code>master-v1</code> — final mastered export</li></ul><p><strong>Filename examples for exports</strong></p><pre tabindex=0><code>my-great-song_session-flat_2025-10-02.wav
+my-great-song_edited_2025-10-03.rpp
+my-great-song_mix-v1_2025-10-05.wav
+my-great-song_mix-v2_2025-10-15.wav
+my-great-song_mix-v2.1_detailpass_2025-10-17.wav
+my-great-song_mix-v2-approved_2025-10-18.wav
+my-great-song_master-v1_2025-10-20.wav
+</code></pre><p>Why include the date? It avoids ambiguity when you have many exports.</p><h3 id=using-git-tags-to-label-mix-exports-recommended>Using Git tags to label mix exports (recommended)</h3><p>When you export a mix and commit the <code>.RPP</code> used to create it, create an
+<strong>annotated tag</strong> that points to that commit. Annotated tags can carry a
+message.</p><p>Example:</p><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#3e4460># commit the RPP with a descriptive message first</span>
+</span></span><span style=display:flex><span>git add my-great-song/my-great-song.RPP
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;mix: mix-v2 - direction approved by band [export: my-great-song_mix-v2_2025-10-15.wav]&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># create an annotated tag</span>
+</span></span><span style=display:flex><span>git tag -a my-great-song-mix-v2 -m <span style=color:#82cc6a>&#34;Mix v2 approved by band — export: my-great-song_mix-v2_2025-10-15.wav&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># push branch and tags</span>
+</span></span><span style=display:flex><span>git push origin main
+</span></span><span style=display:flex><span>git push origin my-great-song-mix-v2
+</span></span><span style=display:flex><span><span style=color:#3e4460># or push all tags</span>
+</span></span><span style=display:flex><span>git push --tags
+</span></span></code></pre></div><p>Tags are perfect because they point to the exact commit (the exact <code>.RPP</code>) used
+to make the export. Later, checking out that tag reproduces the project state
+exactly.</p><p><strong>On GitHub:</strong> create a Release using that tag and upload the exported WAV as
+the release asset. Your repo stays small but your release stores the audible
+artifact.</p><h3 id=when-if-ever-to-duplicate-rpp-files>When (if ever) to duplicate <code>.RPP</code> files</h3><ul><li>Use duplication only if you want to keep multiple states easily accessible
+inside the tree (e.g. <code>finals/my-great-song-mix-v2.rpp</code>). This is redundant
+with tags but has the benefit of being visible in the file tree.</li><li>If you do use a <code>finals/</code> folder, make sure the filename clearly states the
+version: <code>finals/my-great-song_mix-v2_2025-10-15.rpp</code></li><li>Personally, I recommend <strong>tags + export naming</strong> over duplicating <code>.RPP</code> files
+— duplication clutters the tree and can lead to divergence.</li></ul><hr><h2 id=branching--when-and-how>Branching — when and how</h2><p>You said you use Git regularly but are not at ease with branching. Keep the
+branching model very simple.</p><h3 id=minimal-branching-model-recommended>Minimal branching model (recommended)</h3><ul><li><code>main</code> (or <code>master</code>) — canonical working project. This branch contains the
+current working <code>.RPP</code> and history.</li><li><strong>Use branches only for experiments</strong> or parallel, major alternate directions.</li></ul><p><strong>When to create a branch:</strong></p><ul><li>You want to try a very different artistic direction that you may discard (e.g.
+a heavy synth arrangement replacing guitars).</li><li>You want to test destructive editing or radical changes that you don&rsquo;t want to
+mix into <code>main</code> immediately.</li></ul><p><strong>Example branch naming</strong></p><ul><li><code>mix/proposal-v2</code> — a branch containing a different mix approach.</li><li><code>arrangement/add-bridge</code> — rearrangement experiment.</li></ul><p><strong>Simple branching workflow (step-by-step)</strong></p><ol><li>Create a branch from main:</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#3e4460># create and switch</span>
+</span></span><span style=display:flex><span>git checkout -b mix/proposal-v2
+</span></span></code></pre></div><ol start=2><li>Work in Reaper, save <code>.RPP</code>, commit locally:</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add my-great-song/my-great-song.RPP
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;mix(proposal): big reverb change + vocal comp for testing&#34;</span>
+</span></span></code></pre></div><ol start=3><li>If you like the branch and want to merge it into <code>main</code>:</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git checkout main
+</span></span><span style=display:flex><span>git merge --no-ff mix/proposal-v2 -m <span style=color:#82cc6a>&#34;merge: mix/proposal-v2 — accept new direction&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># push</span>
+</span></span><span style=display:flex><span>git push origin main
+</span></span></code></pre></div><ol start=4><li>If you decide to discard the branch:</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git branch -d mix/proposal-v2  <span style=color:#3e4460># local delete</span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># if pushed</span>
+</span></span><span style=display:flex><span>git push origin --delete mix/proposal-v2
+</span></span></code></pre></div><p><strong>Notes about conflicts</strong></p><ul><li>Because <code>.RPP</code> is text, Git will attempt to merge. If two people changed the
+same area of the <code>.RPP</code> it can produce conflicts. Resolve them by opening both
+versions in a text editor or by creating separate exports and deciding which
+one to keep.</li><li>If you expect multiple people to edit the same <code>.RPP</code> concurrently a lot,
+consider a locking policy (person announces they will edit the song) or using
+Git LFS file locking for binary blobs (not helpful for <code>.RPP</code> but relevant for
+large files).</li></ul><h3 id=branch-flow-for-a-typical-mix-lifecycle>Branch flow for a typical mix lifecycle</h3><p>If you prefer branches for each major mix version, you can use a pattern like:</p><ul><li><code>main</code> — base project</li><li><code>mix/v1</code> — first official mix pass (branch created from <code>main</code>)</li><li><code>mix/v2</code> — created if you need a radical remake</li></ul><p>Once a <code>mix/vX</code> is approved, merge back to <code>main</code> and tag it.</p><p>But again: <strong>you don’t need to branch for every tiny mix iteration</strong> — tags +
+commits + export naming are usually enough.</p><hr><h1 id=example-concrete-workflow-end-to-end>Example concrete workflow (end-to-end)</h1><ol><li>Session start</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#3e4460># commit the RPP before starting</span>
+</span></span><span style=display:flex><span>git add my-great-song/my-great-song.RPP
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;session: start recording day 2025-10-02 - drum basic take&#34;</span>
+</span></span><span style=display:flex><span>git push
+</span></span></code></pre></div><ol start=2><li>After editing and comping</li></ol><pre tabindex=0><code>git add my-great-song/my-great-song.RPP
+git commit -m &#34;edit: comped vocals, removed noisy breaths from verses [session: 2025-10-03]&#34;
+git push
+</code></pre><ol start=3><li>Flat mix after session (quick check)</li></ol><ul><li>Export <code>my-great-song_session-flat_2025-10-03.wav</code> using Reaper.</li><li>Commit the <code>.RPP</code> you used and tag it:</li></ul><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add my-great-song/my-great-song.RPP
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;mix: session-flat export for balance check [export: my-great-song_session-flat_2025-10-03.wav]&#34;</span>
+</span></span><span style=display:flex><span>git tag -a my-great-song-session-flat-2025-10-03 -m <span style=color:#82cc6a>&#34;Session flat — quick balance check&#34;</span>
+</span></span><span style=display:flex><span>git push <span style=color:#bc74c4>&amp;&amp;</span> git push --tags
+</span></span></code></pre></div><ol start=4><li>First mixing pass (mix-v1)</li></ol><ul><li>Work on <code>main</code> or create <code>mix/v1</code> branch if you prefer.</li><li>When you export a candidate mix <code>my-great-song_mix-v1_2025-10-05.wav</code>, commit
+the <code>.RPP</code> and tag:</li></ul><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git add my-great-song/my-great-song.RPP
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;mix: mix-v1 — initial mix proposal [export: my-great-song_mix-v1_2025-10-05.wav]&#34;</span>
+</span></span><span style=display:flex><span>git tag -a my-great-song-mix-v1 -m <span style=color:#82cc6a>&#34;Mix v1 - initial artistic direction&#34;</span>
+</span></span><span style=display:flex><span>git push <span style=color:#bc74c4>&amp;&amp;</span> git push --tags
+</span></span></code></pre></div><ol start=5><li>Band rejects the direction — create <code>mix/v2</code> branch and try a different
+approach</li></ol><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git checkout -b mix/v2
+</span></span><span style=display:flex><span><span style=color:#3e4460># work, commit locally many times</span>
+</span></span><span style=display:flex><span>git add ... <span style=color:#bc74c4>&amp;&amp;</span> git commit -m <span style=color:#82cc6a>&#34;mix(proposal): darker tone, synth pad in chorus&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># when ready, push branch</span>
+</span></span><span style=display:flex><span>git push -u origin mix/v2
+</span></span></code></pre></div><ol start=6><li>Band approves <code>mix/v2</code> (now detail passes)</li></ol><ul><li>Make detail commits like <code>mix: mix-v2.1 - automation and vocal delay fixes</code>.</li><li>Export <code>my-great-song_mix-v2.1_2025-10-17.wav</code></li><li>Commit and tag <code>my-great-song-mix-v2.1</code> (or tag the final <code>mix-v2-approved</code>)</li></ul><ol start=7><li>Master</li></ol><ul><li>After mastering, make a <code>master-v1</code> commit and tag. Upload final WAV to GitHub
+Release for that tag or move final master to your audio backup solution.</li></ul><hr><h1 id=cheat-sheet-useful-git-commands>Cheat-sheet: useful git commands</h1><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#3e4460># basic commits</span>
+</span></span><span style=display:flex><span>git add path/to/file
+</span></span><span style=display:flex><span>git commit -m <span style=color:#82cc6a>&#34;type: short summary\n\nmore details&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># branching</span>
+</span></span><span style=display:flex><span>git checkout -b my-branch
+</span></span><span style=display:flex><span>git checkout main
+</span></span><span style=display:flex><span>git merge my-branch
+</span></span><span style=display:flex><span>git branch -d my-branch
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># tagging (annotated tag)</span>
+</span></span><span style=display:flex><span>git tag -a my-tag -m <span style=color:#82cc6a>&#34;message&#34;</span>
+</span></span><span style=display:flex><span>git push origin main
+</span></span><span style=display:flex><span>git push --tags
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># show history</span>
+</span></span><span style=display:flex><span>git log --oneline --graph --decorate
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#3e4460># check out a tag (detached HEAD)</span>
+</span></span><span style=display:flex><span>git checkout my-tag
+</span></span><span style=display:flex><span><span style=color:#3e4460># or create branch from tag</span>
+</span></span><span style=display:flex><span>git checkout -b window-from-tag my-tag
+</span></span></code></pre></div><hr><h1 id=extras--tips>Extras & tips</h1><ul><li><strong>Storing exported WAVs:</strong> keep them in <code>rsnapshot</code> or upload them to GitHub
+releases tied to tags. This keeps your <code>.git</code> small.</li><li><strong>If you really want final RPP copies:</strong> store them in <code>finals/</code> with clear
+filenames (e.g. <code>finals/my-great-song_mix-v2_2025-10-15.rpp</code>). But tags are
+usually enough.</li><li><strong>Make commit messages actionable:</strong> treat them as short notes you&rsquo;d like to
+read six months later.</li><li><strong>Automation:</strong> consider a small <code>scripts/release-mix.sh</code> that commits, tags,
+and creates a draft GitHub release (you can use <code>gh</code> CLI).</li><li><strong>Backups:</strong> your <code>rsnapshot</code> keeps all audio; pushing the repo ensures the
+<code>.RPP</code> metadata is off-site.</li></ul><hr><h1 id=quick-recommended-conventions-summary-copy-this-into-your-readme>Quick recommended conventions summary (copy this into your README)</h1><pre tabindex=0><code># Git conventions for this album
+- Repo layout: each song in its own folder. Track only .RPP and small metadata files.
+- Commit prefix types: session, arr, edit, mix, fix, doc
+- Commit message format: &lt;type&gt;(&lt;scope&gt;): short summary\n\nDetailed notes + [session: YYYY-MM-DD hh:mm] [export: filename.wav]
+- Mix export filenames: &lt;song&gt;_&lt;role&gt;-&lt;version&gt;_YYYY-MM-DD.wav (e.g. my-great-song_mix-v2_2025-10-15.wav)
+- Tag mix commits with annotated tags (e.g. my-great-song-mix-v2)
+- Branches: only for major experiments. Use names like mix/v2 or arr/add-bridge
+</code></pre><hr><p>If you&rsquo;d like, I can also:</p><ul><li>Generate a small <code>scripts/release-mix.sh</code> that automates commit+tag (with
+examples for <code>gh</code> uploads),</li><li>Provide a <code>README.md</code> template to drop in the repo, or</li><li>Produce short <code>git</code> one-liners to copy/paste while working in Reaper.</li></ul><p>Tell me which one you want and I will add it to the wiki.</p><hr><h2 id=extras-added-on-request>Extras added on request</h2><p>I added two extras below: a simple <code>release-mix.sh</code> helper script and a
+<code>README.md</code> template you can paste at the repo root. They are included in this
+wiki so you can copy/paste and adapt them to your taste.</p><h3 id=scriptsrelease-mixsh-what-it-does><code>scripts/release-mix.sh</code> (what it does)</h3><ul><li>Commits the current <code>.RPP</code> for a specified song (if there are changes).</li><li>Creates an annotated tag with a consistent name that includes the song and the
+mix version.</li><li>Optionally prints the <code>gh</code> CLI commands you can run to create a GitHub Release
+and upload the exported WAV file as a release asset (the script does not call
+<code>gh</code> by default — uncomment if you want automation).</li></ul><blockquote><p>Note: the script is intentionally conservative about pushing or uploading
+assets automatically; it focuses on producing a predictable commit + tag so
+you can attach exported WAVs to releases yourself or automate later.</p></blockquote><p>The script content is included below in the wiki so you can copy it into
+<code>scripts/release-mix.sh</code> and <code>chmod +x</code> it.</p><h3 id=readmemd-template><code>README.md</code> template</h3><p>I also added a <code>README.md</code> template section with the concise conventions we
+discussed: repo layout, commit prefixes, export filename patterns, tagging
+policy, and a small example workflow with commands. Drop that <code>README.md</code> at the
+repo root to remind collaborators (and future you) how the workflow operates.</p><hr><p>If you&rsquo;d like, I can:</p><ul><li>make the script call <code>gh</code> automatically and create a GitHub Release (requires
+<code>gh auth login</code> on your machine),</li><li>add an example <code>hooks/pre-commit</code> that prevents accidental staging of audio
+files, or</li><li>convert the README into an actual <code>README.md</code> file in the repo (I can paste
+the exact file content into the wiki so you can grab it).</li></ul><p>Tell me which of those you want next.</p></div></main><footer></footer><script src=/js/scroll-spy.js></script><script src=/js/checklist.js></script></body></html>

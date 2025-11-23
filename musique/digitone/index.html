@@ -1,0 +1,37 @@
+<!doctype html><html lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Digitone</title><link rel=stylesheet href=/css/style.min.7b4250401cd274931ed8bcbac91d35383a99f849b837a813e2820ec60acabba5.css integrity="sha256-e0JQQBzSdJMe2Ly6yR01ODqZ+Em4N6gT4oIOxgrKu6U=" crossorigin=anonymous></head><body class="toc breadcrumb"><main><div id=TOC-container><input type=checkbox id=TOC-toggle>
+<label for=TOC-toggle></label><nav id=TableOfContents><ul><li><a href=#questions>Questions</a></li><li><a href=#default-pattern>default pattern</a></li><li><a href=#general-notes>general notes</a></li><li><a href=#notes>notes</a><ul><li><a href=#comment-faire-un-retrig>Comment faire un retrig</a></li></ul></li><li><a href=#percussive-sound-design>Percussive sound design</a><ul><li><a href=#making-a-kick-drum>Making a kick drum</a></li><li><a href=#digitone-drums-tutorial-ivar-tryti>Digitone drums tutorial Ivar Tryti</a></li><li><a href=#digitone-bass-tutorial-ivar-tryti>Digitone bass tutorial Ivar Tryti</a></li></ul></li><li><a href=#organisation-des-banques-de-sons>Organisation des banques de sons</a><ul><li><a href=#a>A</a></li><li><a href=#b>B</a></li><li><a href=#c>C</a></li><li><a href=#d>D</a></li><li><a href=#e>E</a></li><li><a href=#f>F</a></li></ul></li></ul></nav></div><div id=mainContent><nav id=breadcrumbs><ol><li class=breadcrumb_draft><a href>Home</a></li><li><a href=/musique/>Musique</a></li><li>Digitone</li></ol></nav><h1>Digitone</h1><h2 id=questions>Questions</h2><ul><li><p>how to copy pattern between differents projects
+Possible by the normal way of copying pattern, but one pattern at a time, and becareful with soundlocks</p></li><li><p>is there a way to retrig
+People suggest to play with sound locks and arpeggiator</p></li><li><p>how to transpose track
+très simple dans le note menu</p></li><li><p>where to quantize ?</p><ul><li>func + &mldr;</li><li>no to go back one folder</li></ul></li><li><p>how to nudge sound
+-> Grid recording mode, function + left or right</p></li></ul><h2 id=default-pattern>default pattern</h2><ul><li>folded keybaord, with dorien or myxolidien</li><li>filter keytrack 100%</li></ul><h2 id=general-notes>general notes</h2><p>sawtooth very bright but kind of thin
+square wave, we hear more the fundamental
+more focus over the fundamental because we have only the odd overtones (3rd, 5th, 7th, &mldr;)</p><h2 id=notes>notes</h2><p>Track + Clear: initialize sound</p><p>About operators:
+C is always a Carrier, the left Carrier(it never modulates).</p><p>A is always a modulator (even if you can hear it in algo 5 & 7)</p><p>B1 & B2 share the same parameters.</p><p>B2 modulate B1, never the opposite.
+When not, B2 comes always before B1 (or on the left)</p><p><code>....</code> dotted lines -> amplitude is unaffected by the operator envelope.
+<code>____</code> filled line -> amplitude is affected by the operator envelope.</p><h3 id=comment-faire-un-retrig>Comment faire un retrig</h3><p>Possible de sound.lock un arpegiateur.</p><ol><li>Enregistre le son avec Arp dans la sound pool</li></ol><ul><li>enclencher l&rsquo;arp</li><li>Imp/Exp -> Manage sounds</li><li>View Pool</li><li>Save to here</li></ul><ol start=2><li>sound.lock le son sur un trig</li></ol><p>Si on veut modifier les paramètres de l&rsquo;arpégiateur (le débit si on continue le parrallèle avec retrig), on recommence la procédure.</p><p>À noter que si on fait des modifications sur le son, elles ne seront pas pris en compte sur le trig sound.locké.</p><h2 id=percussive-sound-design>Percussive sound design</h2><h3 id=making-a-kick-drum>Making a kick drum</h3><p><a href="https://www.youtube.com/watch?v=zyy2652JSc4">https://www.youtube.com/watch?v=zyy2652JSc4</a></p><p>sine wave with a very quick pitch drop
+sine wave the body
+pitch drop the percussive feel</p><p>adsr
+filter resonance
+drive
+lfos</p><p>Make it lower in the sound setup, like this when we save it in the sound pool, it&rsquo;s already at the good pitch</p><p>High pass at
+Beware in sound setup to:
+<code>filter keytrack 100</code>
+Like this the filter follow the pitch</p><p>Use unisson to fat up the sound and sample it to economize voice.</p><h3 id=digitone-drums-tutorial-ivar-tryti>Digitone drums tutorial Ivar Tryti</h3><p><a href="https://www.youtube.com/watch?v=CUMi6zErxV0">https://www.youtube.com/watch?v=CUMi6zErxV0</a></p><p>Algorythm 2 X & Y do not affect each other at all.</p><p>A & B level 100%
+A very short decay, no sustain => click noise for kick and snares.</p><p>B high sustain => makes a noise
+filter tracking 100%</p><h4 id=kick>Kick</h4><p>octave -3
+lfo exp
+mode one
+dest pitch all
+HP resonance to max, find the balance between:</p><ul><li>filter cutoff</li><li>envelepe</li><li>decay time</li></ul><p>you can add noise by :</p><ul><li>mixing Y sound</li><li>or change the algorythm (5 here)</li></ul><h4 id=snare>Snare</h4><p>HP Filter to boost mids
+exp-shaped LFO
+Mode: One
+Destination: Mix
+Speed and depth to taste but:</p><ul><li>mix close to Y</li><li>depth negative</li></ul><h3 id=digitone-bass-tutorial-ivar-tryti>Digitone bass tutorial Ivar Tryti</h3><p><a href="https://www.youtube.com/watch?v=gfFCnILXr20">https://www.youtube.com/watch?v=gfFCnILXr20</a></p><ol><li>Analog bass</li></ol><p>algo 2
+X (A -> C) HARM sur saw, avec du modulator A. Ça donne une espèce de saw molle.
+Y (B/B -> B) Fdbk + modulator B, là on arrive vraiment à un son de saw.</p><p>Il met le carrier C à 0,5 pour l&rsquo;avoir une octave en-dessous.</p><p>Add Drive
+=> We&rsquo;ve got something that sound like 2 saw waves oscillator
+play with:</p><ul><li>filter</li><li>unisson</li></ul><ol start=2><li>Saw wave</li></ol><h2 id=organisation-des-banques-de-sons>Organisation des banques de sons</h2><table><thead><tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr></thead><tbody><tr><td>Kick</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>snare</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><h3 id=a>A</h3><p>Kick
+Snare
+HH
+Cy
+Tom</p><h3 id=b>B</h3><p>Basses</p><h3 id=c>C</h3><p>Orgues</p><h3 id=d>D</h3><p>Lead</p><h3 id=e>E</h3><p>Keys</p><h3 id=f>F</h3><p>Arp</p></div></main><footer></footer><script src=/js/scroll-spy.js></script><script src=/js/checklist.js></script></body></html>

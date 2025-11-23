@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musique on My New Hugo Site</title><link>/musique/</link><description>Recent content in Musique on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/musique/index.xml" rel="self" type="application/rss+xml"/><item><title>Bome</title><link>/musique/bome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/bome/</guid><description>&lt;h2 id="bomebox"&gt;Bomebox&lt;/h2&gt;
+&lt;h3 id="appairer-les-deux"&gt;appairer les deux&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;une doit être en master et l&amp;rsquo;autre en dhcpd normale.&lt;br&gt;
+Elles sont toujours accessibles en wifi hotspot à l&amp;rsquo;adresse 192.168.153.1&lt;br&gt;
+Par contre celle qui est en master n&amp;rsquo;est plus accessible depuis un ordi connectée en rj 45 (ou alors je ne sais pas comment).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Edit: Je les ai mis &lt;strong&gt;toutes les deux en fixe&lt;/strong&gt;. Jusqu&amp;rsquo;ici pas de soucis pour qu&amp;rsquo;elles se connectent entre elles.&lt;br&gt;
+L&amp;rsquo;énorme avantage (et ça j&amp;rsquo;ai tellement voulu toujours faire ça !!!). Je peux bosser sur les scripts sur l&amp;rsquo;ordi tout en étant connecté:&lt;/p&gt;</description></item><item><title>M8</title><link>/musique/m8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/m8/</guid><description>&lt;h2 id="todo-list"&gt;Todo list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; mute/unmute tracks&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; load certain parts of arrangements
+Getting good at sampling&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; understand record&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; understand groove&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; understand rate and pitch&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; interacting with synth&lt;/li&gt;
+&lt;li&gt;&lt;input checked="" disabled="" type="checkbox"&gt; load/unload snapshot&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; best way to assign midi controls to instruments&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; how to create a default template&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; comment se créer une banque de son bien organisée (à la digitakt)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; système d&amp;rsquo;organisation des tracks (4 premières rythmiques, 5 basse, 6 acc, 7 et 8 Lead, par exemple ?)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; peut-on faire un template comme un set de batterie par exemple, que l&amp;rsquo;on peut facilement charger ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Faire unp projet de base avec 4 instruments chargés. Par exemple:&lt;/p&gt;</description></item><item><title>Test</title><link>/musique/test/</link><pubDate>Thu, 22 Aug 2024 16:15:11 +0200</pubDate><guid>/musique/test/</guid><description>&lt;h2 id="all-is-good"&gt;All is Good&lt;/h2&gt;
+&lt;p&gt;Salut les ploucs !&lt;/p&gt;</description></item><item><title>Digitakt</title><link>/musique/digitakt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/digitakt/</guid><description>&lt;h2 id="to-learn"&gt;To learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;song mode, mais plus particulièrement la possibilité de développer un thème
+sur 2 pattern et que les sons/timbres soient linkés. Je crois que c&amp;rsquo;est
+possible, à vérifier.&lt;/li&gt;
+&lt;li&gt;enregistrer sur Reaper.&lt;/li&gt;
+&lt;li&gt;Comment trouver des boucles. Quel workflow pour les importer dans le digitakt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="machine"&gt;Machine&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=7CdwhGt8gcU&amp;amp;t=1s"&gt;Digitakt 4 Machines Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="slice"&gt;Slice&lt;/h3&gt;
+&lt;p&gt;Slice will take whatever sample we have loaded on this track and apply a slice
+grid between the start and the end point of our sample.&lt;/p&gt;</description></item><item><title>Digitakt 2</title><link>/musique/digitakt2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/digitakt2/</guid><description>&lt;h2 id="tips-and-tricks"&gt;Tips and tricks&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;Naviguer dans la séquence :&lt;/dt&gt;
+&lt;dd&gt;&lt;ul&gt;
+&lt;li&gt;Grid recording mode&lt;/li&gt;
+&lt;li&gt;hold down page&lt;/li&gt;
+&lt;li&gt;choose a &lt;code&gt;number&lt;/code&gt;, or use &lt;code&gt;arrows&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Si je veux entrer une mélodie avec le clavier intégré du Digitakt, je dois être en &lt;code&gt;step mode&lt;/code&gt;.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Switch between tempo per track / per pattern&lt;/dt&gt;
+&lt;dd&gt;&lt;code&gt;[FUNC] + E&lt;/code&gt;
+&lt;a href="/musique/digitakt2/digitakt2-manual.pdf#page=52"&gt;Tempo and Metronome&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id="sons-dusine-intéressants"&gt;Sons d&amp;rsquo;usine intéressants&lt;/h2&gt;
+&lt;h3 id="bass"&gt;BASS&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;A002 BAM BASS&lt;/dt&gt;
+&lt;dd&gt;Basse avec attaque percusive, un peu FM en plus sale.&lt;/dd&gt;
+&lt;dt&gt;A004 BLA LOFI BASS&lt;/dt&gt;
+&lt;dd&gt;Basse un peu rigolote un peu jouet, sale.&lt;/dd&gt;
+&lt;dt&gt;A089 OVER BASS&lt;/dt&gt;
+&lt;dd&gt;Basse planante&lt;/dd&gt;
+&lt;dt&gt;A093 PASTEL BASS&lt;/dt&gt;
+&lt;dd&gt;Basse super fat&lt;/dd&gt;
+&lt;dt&gt;A108 REB SUB&lt;/dt&gt;
+&lt;dd&gt;Basse pure with an edge&lt;/dd&gt;
+&lt;dt&gt;A128 VEST LOFI BASS&lt;/dt&gt;
+&lt;dd&gt;Basse percusive&lt;/dd&gt;
+&lt;dt&gt;A088 ORANGE SYN&lt;/dt&gt;
+&lt;dd&gt;Basse acide cheap&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h3 id="lead"&gt;LEAD&lt;/h3&gt;
+&lt;p&gt;A001: ACIDD&lt;/p&gt;</description></item><item><title>Digitone</title><link>/musique/digitone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/digitone/</guid><description>&lt;h2 id="questions"&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;how to copy pattern between differents projects
+Possible by the normal way of copying pattern, but one pattern at a time, and becareful with soundlocks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;is there a way to retrig
+People suggest to play with sound locks and arpeggiator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to transpose track
+très simple dans le note menu&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;where to quantize ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;func + &amp;hellip;&lt;/li&gt;
+&lt;li&gt;no to go back one folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how to nudge sound
+-&amp;gt; Grid recording mode, function + left or right&lt;/p&gt;</description></item><item><title>fireface 802</title><link>/musique/fireface802/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/fireface802/</guid><description>&lt;p&gt;&lt;a href="https://huddx01.github.io/oscmix/"&gt;oscmix pour controller la fireface 802&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="méthodologie-mesure-matinée-du-14"&gt;méthodologie mesure matinée du 14&lt;/h2&gt;
+&lt;ol start="0"&gt;
+&lt;li&gt;faire un routing par défaut qui fasse sens
+-&amp;gt; chaque entrée software playback correspon à une sortie
+-&amp;gt; pour l&amp;rsquo;instant j&amp;rsquo;ignore mini-dsp, et si il faut je me contente de brancher l&amp;rsquo;enceinte droite pour faire des tests&lt;/li&gt;
+&lt;li&gt;prendre en main le logiciel et faire des notes précises de chaque étape&lt;/li&gt;
+&lt;li&gt;delay mini-dsp&lt;/li&gt;
+&lt;li&gt;mesure de la position actuelle&lt;/li&gt;
+&lt;li&gt;je bouge les enceintes au fond. Je mesure, et je vois si c&amp;rsquo;est envisageable de partir de ça comme setup.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="résultats"&gt;Résultats&lt;/h2&gt;
+&lt;p&gt;Bon la même mesure avec une timing reference et le minidsp ajoute 20ms de delay.&lt;/p&gt;</description></item><item><title>Lilypond</title><link>/musique/lilypond/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/lilypond/</guid><description>&lt;p&gt;Sur ce site, il dit que ce n&amp;rsquo;est pas possible d&amp;rsquo;utiliser Hugo:&lt;br&gt;
+&lt;a href="https://pianomanfrazier.com/post/lilypond-in-markdown/"&gt;Render LilyPond in Markdown&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Je me demande dans quelle mesure, on pourrait dans les pages bundles avoir:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;index.md&lt;/li&gt;
+&lt;li&gt;mon-extrait.ly&lt;/li&gt;
+&lt;li&gt;mon-extrait.svg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le fichier &lt;code&gt;mon-extrait.svg&lt;/code&gt; serait compiler en local avec lilypond. Dans &lt;code&gt;index.md&lt;/code&gt; on inclurait le fichier &lt;code&gt;svg&lt;/code&gt;. Certes les modifs ne seraient pas directement dans la page markdown, mais ça me parait quand même facile à intégrer.&lt;/p&gt;
+&lt;p&gt;Je pourrais faire un site intéractif avec mes morceaux. Les morceaux seraient exposés partie par partie avec un petit lecteur audio (midi ?) où l&amp;rsquo;on pourrait idéalement choisir le tempo, le boucler (sans trou), un petit départ métronome, etc &amp;hellip;, choisir la tonalité ??!&lt;/p&gt;</description></item><item><title>Linux sound architecture</title><link>/musique/linux-sound-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/linux-sound-architecture/</guid><description>&lt;h2 id="trucs-que-je-viens-de-comprendre"&gt;trucs que je viens de comprendre&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Je vois les 18 entrées de la console, mais je ne peux pas avoir accès au mixe de la console (peut-être configurable dans la x32, à vérifier).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pour utiliser pipewire dans reaper, je dois sélectionner jack, et c&amp;rsquo;est &lt;code&gt;pipewire-jack&lt;/code&gt; qui fera la connection.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;visiblement quand j&amp;rsquo;utise proaudio pour la carte son de l&amp;rsquo;ordi, ça me fait plein de &amp;lsquo;profiles&amp;rsquo; genre pro audio 1, pro audio 2 (ou hdmi), etc &amp;hellip; qui rend les patchbay illisible. Donc soit &lt;code&gt;off&lt;/code&gt;, soit une option simple.&lt;/p&gt;</description></item><item><title>linux, keyboard and reaper</title><link>/musique/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/linux/</guid><description>&lt;h2 id="sound--midi"&gt;Sound &amp;amp; midi&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Hardware support and control&lt;/strong&gt;: ALSA
+&lt;strong&gt;Sound servers&lt;/strong&gt;: Jack, PipeWire&lt;/p&gt;
+&lt;h3 id="midi"&gt;Midi&lt;/h3&gt;
+&lt;p&gt;Lister les ports midi
+&lt;code&gt;aseqdump -l&lt;/code&gt;
+show incoming midi messages
+&lt;code&gt;aseqdump -p 24:0&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="mouse-and-keyboard"&gt;Mouse and keyboard&lt;/h2&gt;
+&lt;h3 id="trackpad"&gt;Trackpad&lt;/h3&gt;
+&lt;p&gt;Pour avoir la marquee selection avec le trackpad (avec une souris c&amp;rsquo;est right drag, ce qui est compliqué avec un trackpad - ou alors il faut utiliser les deux boutons du dessous, ce que je n&amp;rsquo;aime pas faire), une des solutions est la suivante.&lt;/p&gt;</description></item><item><title>MIDI</title><link>/musique/midi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/midi/</guid><description>&lt;h2 id="aconnect"&gt;aconnect&lt;/h2&gt;
+&lt;p&gt;Pour connecter un controller avec son synthé:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;aconnect -l
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;aconnect 24:0 18:0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="aseqdump"&gt;aseqdump&lt;/h2&gt;
+&lt;p&gt;Permet de lister les ports:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;➜ ~ aseqdump -l 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Port Client name Port name
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 0:0 System Timer
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 0:1 System Announce
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 14:0 Midi Through Midi Through Port-0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Xkey Xkey MIDI &lt;span style="color:#56b6c2"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;129:0 Bome Network Virtual Pitchi
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;129:1 Bome Network Virtual MadameBidule
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;130:0 Bome Network Notifications
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pour écouter un port:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;➜ ~ aseqdump -p 28:0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Waiting &lt;span style="color:#7fbaf5"&gt;for&lt;/span&gt; data. Press Ctrl+C to end.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Source Event Ch Data
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note on 4, note 48, velocity &lt;span style="color:#56b6c2"&gt;25&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note off 4, note 48, velocity &lt;span style="color:#56b6c2"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note on 4, note 50, velocity &lt;span style="color:#56b6c2"&gt;87&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note off 4, note 50, velocity &lt;span style="color:#56b6c2"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note on 4, note 52, velocity &lt;span style="color:#56b6c2"&gt;83&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note off 4, note 52, velocity &lt;span style="color:#56b6c2"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note on 4, note 53, velocity &lt;span style="color:#56b6c2"&gt;127&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 28:0 Note off 4, note 53, velocity &lt;span style="color:#56b6c2"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pour filter les informations (par exemple quand il y a du realtime qui vient tout polluer):&lt;/p&gt;</description></item><item><title>Slim Phatty</title><link>/musique/slim-phatty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/musique/slim-phatty/</guid><description>&lt;p&gt;&lt;a href="/musique/slim-phatty/Slim_Phatty_Manual.pdf"&gt;Slim Phatty Manual&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pour avoir accès au menu du preset, il faut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;c&amp;rsquo;est dans les menus du main, ça s&amp;rsquo;appelle&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

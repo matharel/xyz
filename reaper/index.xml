@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reaper on My New Hugo Site</title><link>/reaper/</link><description>Recent content in Reaper on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/reaper/index.xml" rel="self" type="application/rss+xml"/><item><title>Reaper Git Workflow</title><link>/reaper/git/</link><pubDate>Thu, 02 Oct 2025 17:05:30 +0200</pubDate><guid>/reaper/git/</guid><description>&lt;p&gt;This is a compact, practical &lt;strong&gt;wiki&lt;/strong&gt; that explains a beginner-friendly but
+robust workflow for backing up and versioning your Reaper projects at the
+&lt;em&gt;album&lt;/em&gt; level (one git repo that contains multiple song folders). It focuses on
+the things you asked about: when to commit and how to write commit messages, how
+to version mix iterations, and whether/how to use branches.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;Context / assumptions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You keep one Git repo per album (e.g. &lt;code&gt;This super Band/&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;You &lt;strong&gt;do not&lt;/strong&gt; commit audio files (&lt;code&gt;audio/&lt;/code&gt; folders are ignored). Git tracks
+&lt;code&gt;.RPP&lt;/code&gt; and other small project metadata.&lt;/li&gt;
+&lt;li&gt;You use &lt;code&gt;rsnapshot&lt;/code&gt; or a separate backup for actual audio files and big
+exports.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/blockquote&gt;
+
+&lt;hr&gt;
+&lt;h2 id="goals-of-this-workflow"&gt;Goals of this workflow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep a tidy, meaningful history of changes to &lt;code&gt;.RPP&lt;/code&gt; files.&lt;/li&gt;
+&lt;li&gt;Make it easy to reproduce a particular mix/export by linking it to a Git
+commit or tag.&lt;/li&gt;
+&lt;li&gt;Keep collaboration safe and simple (avoid heavy branching complexity unless
+needed).&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;Git tags&lt;/strong&gt; and small conventions to mark important milestones (mix
+proposals, approved versions, masters).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="when-to-commit-and-how"&gt;When to commit and how&lt;/h2&gt;
+&lt;h3 id="when-to-commit-practical-rules"&gt;When to commit (practical rules)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Start of a session&lt;/strong&gt;: commit before you begin (&amp;ldquo;session start: recording day
+2025-10-02&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;After major structural edits&lt;/strong&gt;: arrangement changes, major track
+adds/removes, large routing changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Before/after editing&lt;/strong&gt;: after comping takes / fixing takes / vocal comp.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Before each mix pass&lt;/strong&gt;: commit the &lt;code&gt;.RPP&lt;/code&gt; used to export a mix.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you reach a named milestone&lt;/strong&gt;: e.g. &amp;ldquo;edited version complete&amp;rdquo;, &amp;ldquo;mix v1
+ready for review&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;End of session&lt;/strong&gt;: quick commit with a note of what you did.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Aim for &lt;strong&gt;small, meaningful commits&lt;/strong&gt;: each commit should answer &amp;ldquo;what changed
+and why&amp;rdquo;.&lt;/p&gt;</description></item><item><title>Keybindings</title><link>/reaper/keybindings/</link><pubDate>Thu, 20 Feb 2025 10:04:30 +0100</pubDate><guid>/reaper/keybindings/</guid><description>&lt;h2 id="travail-en-cours-sur-laffichage-des-raccourcis-claviers"&gt;Travail en cours sur l&amp;rsquo;affichage des raccourcis claviers&lt;/h2&gt;
+&lt;p&gt;OK ce fichier commence à être assez lisible. Voici les questions que je me pose
+maintenant.&lt;/p&gt;
+&lt;h3 id="nom-complet-des-actions-reaper-ou-non"&gt;Nom complet des actions Reaper ou non&lt;/h3&gt;
+&lt;p&gt;Ça semble bien d&amp;rsquo;avoir le nom précis des actions et des scripts. Par contre ce
+n&amp;rsquo;est pas très lisible pour une consultation rapide. Plusieurs solutions
+s&amp;rsquo;offrent à moi.&lt;/p&gt;
+&lt;h4 id="solution-1"&gt;Solution 1&lt;/h4&gt;
+&lt;p&gt;Avoir une colonne &amp;ldquo;function&amp;rdquo; qui est un résumé lisible de l&amp;rsquo;action et avoir une
+autre colonne &amp;ldquo;Reaper Action&amp;rdquo; qui est transformée en tooltip.&lt;/p&gt;</description></item><item><title>Documentation de Reaper Motion (as Vim)</title><link>/reaper/reaperdoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/reaperdoc/</guid><description>&lt;h2 id="keybindings"&gt;Keybindings&lt;/h2&gt;
+&lt;p&gt;C-L : Grid adjust by 2
+C-H : Grid adjust by 1/2
+. : repeat the most recent action
+C-O : undo edit cursor move
+C-I : redo edit cursor move
+S-O : restore previous zoom/scroll postion
+S-I : restore next zoom/scroll postion&lt;/p&gt;
+&lt;h3 id="alt-1--folders-z"&gt;Alt 1 → Folders &lt;code&gt;z&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Normalement dans vim c&amp;rsquo;est la gestion des folders. Là je l&amp;rsquo;utilise aussi pour zoomer. Est-ce pertinent ?&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Shortcut&lt;/th&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;za&lt;/td&gt;
+ &lt;td&gt;zoom out project&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zi&lt;/td&gt;
+ &lt;td&gt;horizontal zoom to selected items&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;=&amp;gt; pas terrible car ça fait penser à zoom in,&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;mais en vrai, cela peut nous faire dézoomer en fonction du contexte&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zc&lt;/td&gt;
+ &lt;td&gt;set selected folders collapsed → Custom: Motion: Folder collapsed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zo&lt;/td&gt;
+ &lt;td&gt;set selected folders uncollapsed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zf&lt;/td&gt;
+ &lt;td&gt;move tracks to new folder&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;del&gt;zj&lt;/del&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;del&gt;select nearest next folder&lt;/del&gt; → je ne vois pas l&amp;rsquo;intérêt vue que j&amp;rsquo;ai &lt;code&gt;{}&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;del&gt;zk&lt;/del&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;del&gt;select nearest previous folder&lt;/del&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zn&lt;/td&gt;
+ &lt;td&gt;open all folders → Custom: Motion: uncollapse all folders&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;z?&lt;/td&gt;
+ &lt;td&gt;&lt;strong&gt;get track out of folder&lt;/strong&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zs&lt;/td&gt;
+ &lt;td&gt;zoom time selection&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zt&lt;/td&gt;
+ &lt;td&gt;scroll track at the top of the arrange view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zz&lt;/td&gt;
+ &lt;td&gt;vertical scroll selected tracks into view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zb&lt;/td&gt;
+ &lt;td&gt;scroll track at the bottom of the arrange view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;del&gt;zm&lt;/del&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;del&gt;collapse all folders&lt;/del&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zh&lt;/td&gt;
+ &lt;td&gt;Horizontal scroll to put edit cursor at 10%&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zl&lt;/td&gt;
+ &lt;td&gt;Horizontal scroll to put edit cursor at 90%&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zm&lt;/td&gt;
+ &lt;td&gt;Horizontal scroll to put edit cursor at 50%&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;zv&lt;/td&gt;
+ &lt;td&gt;Select children of selected folder track(s)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="alt-4--les-vues-"&gt;Alt 4 → Les vues &lt;code&gt;\&lt;/code&gt;&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Shortcut&lt;/th&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;m&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;mixer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;master track&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;tempo envelope&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;transport (as in play)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;v&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;video&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;x&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;media explorer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;r&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;routing matrix&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;project media/fx bay&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;t&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;track manager&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;g&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;track group manager&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;e&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;envelope manager&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;region/marker manager&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;c&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;metronome settings&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;big clock&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;P&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;performance meter&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;d&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Peaks display settings&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;z&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;history view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;l&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;locking menu (where is it ?!)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;s&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;snap grid settings&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;;&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;preferences&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;R&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;render view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;C-U: scroll half page up
+C-D: scroll half page down
+C-F: scroll half page right
+C-B: scroll half page left&lt;/p&gt;</description></item><item><title>La base</title><link>/reaper/la-base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/la-base/</guid><description>&lt;p&gt;Ici nous voyons comment préparer un morceau avant d&amp;rsquo;être mixé.&lt;/p&gt;
+&lt;h2 id="préparation"&gt;Préparation&lt;/h2&gt;
+&lt;h3 id="renommer-les-pistes"&gt;Renommer les pistes&lt;/h3&gt;
+&lt;p&gt;Il est important de bien nommer les pistes avant les prises, cela permet d&amp;rsquo;avoir
+les fichiers très clairement organisés.&lt;/p&gt;
+&lt;p&gt;Avoir une convention claire. Nommer avec 3 majuscules les instruments est très
+lisible. Une manière de choisir les majuscules est de supprimer les voyelles -
+des fois il vaut mieux garder une voyelle, à voir au cas par cas. Ici l&amp;rsquo;anglais
+peut aider pour son vocabulaire plus concis.&lt;/p&gt;</description></item><item><title>Reapack</title><link>/reaper/reapack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/reapack/</guid><description>&lt;p&gt;How to install our own script to Reapack.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dans la vidéo autour de 24 minutes, il explique comment intégrer d&amp;rsquo;autres fichiers au script principal&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="concepts"&gt;Concepts&lt;/h2&gt;
+&lt;p&gt;The idea is to update an index.xml files with all the references of our scripts.&lt;/p&gt;
+&lt;p&gt;In &lt;a href="https://www.youtube.com/watch?v=V8-XByf24D0&amp;amp;list=PLifav5PqCOlDkw4BmFmAZMmNDL7tSkxvi&amp;amp;index=19"&gt;this video&lt;/a&gt;
+Daniel explains 2 method to do so.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;folder&lt;/strong&gt; are used for the &lt;strong&gt;categorie&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In each scripts we need to fill the headers:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-lua" data-lang="lua"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- @description Hello world&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- @author cfillion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- @version 1.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- @about&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- This is an example of a package file. It installs itself as a ReaScript that&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- does nothing but show &amp;#34;Hello World!&amp;#34; in REAPER&amp;#39;s scripting console.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;--&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- Packages may also include additional files specified using the @provides tag.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;--&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- This text is the documentation shown when using ReaPack&amp;#39;s &amp;#34;About this package&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#3e4460"&gt;-- feature. [Markdown](https://commonmark.org/) *formatting* is supported.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;reaper.ShowConsoleMsg &lt;span style="color:#82cc6a"&gt;&amp;#39;Hello World!&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the script is not the main script, we change &lt;code&gt;@version&lt;/code&gt; with &lt;code&gt;@noindex&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Ressources génériques</title><link>/reaper/generic-ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/generic-ressources/</guid><description>&lt;p&gt;&lt;a href="https://unison.audio/upward-compression/"&gt;Upward Compression: The Hidden Gem of Dynamic Sound Design&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Travail en cours</title><link>/reaper/travail-en-cours/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/reaper/travail-en-cours/</guid><description>&lt;h2 id="mes-tous-nouveaux-raccourcis-à-réorganiser-quelque-part"&gt;Mes tous nouveaux raccourcis à réorganiser quelque part&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;v,&lt;/code&gt; time selection: set start point
+&lt;code&gt;v;&lt;/code&gt; time selection: set end point
+&lt;code&gt;zs&lt;/code&gt; zoom time selection
+&lt;code&gt;vr&lt;/code&gt; insert region from time selection and edit
+&lt;code&gt;zr&lt;/code&gt; zoom to current region
+&lt;code&gt;??&lt;/code&gt; horizontal zoom to selected items
+&lt;code&gt;C-Enter&lt;/code&gt; go to play cursor
+&lt;code&gt;:r&lt;/code&gt; edit region near cursor
+&lt;code&gt;:m&lt;/code&gt; edit marker near cursor
+&lt;code&gt;f1&lt;/code&gt; script: calculate_tempo_marker_from_time_selection
+&lt;code&gt;f2&lt;/code&gt; script: move_time_selection_left
+&lt;code&gt;f3&lt;/code&gt; script: move_time_selection_right
+&lt;code&gt;f&lt;/code&gt; go to region starting with the 2 first letters&lt;/p&gt;</description></item></channel></rss>

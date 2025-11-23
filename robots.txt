@@ -1,0 +1,312 @@
+User-agent: *
+
+Disallow: /medias/photo/
+
+Disallow: /musique/bome/
+
+Disallow: /groupes/octopulse/
+
+Disallow: /lecume/
+
+Disallow: /musique/m8/
+
+Disallow: /web/hugo/format-content/
+
+Disallow: /k/roti-vegan/
+
+Disallow: /k/ecrase-d-avocat/
+
+Disallow: /k/
+
+Disallow: /productivity/note-taking/
+
+Disallow: /productivity/
+
+Disallow: /fraternites-2025/
+
+Disallow: /informatique/install/
+
+Disallow: /informatique/install/systemd/
+
+Disallow: /f/2025-10-jtc/
+
+Disallow: /reaper/git/
+
+Disallow: /vfub-technique/gros-bal-chapiteau/
+
+Disallow: /vfub-technique/
+
+Disallow: /vfub-technique/gros-bal/
+
+Disallow: /cc-lecume/
+
+Disallow: /vfub/frais/2025-07-14-danseruna/
+
+Disallow: /danseruna/
+
+Disallow: /ziw/
+
+Disallow: /edr/
+
+Disallow: /arts-vignes/
+
+Disallow: /jtc/dates/
+
+Disallow: /tap/
+
+Disallow: /cdr/
+
+Disallow: /grand-plouf/
+
+Disallow: /fonctionnement-gite/
+
+Disallow: /cdr/
+
+Disallow: /tetra/
+
+Disallow: /f/2025-anlor/
+
+Disallow: /tain/
+
+Disallow: /2025-fdt/
+
+Disallow: /ballons/
+
+Disallow: /groupes/kloog/mulder-scully-ibiza/
+
+Disallow: /informatique/ssh/
+
+Disallow: /reaper/keybindings/
+
+Disallow: /vfub/attestation-vente/2025-01-24-motu-m64/
+
+Disallow: /jtc/suivi/
+
+Disallow: /vfub/frais/2024-11-29-frais-transports/
+
+Disallow: /assimil/lesson_04/
+
+Disallow: /education/ambre/
+
+Disallow: /formation/
+
+Disallow: /formation/cloe/
+
+Disallow: /tubercules/ca-2024-12-09/
+
+Disallow: /tubercules/
+
+Disallow: /assimil/lesson_02/
+
+Disallow: /assimil/lesson_01/
+
+Disallow: /groupes/kloog/
+
+Disallow: /f/vfub/
+
+Disallow: /f/edr/
+
+Disallow: /f/vfub/scarabal/
+
+Disallow: /f/scarabal/
+
+Disallow: /musique/test/
+
+Disallow: /formation/vfub/
+
+Disallow: /groupes/terroir-collapse/terroir-collapse-notes-enregistrements/
+
+Disallow: /informatique/install/todo/
+
+Disallow: /informatique/ordinateurs/
+
+Disallow: /vfub/devis/
+
+Disallow: /web/css/
+
+Disallow: /musique/microfreak/20tips-unlock-full-potential/
+
+Disallow: /f/6/
+
+Disallow: /studio-enregistrement/acoustique/
+
+Disallow: /studio-enregistrement/administratif/
+
+Disallow: /ausondudiois/
+
+Disallow: /bal-moras/
+
+Disallow: /reaper/tips-and-tricks/bazar/
+
+Disallow: /groupes/bez-orchestra/
+
+Disallow: /studio-enregistrement/cablage-audio/
+
+Disallow: /categories/
+
+Disallow: /chloe/
+
+Disallow: /ft-chloe2/
+
+Disallow: /ft-chloe/
+
+Disallow: /terrain/commande-novembre/
+
+Disallow: /studio-enregistrement/acoustique/conception/
+
+Disallow: /informatique/config/
+
+Disallow: /studio-enregistrement/consommables/
+
+Disallow: /studio-enregistrement/administratif/contrats/
+
+Disallow: /musique/digitakt/
+
+Disallow: /musique/digitakt2/
+
+Disallow: /musique/digitone/
+
+Disallow: /reaper/reaperdoc/
+
+Disallow: /studio-enregistrement/entretien/
+
+Disallow: /f/tain-lhermitage/
+
+Disallow: /studio-enregistrement/filets/
+
+Disallow: /musique/fireface802/
+
+Disallow: /ausondudiois/frigo/
+
+Disallow: /informatique/git/
+
+Disallow: /f/nyons/
+
+Disallow: /web/hugo/
+
+Disallow: /informatique/
+
+Disallow: /web/hugo/install/
+
+Disallow: /jtc/
+
+Disallow: /ft-jtc/
+
+Disallow: /ft-jtc-seb/
+
+Disallow: /informatique/keyboard/
+
+Disallow: /ft-kloog/
+
+Disallow: /reaper/la-base/
+
+Disallow: /fougere-chloe/
+
+Disallow: /groupes/kloog/le-portique/
+
+Disallow: /reveillon-chatillon/
+
+Disallow: /2025-ndf/
+
+Disallow: /musique/lilypond/
+
+Disallow: /web/lilypond/
+
+Disallow: /informatique/linux/
+
+Disallow: /musique/linux-sound-architecture/
+
+Disallow: /musique/linux/
+
+Disallow: /web/hugo/variables/
+
+Disallow: /informatique/markdown/
+
+Disallow: /medias/
+
+Disallow: /musique/microfreak/
+
+Disallow: /musique/midi/
+
+Disallow: /musique/
+
+Disallow: /groupes/kloog/naked-vailleu/
+
+Disallow: /web/netlify/
+
+Disallow: /informatique/network/
+
+Disallow: /nvim/
+
+Disallow: /informatique/ordinateurs/asus-ambre/
+
+Disallow: /groupes/pss/
+
+Disallow: /web/hugo/scope-and-dot/
+
+Disallow: /studio-enregistrement/2024-chantier/
+
+Disallow: /groupes/terroir-collapse/pre-prod/
+
+Disallow: /informatique/ordinateurs/lenovo/
+
+Disallow: /reaper/reapack/
+
+Disallow: /reaper/
+
+Disallow: /reaper/tips-and-tricks/linux/
+
+Disallow: /reaper/tips-and-tricks/export/
+
+Disallow: /web/ressources/
+
+Disallow: /reaper/generic-ressources/
+
+Disallow: /kubnick/
+
+Disallow: /studio-enregistrement/rideaux/
+
+Disallow: /studio-enregistrement/rew/
+
+Disallow: /groupes/saltabimus/
+
+Disallow: /web/sass/
+
+Disallow: /groupes/chloe/setlist/
+
+Disallow: /musique/slim-phatty/
+
+Disallow: /sonorisation/
+
+Disallow: /nvim/spelling/
+
+Disallow: /studio-enregistrement/
+
+Disallow: /tags/
+
+Disallow: /terrain/
+
+Disallow: /terrain/terrain/
+
+Disallow: /groupes/terroir-collapse/
+
+Disallow: /groupes/terroir-collapse/live/
+
+Disallow: /f/arts-et-vignes/
+
+Disallow: /web/hugo/time/
+
+Disallow: /nvim/tips-and-tricks/
+
+Disallow: /reaper/tips-and-tricks/
+
+Disallow: /f/tournee-bez/
+
+Disallow: /reaper/travail-en-cours/
+
+Disallow: /groupes/vargoz-matharel/
+
+Disallow: /informatique/virtualizer/
+
+Disallow: /web/
+

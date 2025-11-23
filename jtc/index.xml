@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jack The Cop on My New Hugo Site</title><link>/jtc/</link><description>Recent content in Jack The Cop on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/jtc/index.xml" rel="self" type="application/rss+xml"/><item><title>Dates</title><link>/jtc/dates/</link><pubDate>Fri, 13 Jun 2025 11:51:40 +0200</pubDate><guid>/jtc/dates/</guid><description>&lt;h2 id="matos"&gt;Matos&lt;/h2&gt;
+&lt;h3 id="face"&gt;Face&lt;/h3&gt;
+
+&lt;section class="sh-checklist "&gt;
+ &lt;button class='uncheck-all'&gt;&lt;/button&gt;
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;div&gt;
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;ul&amp;gt;" /&gt;&lt;span&gt;&lt;ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 A15 Wide&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 A15 Wide&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 pieds argents&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 pieds argents&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 adaptateurs&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 adaptateurs&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 speakons &amp;#43; 1 spare&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 speakons + 1 spare&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;1 ampli&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;1 ampli&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;1 sub qsc&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;1 sub qsc&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;x32 rack&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;x32 rack&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;1 router&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;1 router&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 rj45&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 rj45&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;cable usb&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;cable usb&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;/ul&amp;gt;" /&gt;&lt;span&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+&lt;/section&gt;
+
+&lt;h3 id="plateau"&gt;Plateau&lt;/h3&gt;
+
+&lt;section class="sh-checklist "&gt;
+ &lt;button class='uncheck-all'&gt;&lt;/button&gt;
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;div&gt;
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;ul&amp;gt;" /&gt;&lt;span&gt;&lt;ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 fbt &amp;#43; pieds → &amp;lt;strong&amp;gt;?&amp;lt;/strong&amp;gt;&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 fbt + pieds → &lt;strong&gt;?&lt;/strong&gt;&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;3 x 12 pouces&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;3 x 12 pouces&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;1 x 15 pouces&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;1 x 15 pouces&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;/ul&amp;gt;" /&gt;&lt;span&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+&lt;/section&gt;
+
+&lt;h3 id="micros"&gt;Micros&lt;/h3&gt;
+
+&lt;section class="sh-checklist "&gt;
+ &lt;button class='uncheck-all'&gt;&lt;/button&gt;
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;div&gt;
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;ul&amp;gt;" /&gt;&lt;span&gt;&lt;ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;B52&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;B52&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;B91&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;B91&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;i5&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;i5&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;e904&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;e904&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 x sm57&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 x sm57&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;e904&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;e904&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;okktava&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;okktava&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;ATM350&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;ATM350&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;3 x SM58&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;3 x SM58&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;DI piezo&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;DI piezo&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 petits pieds&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 petits pieds&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;2 pieds moyen&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;2 pieds moyen&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;6 grands pieds&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;6 grands pieds&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;/ul&amp;gt;" /&gt;&lt;span&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+&lt;/section&gt;
+
+&lt;h3 id="câbles"&gt;Câbles&lt;/h3&gt;
+
+&lt;section class="sh-checklist "&gt;
+ &lt;button class='uncheck-all'&gt;&lt;/button&gt;
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;div&gt;
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;ul&amp;gt;" /&gt;&lt;span&gt;&lt;ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;1 caisse de rallonge et multiprises&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;1 caisse de rallonge et multiprises&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;30 xlr&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;30 xlr&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;8 alims&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;8 alims&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;/ul&amp;gt;" /&gt;&lt;span&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+&lt;/section&gt;
+
+&lt;h3 id="pendrillons"&gt;Pendrillons&lt;/h3&gt;
+
+&lt;section class="sh-checklist "&gt;
+ &lt;button class='uncheck-all'&gt;&lt;/button&gt;
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;div&gt;
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;ul&amp;gt;" /&gt;&lt;span&gt;&lt;ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;pieds &amp;#43; adaptateurs&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;pieds + adaptateurs&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;structures&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;structures&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;li&amp;gt;pendrillons&amp;lt;/li&amp;gt;" /&gt;&lt;span&gt;&lt;li&gt;pendrillons&lt;/li&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;label&gt;&lt;input type="checkbox" name="&amp;lt;/ul&amp;gt;" /&gt;&lt;span&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/label&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+&lt;/section&gt;</description></item><item><title>Suivi</title><link>/jtc/suivi/</link><pubDate>Fri, 17 Jan 2025 15:58:19 +0100</pubDate><guid>/jtc/suivi/</guid><description>&lt;h2 id="on-ira"&gt;On ira&lt;/h2&gt;
+&lt;h2 id="le-slow"&gt;Le slow&lt;/h2&gt;
+&lt;p&gt;La CB est à 40, il faut que je mette le low-cut à 60Hz&lt;/p&gt;
+&lt;h2 id="les-bras"&gt;Les bras&lt;/h2&gt;
+&lt;p&gt;Intro au Tom, attention au gate !&lt;/p&gt;
+&lt;h2 id="soirée-brouette"&gt;soirée brouette&lt;/h2&gt;
+&lt;p&gt;Contrebasse larsen pendant la descente quand il y a le concertina&lt;/p&gt;
+&lt;h2 id="mathilde"&gt;Mathilde&lt;/h2&gt;
+&lt;p&gt;Fin, faire attention à la contrebasse.&lt;/p&gt;</description></item><item><title>Jack The Cop - Fiche Technique</title><link>/ft-jtc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ft-jtc/</guid><description>&lt;p class="pdf-link"&gt;&lt;a href="/ft-jtc.pdf"&gt;Version PDF&lt;/a&gt;&lt;/p&gt;
+&lt;table class="headers"&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;Instruments&lt;/th&gt;
+ &lt;th&gt;Micros&lt;/th&gt;
+ &lt;th&gt;Pieds&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Kick Back&lt;/td&gt;
+ &lt;td&gt;B52&lt;/td&gt;
+ &lt;td&gt;Petit&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Kick frappe&lt;/td&gt;
+ &lt;td&gt;B91&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Snare Top&lt;/td&gt;
+ &lt;td&gt;Audix i5&lt;/td&gt;
+ &lt;td&gt;Moyen&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;Snare Bo&lt;/td&gt;
+ &lt;td&gt;e904&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;HH&lt;/td&gt;
+ &lt;td&gt;sm57&lt;/td&gt;
+ &lt;td&gt;Moyen&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;Tom&lt;/td&gt;
+ &lt;td&gt;e904&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;OH Jardin&lt;/td&gt;
+ &lt;td&gt;KM184&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;8&lt;/td&gt;
+ &lt;td&gt;OH Cours&lt;/td&gt;
+ &lt;td&gt;KM184&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;9&lt;/td&gt;
+ &lt;td&gt;CB&lt;/td&gt;
+ &lt;td&gt;DI Piezo (Radial PZ-DI)&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;10&lt;/td&gt;
+ &lt;td&gt;Guitare 1&lt;/td&gt;
+ &lt;td&gt;e906&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;11&lt;/td&gt;
+ &lt;td&gt;Guitare 2&lt;/td&gt;
+ &lt;td&gt;sm57&lt;/td&gt;
+ &lt;td&gt;Petit&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;Concertina&lt;/td&gt;
+ &lt;td&gt;ATM350&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;13&lt;/td&gt;
+ &lt;td&gt;Flûte&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;14&lt;/td&gt;
+ &lt;td&gt;Erwann&lt;/td&gt;
+ &lt;td&gt;(&lt;em&gt;switch avec flute&lt;/em&gt;)&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;Olive&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;16&lt;/td&gt;
+ &lt;td&gt;Bertrand&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+&lt;div class="goat svg-container medium"&gt;
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="monospace"
+ font-size="14px"
+ 
+ viewBox="0 0 616 233"
+ &gt;
+ &lt;g transform='translate(8,16)'&gt;
+&lt;path d='M 248,0 L 360,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,64 L 136,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,64 L 584,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,80 L 360,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,128 L 360,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,144 L 136,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,144 L 584,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,208 L 360,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,80 L 8,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,80 L 152,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,16 L 232,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,144 L 232,192' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,16 L 376,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,144 L 376,192' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,80 L 456,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 600,80 L 600,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,0 A 16,16 0 0,0 232,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,0 A 16,16 0 0,1 376,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,64 A 16,16 0 0,0 8,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 136,64 A 16,16 0 0,1 152,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,64 A 16,16 0 0,0 456,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 584,64 A 16,16 0 0,1 600,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,64 A 16,16 0 0,0 248,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,64 A 16,16 0 0,1 360,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,128 A 16,16 0 0,0 232,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,128 A 16,16 0 0,1 376,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,128 A 16,16 0 0,0 24,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,128 A 16,16 0 0,1 136,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,128 A 16,16 0 0,0 472,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 600,128 A 16,16 0 0,1 584,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,192 A 16,16 0 0,0 248,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,192 A 16,16 0 0,1 360,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'&gt;É&lt;/text&gt;
+&lt;text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'&gt;M&lt;/text&gt;
+&lt;text text-anchor='middle' x='72' y='100' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='80' y='100' fill='currentColor' style='font-size:1em'&gt;L&lt;/text&gt;
+&lt;text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'&gt;9&lt;/text&gt;
+&lt;text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='96' y='100' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='280' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'&gt;O&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='164' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='180' fill='currentColor' style='font-size:1em'&gt;2&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='36' fill='currentColor' style='font-size:1em'&gt;L&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='52' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='164' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='180' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='36' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='164' fill='currentColor' style='font-size:1em'&gt;W&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='36' fill='currentColor' style='font-size:1em'&gt;V&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='52' fill='currentColor' style='font-size:1em'&gt;-&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='164' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='36' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='164' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='180' fill='currentColor' style='font-size:1em'&gt;3&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='36' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='52' fill='currentColor' style='font-size:1em'&gt;8&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='164' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='180' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='36' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='352' y='180' fill='currentColor' style='font-size:1em'&gt;4&lt;/text&gt;
+&lt;text text-anchor='middle' x='504' y='100' fill='currentColor' style='font-size:1em'&gt;B&lt;/text&gt;
+&lt;text text-anchor='middle' x='504' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='512' y='100' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='512' y='116' fill='currentColor' style='font-size:1em'&gt;0&lt;/text&gt;
+&lt;text text-anchor='middle' x='520' y='100' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='520' y='116' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='528' y='100' fill='currentColor' style='font-size:1em'&gt;T&lt;/text&gt;
+&lt;text text-anchor='middle' x='536' y='100' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='536' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='544' y='100' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='544' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='552' y='100' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='552' y='116' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='560' y='100' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='568' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='576' y='116' fill='currentColor' style='font-size:1em'&gt;6&lt;/text&gt;
+&lt;/g&gt;
+
+ &lt;/svg&gt;
+ 
+&lt;/div&gt;</description></item><item><title>Jack The Cop - Fiche Technique Sébastien</title><link>/ft-jtc-seb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/ft-jtc-seb/</guid><description>&lt;p class="pdf-link"&gt;&lt;a href="/ft-jtc-seb.pdf"&gt;Version PDF&lt;/a&gt;&lt;/p&gt;
+&lt;table class="headers"&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;Instruments&lt;/th&gt;
+ &lt;th&gt;Micros&lt;/th&gt;
+ &lt;th&gt;Pieds&lt;/th&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;Mixes&lt;/th&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Kick Back&lt;/td&gt;
+ &lt;td&gt;B52&lt;/td&gt;
+ &lt;td&gt;Petit&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 1&lt;/td&gt;
+ &lt;td&gt;Retour Émilie&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Kick frappe&lt;/td&gt;
+ &lt;td&gt;B91&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 2&lt;/td&gt;
+ &lt;td&gt;Retour Erwann&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Snare Top&lt;/td&gt;
+ &lt;td&gt;Audix i5&lt;/td&gt;
+ &lt;td&gt;Moyen&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 3&lt;/td&gt;
+ &lt;td&gt;Retour Bertrand&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;Snare Bo&lt;/td&gt;
+ &lt;td&gt;e904&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 4&lt;/td&gt;
+ &lt;td&gt;Retour Olivier (&lt;strong&gt;15 pouces&lt;/strong&gt;)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;HH&lt;/td&gt;
+ &lt;td&gt;sm57&lt;/td&gt;
+ &lt;td&gt;Moyen&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 5-6&lt;/td&gt;
+ &lt;td&gt;Groupe drum → Face&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;Tom&lt;/td&gt;
+ &lt;td&gt;e904&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 7-8&lt;/td&gt;
+ &lt;td&gt;Groupe Guitare → Face&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;OH Jardin&lt;/td&gt;
+ &lt;td&gt;KM184&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 9&lt;/td&gt;
+ &lt;td&gt;Groupe CB → Face&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;8&lt;/td&gt;
+ &lt;td&gt;OH Cours&lt;/td&gt;
+ &lt;td&gt;KM184&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 10&lt;/td&gt;
+ &lt;td&gt;Groupe Erwann → Face&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;9&lt;/td&gt;
+ &lt;td&gt;CB&lt;/td&gt;
+ &lt;td&gt;DI Piezo&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;Mix 11-12&lt;/td&gt;
+ &lt;td&gt;Groupe Choeurs → Face&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;10&lt;/td&gt;
+ &lt;td&gt;Guitare 1&lt;/td&gt;
+ &lt;td&gt;e906&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;11&lt;/td&gt;
+ &lt;td&gt;Guitare 2&lt;/td&gt;
+ &lt;td&gt;sm57&lt;/td&gt;
+ &lt;td&gt;Petit&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;Concertina&lt;/td&gt;
+ &lt;td&gt;ATM350&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;13&lt;/td&gt;
+ &lt;td&gt;Flûte&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;14&lt;/td&gt;
+ &lt;td&gt;Erwann&lt;/td&gt;
+ &lt;td&gt;(&lt;em&gt;switch avec flute&lt;/em&gt;)&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;Olive&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;16&lt;/td&gt;
+ &lt;td&gt;Bertrand&lt;/td&gt;
+ &lt;td&gt;SM58&lt;/td&gt;
+ &lt;td&gt;Grand&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+&lt;div class="goat svg-container medium"&gt;
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="monospace"
+ font-size="14px"
+ 
+ viewBox="0 0 616 233"
+ &gt;
+ &lt;g transform='translate(8,16)'&gt;
+&lt;path d='M 248,0 L 360,0' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,64 L 136,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,64 L 584,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,80 L 360,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,128 L 360,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,144 L 136,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,144 L 584,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,208 L 360,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,80 L 8,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,80 L 152,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,16 L 232,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,144 L 232,192' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,16 L 376,64' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,144 L 376,192' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,80 L 456,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 600,80 L 600,128' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,0 A 16,16 0 0,0 232,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,0 A 16,16 0 0,1 376,16' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 24,64 A 16,16 0 0,0 8,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 136,64 A 16,16 0 0,1 152,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 472,64 A 16,16 0 0,0 456,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 584,64 A 16,16 0 0,1 600,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,64 A 16,16 0 0,0 248,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,64 A 16,16 0 0,1 360,80' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 248,128 A 16,16 0 0,0 232,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 360,128 A 16,16 0 0,1 376,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 8,128 A 16,16 0 0,0 24,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 152,128 A 16,16 0 0,1 136,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 456,128 A 16,16 0 0,0 472,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 600,128 A 16,16 0 0,1 584,144' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 232,192 A 16,16 0 0,0 248,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;path d='M 376,192 A 16,16 0 0,1 360,208' fill='none' stroke='currentColor'&gt;&lt;/path&gt;
+&lt;text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'&gt;É&lt;/text&gt;
+&lt;text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'&gt;M&lt;/text&gt;
+&lt;text text-anchor='middle' x='72' y='100' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='80' y='100' fill='currentColor' style='font-size:1em'&gt;L&lt;/text&gt;
+&lt;text text-anchor='middle' x='80' y='116' fill='currentColor' style='font-size:1em'&gt;9&lt;/text&gt;
+&lt;text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='96' y='100' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='280' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='36' fill='currentColor' style='font-size:1em'&gt;O&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='164' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='288' y='180' fill='currentColor' style='font-size:1em'&gt;2&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='36' fill='currentColor' style='font-size:1em'&gt;L&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='52' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='164' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='296' y='180' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='36' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='304' y='164' fill='currentColor' style='font-size:1em'&gt;W&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='36' fill='currentColor' style='font-size:1em'&gt;V&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='52' fill='currentColor' style='font-size:1em'&gt;-&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='164' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='312' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='36' fill='currentColor' style='font-size:1em'&gt;I&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='164' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='320' y='180' fill='currentColor' style='font-size:1em'&gt;3&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='36' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='52' fill='currentColor' style='font-size:1em'&gt;8&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='164' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='328' y='180' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='336' y='36' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='344' y='180' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='352' y='180' fill='currentColor' style='font-size:1em'&gt;4&lt;/text&gt;
+&lt;text text-anchor='middle' x='504' y='100' fill='currentColor' style='font-size:1em'&gt;B&lt;/text&gt;
+&lt;text text-anchor='middle' x='504' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='512' y='100' fill='currentColor' style='font-size:1em'&gt;E&lt;/text&gt;
+&lt;text text-anchor='middle' x='512' y='116' fill='currentColor' style='font-size:1em'&gt;0&lt;/text&gt;
+&lt;text text-anchor='middle' x='520' y='100' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='520' y='116' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='528' y='100' fill='currentColor' style='font-size:1em'&gt;T&lt;/text&gt;
+&lt;text text-anchor='middle' x='536' y='100' fill='currentColor' style='font-size:1em'&gt;R&lt;/text&gt;
+&lt;text text-anchor='middle' x='536' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='544' y='100' fill='currentColor' style='font-size:1em'&gt;A&lt;/text&gt;
+&lt;text text-anchor='middle' x='544' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='552' y='100' fill='currentColor' style='font-size:1em'&gt;N&lt;/text&gt;
+&lt;text text-anchor='middle' x='552' y='116' fill='currentColor' style='font-size:1em'&gt;,&lt;/text&gt;
+&lt;text text-anchor='middle' x='560' y='100' fill='currentColor' style='font-size:1em'&gt;D&lt;/text&gt;
+&lt;text text-anchor='middle' x='568' y='116' fill='currentColor' style='font-size:1em'&gt;1&lt;/text&gt;
+&lt;text text-anchor='middle' x='576' y='116' fill='currentColor' style='font-size:1em'&gt;6&lt;/text&gt;
+&lt;/g&gt;
+
+ &lt;/svg&gt;
+ 
+&lt;/div&gt;
+&lt;p&gt;Au son → Sébastien: 07 81 11 21 76&lt;/p&gt;</description></item></channel></rss>

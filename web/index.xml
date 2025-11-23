@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on My New Hugo Site</title><link>/web/</link><description>Recent content in Web on My New Hugo Site</description><generator>Hugo</generator><language>fr-FR</language><atom:link href="/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Lilypond</title><link>/web/lilypond/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/web/lilypond/</guid><description>&lt;h2 id="snippet"&gt;Snippet&lt;/h2&gt;
+&lt;p&gt;Pour insérer des bouts de partitions lilypond dans une page web:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;créer un fichier &lt;code&gt;lily/ma-partoche.ly&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;l&amp;rsquo;exporter avec la commande &lt;code&gt;lilypond -dbackend=svg -dcrop ma-partoche.ly&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;l&amp;rsquo;insérer dans le fichier markdown &lt;code&gt;![Ma partoche](ma-partoche.ly)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>netlify</title><link>/web/netlify/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/web/netlify/</guid><description>&lt;h2 id="add-a-domain-name"&gt;Add a domain name&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;choose the website on the netlify page&lt;/li&gt;
+&lt;li&gt;in the left menu &lt;code&gt;domain management&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En face du nom de domaine, il y a un menu déroulant &lt;code&gt;options&lt;/code&gt; avec:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;blockquote&gt;
+ &lt;p&gt;&lt;code&gt;Go to DNS panel&lt;/code&gt;&lt;/p&gt;
+
+ &lt;/blockquote&gt;
+
+&lt;p&gt;Ici, ils proposent de pointer les &lt;code&gt;domain's name servers&lt;/code&gt; sur netlify. En gros, chez le domaine provider (ici ovh), il faut rentrer les 4 dns servers suivants:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dns1.p09.nsone.net&lt;/li&gt;
+&lt;li&gt;dns2.p09.nsone.net&lt;/li&gt;
+&lt;li&gt;dns3.p09.nsone.net&lt;/li&gt;
+&lt;li&gt;dns4.p09.nsone.net&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: Les noms de serveurs varient à chaque fois. Pour savoir exactement les dns qu&amp;rsquo;il faut entrer, il faut:&lt;/p&gt;</description></item><item><title>Ressources</title><link>/web/ressources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/web/ressources/</guid><description>&lt;h2 id="ressources"&gt;Ressources&lt;/h2&gt;
+&lt;h3 id="couleurs"&gt;couleurs&lt;/h3&gt;
+&lt;p&gt;pour les couleurs, j&amp;rsquo;ai trouvé ça :
+&lt;a href="https://clrs.cc/"&gt;Colors - A nicer color palette for the web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Super outil pour modifier des couleurs en ligne :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://material.io/resources/color/"&gt;Material Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://paletton.com/"&gt;Paletton Live Colorizer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="tutos"&gt;Tutos&lt;/h3&gt;
+&lt;p&gt;Incroyable ressource !!!
+&lt;a href="https://www.learnhowtoprogram.com/user-interfaces"&gt;Learn How To Programm&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="sticky-menu"&gt;Sticky menu&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/"&gt;Responsive mobile menu with CSS without JS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/javascriptacademy/responsive-navigation-bar-with-mobile-menu-using-html-css-2hpd"&gt;Responsive Navigation bar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="image"&gt;Image&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://levelup.gitconnected.com/how-to-make-a-fully-accessible-css-only-carousel-40e8bd62032b"&gt;How to Make a Fully Accessible CSS-Only Carousel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codesalad.dev/blog/how-to-create-an-image-lightbox-in-pure-css-25"&gt;How to Create an Image Lightbox in Pure CSS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="site-example"&gt;Site example&lt;/h2&gt;
+&lt;h3 id="font"&gt;Font&lt;/h3&gt;
+&lt;p&gt;J&amp;rsquo;aime bien la police de &lt;a href="https://promixacademy.com/blog/reaper-backup/"&gt;ce site&lt;/a&gt;&lt;/p&gt;</description></item><item><title>sass</title><link>/web/sass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/web/sass/</guid><description>&lt;p&gt;Par exemple quand on intéragit avec un menu (hover):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lighten($color, $amount)&lt;/li&gt;
+&lt;li&gt;complement($color)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="basic-color-manipulation"&gt;Basic color manipulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;lighten(color, amount)&lt;/li&gt;
+&lt;li&gt;darken(color, amount)&lt;/li&gt;
+&lt;li&gt;saturate(color, amount)&lt;/li&gt;
+&lt;li&gt;desaturate(color, amount)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="creating-new-colors"&gt;Creating new colors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;grayscale(color)&lt;/li&gt;
+&lt;li&gt;complement(color)&lt;/li&gt;
+&lt;li&gt;invert(color)&lt;/li&gt;
+&lt;li&gt;mix(color1, color2, perc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="opacity"&gt;opacity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;opacify(color, amount)&lt;/li&gt;
+&lt;li&gt;transparentize(color, amount)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="work-on-color"&gt;Work on color:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kittygiraudel.com/2014/01/30/programmatically-go-from-one-color-to-another-with-sass/"&gt;Programmatically go from one color to another with Sass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wunnle.com/dynamic-text-color-based-on-background"&gt;Dynamic text color based on background&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

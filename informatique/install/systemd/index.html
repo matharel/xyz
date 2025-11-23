@@ -1,0 +1,114 @@
+<!doctype html><html lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>SystemD</title><link rel=stylesheet href=/css/style.min.7b4250401cd274931ed8bcbac91d35383a99f849b837a813e2820ec60acabba5.css integrity="sha256-e0JQQBzSdJMe2Ly6yR01ODqZ+Em4N6gT4oIOxgrKu6U=" crossorigin=anonymous></head><body class=toc><main><div id=TOC-container><input type=checkbox id=TOC-toggle>
+<label for=TOC-toggle></label><nav id=TableOfContents><ul><li><a href=#the-d-of-systemd>The <code>D</code> of <code>systemd</code></a></li><li><a href=#cgroups>Cgroups</a></li><li><a href=#systemd-units>Systemd Units</a><ul><li><a href=#11-differents-type-of-units>11 Differents type of units</a></li></ul></li><li><a href=#unit-files>Unit files</a><ul><li><a href=#the-unit-section>The <code>[unit]</code> Section</a></li><li><a href=#the-install-section-enabling-and-disabling>The <code>[Install]</code> Section: Enabling and disabling</a></li><li><a href=#the-service-section>The <code>[Service]</code> Section</a></li><li><a href=#execution-environmnet>Execution Environmnet</a></li><li><a href=#overriding-unit-files>Overriding Unit Files</a></li></ul></li><li><a href=#controlling-the-system>Controlling the System</a><ul><li><a href=#unit-inspection-commands>Unit Inspection Commands</a></li><li><a href=#unit-management-commands>Unit Management Commands</a></li><li><a href=#the-journal>The Journal</a></li></ul></li><li><a href=#conclusion>Conclusion</a></li></ul></nav></div><div id=mainContent><h1>SystemD</h1><p>This page is my personal notes on this excellent ressource:</p><blockquote><p><a href=https://medium.com/@sebastiancarlos/systemds-nuts-and-bolts-0ae7995e45d3>Systemd’s Nuts and Bolts — A Visual Guide to Systemd</a></p></blockquote><h2 id=the-d-of-systemd>The <code>D</code> of <code>systemd</code></h2><p><code>D-Bus</code> (Desktop Bus) is a high-level message-passing mechanism for
+<strong><code>Inter-Process Communication</code></strong> (IPC).</p><p>The <code>D-Bus</code> daemon runs two <strong>busses</strong>, virtual channels where messages fly back
+and forth :</p><ul><li><strong>The System Bus</strong>: system-wide services (NetworkManager, systemd)</li><li><strong>The Session Bus</strong>: a private bus for each logged-in user, handling things
+like desktop notifications and applications communication.</li></ul><p>When a program connects to a bus, it gets a <strong>bus name</strong> (e.g.,
+<code>org.freedesktop.NetworkManager</code>). This how we can talk to a given service, it&rsquo;s
+a DNS for D-Bus.</p><p>The <code>systemctl</code> commands is a user-friendly wrapper for making D-Bus calls.
+Some&rsquo;s say it&rsquo;s just a collection of tools.</p><p>When we type <code>systemctl start my-app.service</code>, we&rsquo;re sending a D-Bus message to
+the <code>systemd</code> process (PID 1), which is a D-Bus service. We could do it by the
+<code>busctl</code> tool, but it&rsquo;s a lot of harder work !</p><h2 id=cgroups>Cgroups</h2><p><code>Control groups</code> provide the isolation of hardware resources (CPU, Memroy, I/O,
+etc.) between processes, and keep processes isolated from each other.</p><p><code>systemd</code> uses <code>cgroups</code> extensively to provide a level of security and
+isolation to all processes on the machine. Every single process runs in one
+<code>cgroup</code>.</p><p><code>systemd-cgls</code> (control groups list) get a view of the whole cgroup hierarchy.</p><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>➜  ~ systemd-cgls
+</span></span><span style=display:flex><span>CGroup /:
+</span></span><span style=display:flex><span>-.slice
+</span></span><span style=display:flex><span>├─user.slice
+</span></span><span style=display:flex><span>│ └─user-1000.slice
+</span></span><span style=display:flex><span>│   ├─user@1000.service …
+</span></span><span style=display:flex><span>│   │ ├─session.slice
+</span></span><span style=display:flex><span>│   │ │ ├─xdg-permission-store.service
+</span></span><span style=display:flex><span>│   │ │ │ └─1451 /usr/lib/xdg-permission-store
+</span></span><span style=display:flex><span>│   │ │ ├─dbus-broker.service
+</span></span><span style=display:flex><span>│   │ │ │ └─1023 dbus-broker --log <span style=color:#56b6c2>11</span> --controller <span style=color:#56b6c2>10</span> --machine-id 6b0b76dc4601…
+</span></span><span style=display:flex><span>│   │ │ ├─wireplumber.service
+</span></span><span style=display:flex><span>│   │ │ │ └─1514 /usr/bin/wireplumber
+</span></span><span style=display:flex><span>│   │ │ └─pipewire.service
+</span></span><span style=display:flex><span>│   │ │   └─1513 /usr/bin/pipewire
+</span></span><span style=display:flex><span>│   │ ├─app.slice
+</span></span><span style=display:flex><span>│   │ │ ├─gammastep.service
+</span></span><span style=display:flex><span>│   │ │ │ └─12410 /usr/bin/gammastep
+</span></span><span style=display:flex><span>│   │ │ ├─tmux-spawn-84d3c2b7-e82f-4ae2-812f-e493f7179f80.scope
+</span></span><span style=display:flex><span>│   │ │ │ └─1022 -zsh
+</span></span><span style=display:flex><span>│   │ │ └─run-p950-i951.scope
+</span></span><span style=display:flex><span>│   │ │   ├─  <span style=color:#56b6c2>950</span> sway
+</span></span><span style=display:flex><span>│   │ │   ├─  <span style=color:#56b6c2>990</span> swaybg -o * -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blu…
+</span></span><span style=display:flex><span>│   │ │   ├─ <span style=color:#56b6c2>1001</span> swaybar -b bar-0
+</span></span><span style=display:flex><span>│   │ │   ├─ <span style=color:#56b6c2>1006</span> mako
+</span></span><span style=display:flex><span>│   │ │   ├─ <span style=color:#56b6c2>1007</span> sh -c tmux new -s hugo <span style=color:#56b6c2>|</span> hugo serve -s ~/repos/perso/
+</span></span><span style=display:flex><span>│   │ │   ├─ <span style=color:#56b6c2>4538</span> nvim tuto.md
+</span></span><span style=display:flex><span>│   │ └─init.scope
+</span></span><span style=display:flex><span>│   │   ├─711 /usr/lib/systemd/systemd --user
+</span></span><span style=display:flex><span>│   │   └─733 <span style=color:#bc74c4>(</span>sd-pam<span style=color:#bc74c4>)</span>
+</span></span><span style=display:flex><span>│   └─session-4.scope
+</span></span><span style=display:flex><span>│     └─903 /usr/bin/greetd --session-worker <span style=color:#56b6c2>12</span>
+</span></span><span style=display:flex><span>├─init.scope
+</span></span><span style=display:flex><span>│ └─1 /sbin/init
+</span></span><span style=display:flex><span>└─system.slice
+</span></span><span style=display:flex><span>  ├─systemd-networkd.service
+</span></span><span style=display:flex><span>  │ └─432 /usr/lib/systemd/systemd-networkd
+</span></span><span style=display:flex><span>  ├─systemd-udevd.service …
+</span></span><span style=display:flex><span>  ├─dbus-broker.service
+</span></span><span style=display:flex><span>  ├─polkit.service
+</span></span><span style=display:flex><span>  ├─iwd.service
+</span></span><span style=display:flex><span>  ├─bluetooth.service
+</span></span><span style=display:flex><span>  ├─systemd-journald.service
+</span></span><span style=display:flex><span>  ├─greetd.service
+</span></span><span style=display:flex><span>  ├─upower.service
+</span></span><span style=display:flex><span>  ├─keyd.service
+</span></span><span style=display:flex><span>  ├─systemd-resolved.service
+</span></span><span style=display:flex><span>  ├─udisks2.service
+</span></span><span style=display:flex><span>  ├─systemd-timesyncd.service
+</span></span><span style=display:flex><span>  └─systemd-logind.service
+</span></span><span style=display:flex><span>    └─604 /usr/lib/systemd/systemd-logind
+</span></span></code></pre></div><ul><li><code>.slice</code>: a group of cgroups, like a folder organizing other cgroups. The
+whole system starts in the root slice (<code>-.slice</code>), with user porcesses in
+<code>user.slice</code> and system services in <code>system.slice</code>.</li><li><code>.service</code>: A cgroup for a service unit, like <code>gammastep.service</code>.</li><li><code>.scope</code>: A cgroup for grouping &ldquo;foreign&rdquo; processes that <code>systemd</code> didn&rsquo;t
+start itself but still want to monitor (the user login session - greetd - for
+example).</li></ul><h2 id=systemd-units>Systemd Units</h2><p>In <code>systemd</code> everything is a &ldquo;unit&rdquo;.</p><p>A unit is a declarative configuration files that tell <code>systemd</code> <strong>what you want
+done</strong>, <strong>not how</strong> to do it.</p><h3 id=11-differents-type-of-units>11 Differents type of units</h3><p>But the ones we interact with :</p><ul><li><code>.service</code>: starts and controls a process (daemon or any process)</li><li><code>.socket</code> : when traffic arrives on this socket, systemd will active the
+corresponding <code>.service</code> unit. It allows service to be started on-demand.</li><li><code>.target</code>: a way to group other units and create synchronization points. Hooks
+for dependencies (<code>WantedBy</code>, <code>RequiredBy</code>).</li><li><code>.timer</code>: trigger units on a calendar schedule</li><li><code>.slice</code> and <code>.scope</code>: in relation to cgroups.<ul><li><code>.slice</code>: unit used to group other units in the cgroup tree</li><li><code>.scope</code>: unit used to manage &ldquo;foreign&rdquo; process that <code>systemd</code> wants to
+track</li></ul></li></ul><h2 id=unit-files>Unit files</h2><figure role=figure aria-label="Systemd Unit File Section"><a href=/systemd-unit-file-section_1019.avif><div class=image-wrapper background: linear-gradient(#e7dfe0, #2c2927, #020221);><picture><source type=image/avif srcset="/systemd-unit-file-section_420.avif 420w, /systemd-unit-file-section_789.avif 789w, /systemd-unit-file-section_1019.avif 1019w" sizes="(min-width:1000px) 789px, (min-width:500px) 80vw, 100vw"><img src=/systemd-unit-file-section_789.jpg alt="Systemd Unit File Section" width=1400 height=1300 loading=lazy decoding=async></picture></div></a></figure><h3 id=the-unit-section>The <code>[unit]</code> Section</h3><p>Contains information about the unit and <strong>its relationship with other units</strong>.</p><ul><li><code>Description=</code></li><li><code>Wants=</code>: &ldquo;weak&rdquo; dependency, it a unit list here fails, systemd starts the
+unit anyway.</li><li><code>Requires=</code>: &ldquo;strong&rdquo; dependency. (better to use <code>wants</code>)</li><li><code>Conflicts=</code>: The opposite of <code>Requires</code>.</li><li><code>After=</code> and <code>Before=</code>: startup order.</li></ul><h3 id=the-install-section-enabling-and-disabling>The <code>[Install]</code> Section: Enabling and disabling</h3><p>Tells <code>systemctl</code> how to hook the unit into the boot process.</p><h3 id=the-service-section>The <code>[Service]</code> Section</h3><p>This section is specific to <code>.service</code> units and defines how to run the process.</p><h3 id=execution-environmnet>Execution Environmnet</h3><ul><li><code>WorkingDirectory</code></li><li><code>User=</code> and <code>Group=</code></li><li><code>Environment=</code></li><li><code>EnvironmentFile=</code></li></ul><h3 id=overriding-unit-files>Overriding Unit Files</h3><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>systemctl edit my-app.service
+</span></span></code></pre></div><p>We only specify the sections and directives we want to add or change:</p><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#bc74c4>[</span>Service<span style=color:#bc74c4>]</span>
+</span></span><span style=display:flex><span><span style=color:#bc74c4;font-style:italic>Restart</span><span style=color:#bc74c4>=</span>always
+</span></span></code></pre></div><p>After making changes to unit files, we <strong>must run</strong> <code>systemctl daemon-reload</code>.</p><h2 id=controlling-the-system>Controlling the System</h2><p><code>systemctl</code> is the command line interface the the <code>systemd</code> manager.</p><h3 id=unit-inspection-commands>Unit Inspection Commands</h3><ul><li><code>systemctl status [UNIT ...]</code></li><li><code>systemctl list-dependencies</code></li></ul><div class=highlight><pre tabindex=0 style=color:#c9c9c9;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>➜  ~ systemctl --user status pipewire
+</span></span><span style=display:flex><span>● pipewire.service - PipeWire Multimedia Service
+</span></span><span style=display:flex><span>     Loaded: loaded <span style=color:#bc74c4>(</span>/usr/lib/systemd/user/pipewire.service<span style=color:#56b6c2>;</span> disabled<span style=color:#56b6c2>;</span> preset: enabled<span style=color:#bc74c4>)</span>
+</span></span><span style=display:flex><span>     Active: active <span style=color:#bc74c4>(</span>running<span style=color:#bc74c4>)</span> since Fri 2025-10-10 11:09:13 CEST<span style=color:#56b6c2>;</span> 4h 18min ago
+</span></span><span style=display:flex><span> Invocation: 50f68cb1b5994e3e91dad8fc9b1748bd
+</span></span><span style=display:flex><span>TriggeredBy: ● pipewire.socket
+</span></span><span style=display:flex><span>   Main PID: <span style=color:#56b6c2>1513</span> <span style=color:#bc74c4>(</span>pipewire<span style=color:#bc74c4>)</span>
+</span></span><span style=display:flex><span>      Tasks: <span style=color:#56b6c2>3</span> <span style=color:#bc74c4>(</span>limit: 76469<span style=color:#bc74c4>)</span>
+</span></span><span style=display:flex><span>     Memory: 11M <span style=color:#bc74c4>(</span>peak: 13.9M<span style=color:#bc74c4>)</span>
+</span></span><span style=display:flex><span>        CPU: 1min 47.048s
+</span></span><span style=display:flex><span>     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
+</span></span><span style=display:flex><span>             └─1513 /usr/bin/pipewire
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Oct <span style=color:#56b6c2>10</span> 11:09:13 archlinux systemd<span style=color:#bc74c4>[</span>711<span style=color:#bc74c4>]</span>: Started PipeWire Multimedia Service.
+</span></span><span style=display:flex><span>➜  ~ systemctl --user list-dependencies pipewire
+</span></span><span style=display:flex><span>pipewire.service
+</span></span><span style=display:flex><span>● ├─dbus-broker.service
+</span></span><span style=display:flex><span>● ├─pipewire.socket
+</span></span><span style=display:flex><span>● ├─session.slice
+</span></span><span style=display:flex><span>● ├─wireplumber.service
+</span></span><span style=display:flex><span>● └─basic.target
+</span></span><span style=display:flex><span>●   ├─paths.target
+</span></span><span style=display:flex><span>●   ├─sockets.target
+</span></span><span style=display:flex><span>●   │ ├─dbus.socket
+</span></span><span style=display:flex><span>●   │ ├─dirmngr.socket
+</span></span><span style=display:flex><span>●   │ ├─gpg-agent-browser.socket
+</span></span><span style=display:flex><span>●   │ ├─gpg-agent-extra.socket
+</span></span><span style=display:flex><span>●   │ ├─gpg-agent-ssh.socket
+</span></span><span style=display:flex><span>●   │ ├─gpg-agent.socket
+</span></span><span style=display:flex><span>●   │ ├─keyboxd.socket
+</span></span><span style=display:flex><span>●   │ ├─p11-kit-server.socket
+</span></span><span style=display:flex><span>●   │ ├─pipewire-pulse.socket
+</span></span><span style=display:flex><span>●   │ ├─pipewire.socket
+</span></span><span style=display:flex><span>●   │ └─systemd-ask-password.socket
+</span></span><span style=display:flex><span>●   └─timers.target
+</span></span></code></pre></div><h3 id=unit-management-commands>Unit Management Commands</h3><ul><li><code>systemctl start|stop|restart</code></li><li><code>systemctl enable|disable</code>: Enables unit to start at boot by creating the
+symlink defined in the <code>[Install]</code> section.</li><li><code>systemctl enable --now</code>: enable and start.</li><li><code>systemctl daemon-reload</code>: Reloads all unit configuration files from disk.</li></ul><h3 id=the-journal>The Journal</h3><p>The <code>systemd-journald</code> daemon collects log messages from a variety of sources:</p><ul><li>Kernel messages</li><li>Messages from all services managed by <code>systemd</code></li></ul><p><code>journalctl</code> dump the entire journal, filter it:</p><ul><li>Follow logs live: <code>journalctl -f</code></li><li>Show logs for a specific units: <code>journalctl -u pipewire.service</code></li><li>filter by priority: <code>journalctl -p err</code></li><li>kernel messages: <code>journalctl -k</code></li></ul><h2 id=conclusion>Conclusion</h2><p>From D-Bus IPC and cgroup process management to the declarative unit system and
+the structured journal, systemd provides a comprehensive, integrated suite of
+tools for managing a modern Linux system.</p></div></main><footer></footer><script src=/js/scroll-spy.js></script><script src=/js/checklist.js></script></body></html>

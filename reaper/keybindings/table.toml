@@ -1,0 +1,79 @@
+headers = [
+  { key = "key",  label = "Keybinding" },
+  { key = "action", label = "The default actions done by the keys" }
+]
+
+[[row]]
+key = "B"
+action = "View: Show project bay window"
+abbr = "bay"
+
+[[row]]
+key = "C"
+action = "Options: Show metronome/pre-roll settings"
+abbr = "clic"
+
+[[row]]
+key = "D"
+action = "View: Show peaks display settings"
+abbr = "peaks"
+
+[[row]]
+key = "E"
+action = "View: Show enveloppe manager window"
+abbr = "env"
+
+[[row]]
+key = "G"
+action = "View: Show track group manager window"
+abbr = "group"
+
+[[row]]
+key = "L"
+action = "Locking Menu"
+abbr = "lock"
+
+[[row]]
+key = "M"
+action = "View: Toggle mixer visible"
+abbr = "mixer"
+
+[[row]]
+key = "P"
+action = "View: Toggle transport visible (as in Play)"
+abbr = "transp"
+
+[[row]]
+key = "R"
+action = "View: Show routing matrix window"
+abbr = "routing"
+
+[[row]]
+key = "S"
+action = "Options: Show track manager window"
+abbr = "track"
+
+[[row]]
+key = "T"
+action = "View: Show track manager window"
+abbr = "track"
+
+[[row]]
+key = "V"
+action = "Video: Show/hide video window"
+abbr = "video"
+
+[[row]]
+key = "X"
+action = "Media eXplorer: Show/hide media explorer"
+abbr = "explorer"
+
+[[row]]
+key = "Z"
+action = "View: Show undo history window"
+abbr = "undo"
+
+[[row]]
+key = ";"
+action = "Options: Preferences …"
+abbr = "prefs"
